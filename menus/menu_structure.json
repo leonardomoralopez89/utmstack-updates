@@ -1,0 +1,27 @@
+[
+    {
+        "name": "",
+        "url": "",
+        "type": "",
+        "reference": "",
+        "position": 0,
+        "isActive": true,
+        "isAction": false,
+        "icon": "",
+        "module": "",
+        "submenus": [
+            {
+                "name": "",
+                "url": "",
+                "type": "",
+                "reference": "",
+                "position": 0,
+                "isActive": true,
+                "isAction": false,
+                "icon": "",
+                "module": "",
+                "submenus": null
+            }
+        ]
+    }
+]
