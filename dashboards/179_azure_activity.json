@@ -1,0 +1,426 @@
+[
+    {
+        "id": 689,
+        "idVisualization": 631,
+        "idDashboard": 179,
+        "order": 3,
+        "width": 548,
+        "height": 324.8,
+        "top": 6,
+        "left": 10,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"6c473e37-e002-cd40-8e03-666b2a2da65d\",\"rows\":6,\"x\":10,\"y\":6}",
+        "visualization": {
+            "id": 631,
+            "name": "Azure Activity Admin Connections",
+            "description": "Azure Activity Admin Connections",
+            "eventType": "log-azure-*",
+            "createdDate": "2020-07-31T19:14:43.555Z",
+            "modifiedDate": null,
+            "userCreated": "demo",
+            "userModified": null,
+            "chartConfig": "{\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"padding\":null,\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"visualMap\":{\"type\":\"continuous\",\"calculable\":true,\"realtime\":true,\"inRange\":{\"color\":[\"#f5994e\",\"#c05050\"]},\"orient\":\"horizontal\",\"left\":\"center\",\"top\":\"bottom\",\"bottom\":\"15%\"},\"leaflet\":{\"center\":[0,0],\"zoom\":1,\"roam\":true,\"layerControl\":{\"position\":\"topleft\"},\"tiles\":[{\"label\":\"Open Street Map\",\"urlTemplate\":\"https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png\",\"options\":{\"attribution\":\"\"}}],\"lat\":0,\"lon\":0},\"series\":null,\"top\":10}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 11,
+            "chartType": "COORDINATE_MAP_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.azure.category.value.keyword",
+                    "value": "Administrative"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Connection Location"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.azure.claims.ipaddr.keyword",
+                    "customLabel": "Connection Location",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 1000
+                    }
+                }
+            },
+            "pattern": {
+                "id": 11,
+                "pattern": "log-azure-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 179,
+            "name": "Azure Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T19:23:34.817Z",
+            "modifiedDate": "2021-02-20T06:42:29.570Z",
+            "userCreated": "demo",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 686,
+        "idVisualization": 628,
+        "idDashboard": 179,
+        "order": 0,
+        "width": 1161.8,
+        "height": 324.8,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":21,\"id\":\"41bc0342-b49e-1ce8-a4b4-a45ec1329a9e\",\"rows\":6,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 628,
+            "name": "Azure Activity",
+            "description": "Azure Activity",
+            "eventType": "log-azure-*",
+            "createdDate": "2020-07-31T18:49:39.992Z",
+            "modifiedDate": null,
+            "userCreated": "demo",
+            "userModified": null,
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"Events Count\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"2020-07-28T21:00:00.000Z\",\"2020-07-28T22:00:00.000Z\",\"2020-07-28T23:00:00.000Z\",\"2020-07-29T00:00:00.000Z\",\"2020-07-29T01:00:00.000Z\",\"2020-07-29T02:00:00.000Z\",\"2020-07-29T03:00:00.000Z\",\"2020-07-29T04:00:00.000Z\",\"2020-07-29T05:00:00.000Z\",\"2020-07-29T06:00:00.000Z\",\"2020-07-29T07:00:00.000Z\",\"2020-07-29T08:00:00.000Z\",\"2020-07-29T09:00:00.000Z\",\"2020-07-29T10:00:00.000Z\",\"2020-07-29T11:00:00.000Z\",\"2020-07-29T12:00:00.000Z\",\"2020-07-29T13:00:00.000Z\",\"2020-07-29T14:00:00.000Z\",\"2020-07-29T15:00:00.000Z\",\"2020-07-29T16:00:00.000Z\",\"2020-07-29T17:00:00.000Z\",\"2020-07-29T18:00:00.000Z\",\"2020-07-29T19:00:00.000Z\",\"2020-07-29T20:00:00.000Z\",\"2020-07-29T21:00:00.000Z\",\"2020-07-29T22:00:00.000Z\",\"2020-07-29T23:00:00.000Z\",\"2020-07-30T00:00:00.000Z\",\"2020-07-30T01:00:00.000Z\",\"2020-07-30T02:00:00.000Z\",\"2020-07-30T03:00:00.000Z\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":1,\"name\":\"\",\"type\":\"line\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"Events Count\",\"type\":\"line\",\"data\":[3,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 11,
+            "chartType": "LINE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Events Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "DATE_HISTOGRAM",
+                    "type": "AXIS",
+                    "field": "@timestamp",
+                    "customLabel": "Activity",
+                    "dateHistogram": {
+                        "interval": "1h"
+                    }
+                }
+            },
+            "pattern": {
+                "id": 11,
+                "pattern": "log-azure-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 179,
+            "name": "Azure Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T19:23:34.817Z",
+            "modifiedDate": "2021-02-20T06:42:29.570Z",
+            "userCreated": "demo",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 687,
+        "idVisualization": 629,
+        "idDashboard": 179,
+        "order": 1,
+        "width": 492.2,
+        "height": 324.8,
+        "top": 0,
+        "left": 21,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":9,\"id\":\"211b8658-9ac6-49e8-dd2c-60ac4cd5807c\",\"rows\":6,\"x\":21,\"y\":0}",
+        "visualization": {
+            "id": 629,
+            "name": "Azure Activity Per Resource",
+            "description": "Azure Activity Per Resource",
+            "eventType": "log-azure-*",
+            "createdDate": "2020-07-31T18:51:41.987Z",
+            "modifiedDate": null,
+            "userCreated": "demo",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 11,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Event Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.azure.resourceProviderName.value.keyword",
+                    "customLabel": "Resources",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 11,
+                "pattern": "log-azure-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 179,
+            "name": "Azure Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T19:23:34.817Z",
+            "modifiedDate": "2021-02-20T06:42:29.570Z",
+            "userCreated": "demo",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 690,
+        "idVisualization": 632,
+        "idDashboard": 179,
+        "order": 4,
+        "width": 548,
+        "height": 324.8,
+        "top": 6,
+        "left": 20,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"3ab9406e-d338-35e1-f323-004def32fc79\",\"rows\":6,\"x\":20,\"y\":6}",
+        "visualization": {
+            "id": 632,
+            "name": "Azure Activity per User",
+            "description": "Azure Activity per User",
+            "eventType": "log-azure-*",
+            "createdDate": "2020-07-31T19:18:01.402Z",
+            "modifiedDate": "2021-01-03T22:14:14.897Z",
+            "userCreated": "demo",
+            "userModified": "siem",
+            "chartConfig": "{\"pieType\":\"donut\",\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"adam@atlasintech.com\",\"rick@atlasintech.com\",\"8abe2874-2605-496d-83c3-de605a948db1\",\"0bc3ba33-0202-4573-a1ed-18a9ac710507\",\"4131fd54-4d9b-4fba-9aa1-777382c3aa13\",\"f8a8139e-c53e-44b1-be57-4995440bbacb\"]},\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":false,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":false,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":false}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"grid\":{}}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 11,
+            "chartType": "PIE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Activity Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.azure.caller.keyword",
+                    "customLabel": "",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 20
+                    }
+                }
+            },
+            "pattern": {
+                "id": 11,
+                "pattern": "log-azure-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 179,
+            "name": "Azure Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T19:23:34.817Z",
+            "modifiedDate": "2021-02-20T06:42:29.570Z",
+            "userCreated": "demo",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 688,
+        "idVisualization": 630,
+        "idDashboard": 179,
+        "order": 2,
+        "width": 548,
+        "height": 324.8,
+        "top": 6,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"1a82a301-ff00-7d68-8a85-c7368731f580\",\"rows\":6,\"x\":0,\"y\":6}",
+        "visualization": {
+            "id": 630,
+            "name": "Azure Activity by Type",
+            "description": "Azure Activity by Type",
+            "eventType": "log-azure-*",
+            "createdDate": "2020-07-31T19:12:14.315Z",
+            "modifiedDate": null,
+            "userCreated": "demo",
+            "userModified": null,
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"Administrative\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"Event Count\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":1,\"name\":\"\",\"type\":\"bar\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"Administrative\",\"type\":\"bar\",\"data\":[{\"value\":20,\"name\":\"Event Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 11,
+            "chartType": "VERTICAL_BAR_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Event Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "logx.azure.category.value.keyword",
+                    "customLabel": "",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 11,
+                "pattern": "log-azure-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 179,
+            "name": "Azure Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T19:23:34.817Z",
+            "modifiedDate": "2021-02-20T06:42:29.570Z",
+            "userCreated": "demo",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 691,
+        "idVisualization": 633,
+        "idDashboard": 179,
+        "order": 5,
+        "width": 1664,
+        "height": 380.6,
+        "top": 12,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"5fd5dbb7-f446-6ba0-b364-e8fe3a9c5e79\",\"rows\":7,\"x\":0,\"y\":12}",
+        "visualization": {
+            "id": 633,
+            "name": "Azure Activity per Resource ID",
+            "description": "Azure Activity per Resource ID",
+            "eventType": "log-azure-*",
+            "createdDate": "2020-07-31T19:21:30.405Z",
+            "modifiedDate": null,
+            "userCreated": "demo",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 11,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Log Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.azure.resourceId.keyword",
+                    "customLabel": "Resource ID",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.azure.resourceGroupName.keyword",
+                        "customLabel": "Resource Group",
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 11,
+                "pattern": "log-azure-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 179,
+            "name": "Azure Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T19:23:34.817Z",
+            "modifiedDate": "2021-02-20T06:42:29.570Z",
+            "userCreated": "demo",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

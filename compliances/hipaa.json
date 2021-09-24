@@ -1,0 +1,61 @@
+{
+    "id": 1,
+    "name": "HIPAA",
+    "description": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge.",
+    "sections": [
+        {
+            "id": 33,
+            "name": "§164.312(b) - Audit Controls",
+            "description": "Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.",
+            "reports":[]
+        },
+        {
+            "id": 36,
+            "name": "§164.312(b) - Audit Controls",
+            "description": "Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.",
+            "reports":[]
+        },
+        {
+            "id": 36,
+            "name": "",
+            "description": "",
+            "reports":[]
+        },
+        {
+            "id": 36,
+            "name": "",
+            "description": "",
+            "reports":[]
+        },
+        {
+            "id": 36,
+            "name": "",
+            "description": "",
+            "reports":[]
+        },
+        {
+            "id": 36,
+            "name": "",
+            "description": "",
+            "reports":[]
+        },
+        {
+            "id": 36,
+            "name": "",
+            "description": "",
+            "reports":[]
+        },
+        {
+            "id": 36,
+            "name": "",
+            "description": "",
+            "reports":[]
+        },
+        {
+            "id": 36,
+            "name": "",
+            "description": "",
+            "reports":[]
+        }
+    ]
+}

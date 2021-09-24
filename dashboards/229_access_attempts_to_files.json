@@ -1,0 +1,601 @@
+[
+    {
+        "id": 892,
+        "idVisualization": 790,
+        "idDashboard": 229,
+        "order": 0,
+        "width": 492.2,
+        "height": 269,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":9,\"id\":\"b81500fc-d2c2-f2a1-8805-32368e2de553\",\"rows\":5,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 790,
+            "name": "Write Data",
+            "description": "For a file object, the right to write data to the file. For a directory object, the right to create a file in the directory (FILE_ADD_FILE).",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-01T23:20:38.101Z",
+            "modifiedDate": "2021-02-21T15:54:34.961Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.AccessMask.keyword",
+                    "value": "0x2"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": "File"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 229,
+            "name": "Access attempts to files",
+            "description": "Access attempts to critical files and data.",
+            "refreshTime": 300000,
+            "createdDate": "2021-02-01T23:34:36.716Z",
+            "modifiedDate": "2021-02-20T07:02:23.344Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 897,
+        "idVisualization": 795,
+        "idDashboard": 229,
+        "order": 1,
+        "width": 436.4,
+        "height": 269,
+        "top": 0,
+        "left": 9,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"72bc5cbc-ff26-a643-ddee-974dcb16fb26\",\"rows\":5,\"x\":9,\"y\":0}",
+        "visualization": {
+            "id": 795,
+            "name": "DeleteChild",
+            "description": "For a directory, the right to delete a directory and all the files it contains, including read-only files.",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-01T23:27:47.656Z",
+            "modifiedDate": "2021-02-21T16:00:07.479Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.AccessMask.keyword",
+                    "value": "0x40"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": "File"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 229,
+            "name": "Access attempts to files",
+            "description": "Access attempts to critical files and data.",
+            "refreshTime": 300000,
+            "createdDate": "2021-02-01T23:34:36.716Z",
+            "modifiedDate": "2021-02-20T07:02:23.344Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 895,
+        "idVisualization": 793,
+        "idDashboard": 229,
+        "order": 2,
+        "width": 715.4,
+        "height": 548,
+        "top": 0,
+        "left": 17,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":13,\"id\":\"150dc31d-37e0-b8bb-3803-c5f55ba8934a\",\"rows\":10,\"x\":17,\"y\":0}",
+        "visualization": {
+            "id": 793,
+            "name": "User with more access an object",
+            "description": "An attempt was made to access an object",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-02T01:34:47.287Z",
+            "modifiedDate": "2021-02-20T21:42:05.515Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"pieType\":\"pie\",\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[]},\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":false,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":false,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":false}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"grid\":{}}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "PIE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.AccessMask.keyword",
+                    "value": [
+                        "0x2",
+                        "0x4",
+                        "0x40",
+                        "0x10",
+                        "0x10000",
+                        "0x40000",
+                        "0x80000"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": "File"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                    "customLabel": "Username",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 229,
+            "name": "Access attempts to files",
+            "description": "Access attempts to critical files and data.",
+            "refreshTime": 300000,
+            "createdDate": "2021-02-01T23:34:36.716Z",
+            "modifiedDate": "2021-02-20T07:02:23.344Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 896,
+        "idVisualization": 794,
+        "idDashboard": 229,
+        "order": 5,
+        "width": 1664,
+        "height": 492.2,
+        "top": 10,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"82b00add-d373-e42c-b8ec-ade341b172dd\",\"rows\":9,\"x\":0,\"y\":10}",
+        "visualization": {
+            "id": 794,
+            "name": "Access attempts to critical files and data",
+            "description": "Monitor access attempts to critical files and data, and alarm when unauthorized attempts are detected.",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-01T23:31:56.533Z",
+            "modifiedDate": "2021-02-20T09:02:32.629Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.AccessMask.keyword",
+                    "value": [
+                        "0x2",
+                        "0x4",
+                        "0x10",
+                        "0x40",
+                        "0x100",
+                        "0x10000",
+                        "0x40000",
+                        "0x80000"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": "File"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "@timestamp",
+                    "customLabel": "Date",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                        "customLabel": "User",
+                        "subBucket": {
+                            "id": "1007",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.beat.hostname.keyword",
+                            "customLabel": "Computer",
+                            "subBucket": {
+                                "id": "1009",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.ObjectName.keyword",
+                                "customLabel": "Object",
+                                "subBucket": {
+                                    "id": "1010",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "logx.wineventlog.access_description.keyword",
+                                    "customLabel": "Access description",
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 229,
+            "name": "Access attempts to files",
+            "description": "Access attempts to critical files and data.",
+            "refreshTime": 300000,
+            "createdDate": "2021-02-01T23:34:36.716Z",
+            "modifiedDate": "2021-02-20T07:02:23.344Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 894,
+        "idVisualization": 792,
+        "idDashboard": 229,
+        "order": 4,
+        "width": 436.4,
+        "height": 269,
+        "top": 5,
+        "left": 9,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"65a694fd-6c18-6a84-6b5f-6480d6bf51e1\",\"rows\":5,\"x\":9,\"y\":5}",
+        "visualization": {
+            "id": 792,
+            "name": "DELETE",
+            "description": "The right to delete the object.",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-01T23:29:03.792Z",
+            "modifiedDate": "2021-02-21T15:59:12.261Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.AccessMask.keyword",
+                    "value": "0x10000"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": "File"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 229,
+            "name": "Access attempts to files",
+            "description": "Access attempts to critical files and data.",
+            "refreshTime": 300000,
+            "createdDate": "2021-02-01T23:34:36.716Z",
+            "modifiedDate": "2021-02-20T07:02:23.344Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 893,
+        "idVisualization": 791,
+        "idDashboard": 229,
+        "order": 3,
+        "width": 492.2,
+        "height": 269,
+        "top": 5,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":9,\"id\":\"8cac58e5-3092-7232-f79d-122cc0ccc27f\",\"rows\":5,\"x\":0,\"y\":5}",
+        "visualization": {
+            "id": 791,
+            "name": "WriteEA",
+            "description": "The right to write extended file attributes.",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-01T23:26:28.147Z",
+            "modifiedDate": "2021-02-21T15:56:57.339Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.AccessMask.keyword",
+                    "value": "0x10"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": "File"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 229,
+            "name": "Access attempts to files",
+            "description": "Access attempts to critical files and data.",
+            "refreshTime": 300000,
+            "createdDate": "2021-02-01T23:34:36.716Z",
+            "modifiedDate": "2021-02-20T07:02:23.344Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

@@ -1,6 +1,7 @@
 # Here you can get a reference about the Utmstack menu structure update file
 
-## Properties with '*' means that
+### **Id** *
+#### Identifier of the menu,
 
 ### **Name** *
 #### Name of the menu.

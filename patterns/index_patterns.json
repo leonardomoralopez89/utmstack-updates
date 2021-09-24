@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "pattern": "log-*"
+    },
+    {
+        "id": 2,
+        "pattern": "alert-*"
+    },
+    {
+        "id": 3,
+        "pattern": "dc-*",
+        "module": "AD_AUDIT"
+    },
+    {
+        "id": 4,
+        "pattern": "log-network_flow-*"
+    },
+    {
+        "id": 5,
+        "pattern": "log-nids-*"
+    },
+    {
+        "id": 6,
+        "pattern": "log-dns-*"
+    },
+    {
+        "id": 7,
+        "pattern": "log-metricbeat-*"
+    },
+    {
+        "id": 8,
+        "pattern": "log-wineventlog-*"
+    },
+    {
+        "id": 9,
+        "pattern": "log-darwin-*"
+    },
+    {
+        "id": 10,
+        "pattern": "log-aws-*",
+        "module": "AWS"
+    },
+    {
+        "id": 11,
+        "pattern": "log-azure-*",
+        "module": "AZURE"
+    },
+    {
+        "id": 12,
+        "pattern": "log-o365-*",
+        "module": "O365"
+    },
+    {
+        "id": 13,
+        "pattern": "log-firewall-meraki-*"
+    },
+    {
+        "id": 14,
+        "pattern": "log-firewall-*"
+    },
+    {
+        "id": 15,
+        "pattern": "log-firewall-cisco_asa-*"
+    },
+    {
+        "id": 16,
+        "pattern": "log-hids-*"
+    },
+    {
+        "id": 17,
+        "pattern": "log-firewall-sophos-*"
+    },
+    {
+        "id": 18,
+        "pattern": "log-iis-*"
+    },
+    {
+        "id": 19,
+        "pattern": "log-generic-*"
+    }
+]

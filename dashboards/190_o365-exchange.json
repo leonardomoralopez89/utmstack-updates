@@ -1,0 +1,452 @@
+[
+    {
+        "id": 753,
+        "idVisualization": 687,
+        "idDashboard": 190,
+        "order": 0,
+        "width": 436.4,
+        "height": 380.6,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"40fef4a8-e90b-eeb8-f892-4aabf1d4c571\",\"rows\":7,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 687,
+            "name": "O365 Top 5 Exchange Operations",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-07T21:25:41.192Z",
+            "modifiedDate": "2021-07-23T16:24:08.353Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "{\"pieType\":\"donut\",\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"\",\"extraCssText\":\"z-index:100\",\"data\":[\"MailItemsAccessed\",\"MoveToDeletedItems\",\"SoftDelete\",\"Create\",\"HardDelete\",\"Set-User\",\"SupervisoryReviewOLAudit\",\"Set-Mailbox\",\"ModifyFolderPermissions\",\"Set-TransportRule\"]},\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":false,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":false,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":false}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"grid\":{\"top\":0,\"right\":0,\"left\":0,\"bottom\":0}}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "PIE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.o365.Workload.keyword",
+                    "value": "Exchange"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.Operation.keyword",
+                    "customLabel": "Operations",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 190,
+            "name": "O365 Exchange",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-07T23:09:55.585Z",
+            "modifiedDate": "2021-02-20T06:45:34.383Z",
+            "userCreated": "rick",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 750,
+        "idVisualization": 688,
+        "idDashboard": 190,
+        "order": 1,
+        "width": 436.4,
+        "height": 380.6,
+        "top": 0,
+        "left": 8,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"71edde78-3002-1daf-7430-d0f7b73f62fb\",\"rows\":7,\"x\":8,\"y\":0}",
+        "visualization": {
+            "id": 688,
+            "name": "O365 Top 5 Active Users",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-07T23:22:52.058Z",
+            "modifiedDate": "2021-07-23T16:24:08.376Z",
+            "userCreated": "rick",
+            "userModified": null,
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"rogelio.romero@alivi.com\",\"lillian.colon@alivi.com\",\"maikel.abreu@alivi.com\",\"NT AUTHORITY\\\\SYSTEM (Microsoft.Exchange.Management.ForwardSync)\",\"mcam@alivi.com\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"Count\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":1,\"name\":\"\",\"type\":\"bar\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"rogelio.romero@alivi.com\",\"type\":\"bar\",\"data\":[{\"value\":3575,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"lillian.colon@alivi.com\",\"type\":\"bar\",\"data\":[{\"value\":396,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"maikel.abreu@alivi.com\",\"type\":\"bar\",\"data\":[{\"value\":236,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"NT AUTHORITY\\\\SYSTEM (Microsoft.Exchange.Management.ForwardSync)\",\"type\":\"bar\",\"data\":[{\"value\":71,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"mcam@alivi.com\",\"type\":\"bar\",\"data\":[{\"value\":65,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "VERTICAL_BAR_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.o365.Workload.keyword",
+                    "value": "Exchange"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "logx.o365.UserId.keyword",
+                    "customLabel": "User",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 190,
+            "name": "O365 Exchange",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-07T23:09:55.585Z",
+            "modifiedDate": "2021-02-20T06:45:34.383Z",
+            "userCreated": "rick",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 751,
+        "idVisualization": 689,
+        "idDashboard": 190,
+        "order": 2,
+        "width": 771.2,
+        "height": 380.6,
+        "top": 0,
+        "left": 16,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":14,\"id\":\"cfecac15-2bf0-c1c3-2933-bf87418f1854\",\"rows\":7,\"x\":16,\"y\":0}",
+        "visualization": {
+            "id": 689,
+            "name": "O365 Top Attackers location",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-07T22:56:12.089Z",
+            "modifiedDate": "2021-07-23T16:24:08.390Z",
+            "userCreated": "rick",
+            "userModified": "admin",
+            "chartConfig": "{\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"padding\":null,\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"visualMap\":{\"type\":\"continuous\",\"calculable\":true,\"realtime\":true,\"inRange\":{\"color\":[\"#f5994e\",\"#c05050\"]},\"orient\":\"horizontal\",\"left\":\"center\",\"top\":\"bottom\",\"bottom\":\"15%\"},\"leaflet\":{\"center\":[0,0],\"zoom\":1,\"roam\":true,\"layerControl\":{\"position\":\"topleft\"},\"tiles\":[{\"label\":\"Open Street Map\",\"urlTemplate\":\"https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png\",\"options\":{\"attribution\":\"\"}}],\"lat\":0,\"lon\":0},\"series\":null,\"top\":10}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "COORDINATE_MAP_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.o365.Workload.keyword",
+                    "value": "ThreatIntelligence"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.SenderIp.keyword",
+                    "customLabel": "Location",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 190,
+            "name": "O365 Exchange",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-07T23:09:55.585Z",
+            "modifiedDate": "2021-02-20T06:45:34.383Z",
+            "userCreated": "rick",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 754,
+        "idVisualization": 671,
+        "idDashboard": 190,
+        "order": 3,
+        "width": 548,
+        "height": 380.6,
+        "top": 7,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"1d564f7a-7f75-7f94-2d86-589000bd8165\",\"rows\":7,\"x\":0,\"y\":7}",
+        "visualization": {
+            "id": 671,
+            "name": "O365 Top Targets",
+            "description": "Threat Intelligence Report for Office365",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-05-19T14:49:24.650Z",
+            "modifiedDate": "2021-07-23T16:24:08.139Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.o365.Workload.keyword",
+                    "value": "ThreatIntelligence"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.Recipients.keyword",
+                    "customLabel": "Targets",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 190,
+            "name": "O365 Exchange",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-07T23:09:55.585Z",
+            "modifiedDate": "2021-02-20T06:45:34.383Z",
+            "userCreated": "rick",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 755,
+        "idVisualization": 690,
+        "idDashboard": 190,
+        "order": 4,
+        "width": 548,
+        "height": 380.6,
+        "top": 7,
+        "left": 10,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"655f9306-e330-16eb-bba2-d3c14fd9f94c\",\"rows\":7,\"x\":10,\"y\":7}",
+        "visualization": {
+            "id": 690,
+            "name": "O365 Top Phish Subjects",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-07T23:13:48.685Z",
+            "modifiedDate": "2021-07-23T16:24:08.403Z",
+            "userCreated": "rick",
+            "userModified": "admin",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.o365.Verdict.keyword",
+                    "value": "Phish"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.Subject.keyword",
+                    "customLabel": "Subject",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.o365.P2Sender.keyword",
+                        "customLabel": "Sender",
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 190,
+            "name": "O365 Exchange",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-07T23:09:55.585Z",
+            "modifiedDate": "2021-02-20T06:45:34.383Z",
+            "userCreated": "rick",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "id": 752,
+        "idVisualization": 685,
+        "idDashboard": 190,
+        "order": 5,
+        "width": 548,
+        "height": 380.6,
+        "top": 7,
+        "left": 20,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"4019a7b2-f334-1fc7-e444-9b30acc17677\",\"rows\":7,\"x\":20,\"y\":7}",
+        "visualization": {
+            "id": 685,
+            "name": "O365 Top 5 Targets",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-07T22:22:04.639Z",
+            "modifiedDate": "2021-07-23T16:24:08.414Z",
+            "userCreated": "rick",
+            "userModified": "admin",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Attacks count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.Recipients.keyword",
+                    "customLabel": "Targets",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 190,
+            "name": "O365 Exchange",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-07T23:09:55.585Z",
+            "modifiedDate": "2021-02-20T06:45:34.383Z",
+            "userCreated": "rick",
+            "userModified": "siem",
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

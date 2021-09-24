@@ -1,26 +1,764 @@
 [
     {
-        "name": "",
-        "url": "",
-        "type": "",
-        "reference": "",
+        "id": 1,
+        "name": "Dashboards",
         "position": 0,
         "isActive": true,
         "isAction": false,
-        "icon": "",
-        "module": "",
+        "icon": "WEBSITE_ANALYSIS.svg",
         "submenus": [
             {
-                "name": "",
-                "url": "",
-                "type": "",
-                "reference": "",
+                "id": 11,
+                "name": "New Dashboard",
+                "url": "creator/dashboard/builder",
                 "position": 0,
                 "isActive": true,
+                "isAction": true
+            },
+            {
+                "id": 12,
+                "name": "New Visualization",
+                "url": "creator/visualization/list?onInitAction=showCreateModal",
+                "position": 1,
+                "isActive": true,
+                "isAction": true
+            },
+            {
+                "id": 13,
+                "name": "Overview",
+                "url": "dashboard/overview",
+                "position": 0,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 14,
+                "name": "Vulnerabilities",
+                "url": "/vulnerability-scanner/overview",
+                "position": 2,
+                "isActive": false,
                 "isAction": false,
-                "icon": "",
-                "module": "",
-                "submenus": null
+                "module": "VULNERABILITIES"
+            },
+            {
+                "id": 15,
+                "name": "AD Auditor",
+                "url": "active-directory/overview",
+                "position": 1,
+                "isActive": false,
+                "isAction": false,
+                "module": "AD_AUDIT"
+            },
+            {
+                "id": 102,
+                "name": "Azure Activity",
+                "url": "dashboard/render/179/azure-activity",
+                "position": 3,
+                "isActive": false,
+                "isAction": false,
+                "module": "AZURE"
+            },
+            {
+                "id": 107,
+                "name": "Threat Activity",
+                "url": "dashboard/render/183/threat-activity",
+                "position": 9,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 108,
+                "name": "Network Intrusion Detection",
+                "url": "dashboard/render/184/network-intrusion-detection",
+                "position": 5,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 109,
+                "name": "Host Intrusion Detection",
+                "url": "dashboard/render/182/host-intrusion-detection",
+                "position": 6,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 122,
+                "name": "AWS Activity",
+                "url": "dashboard/render/213/aws-activity",
+                "position": 7,
+                "isActive": false,
+                "isAction": false,
+                "module": "AWS"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Log Explorer",
+        "position": 3,
+        "isActive": true,
+        "isAction": false,
+        "icon": "ANALYTICS.svg",
+        "submenus": [
+            {
+                "id": 16,
+                "name": "Log Explorer",
+                "url": "discover/log-analyzer",
+                "position": 0,
+                "isActive": true,
+                "isAction": true
+            },
+            {
+                "id": 17,
+                "name": "Windows",
+                "url": "discover/log-analyzer?patternId=8&indexPattern=log-wineventlog-*",
+                "position": 0,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 18,
+                "name": "IIS Log",
+                "url": "discover/log-analyzer?patternId=18&indexPattern=log-iis-*",
+                "position": 3,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 19,
+                "name": "Firewall",
+                "url": "discover/log-analyzer?patternId=14&indexPattern=log-firewall-*",
+                "position": 4,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 20,
+                "name": "Login Failed",
+                "url": "discover/log-analyzer?patternId=8&indexPattern=log-wineventlog-*&logx.wineventlog.event_id=IS->4625",
+                "position": 5,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 21,
+                "name": "Office365",
+                "url": "discover/log-analyzer?patternId=12&indexPattern=log-o365-*",
+                "position": 6,
+                "isActive": false,
+                "isAction": false,
+                "module": "O365"
+            },
+            {
+                "id": 22,
+                "name": "Threat Intelligence",
+                "url": "discover/log-analyzer?patternId=12&indexPattern=log-o365-*&logx.o365.Verdict.keyword=IS->Threat Intelligence",
+                "position": 7,
+                "isActive": false,
+                "isAction": false,
+                "module": "O365"
+            },
+            {
+                "id": 23,
+                "name": "Outlook",
+                "url": "discover/log-analyzer?patternId=12&indexPattern=log-o365-*&logx.o365.Workload.keyword=IS->Exchange",
+                "position": 8,
+                "isActive": false,
+                "isAction": false,
+                "module": "O365"
+            },
+            {
+                "id": 24,
+                "name": "Sharepoint",
+                "url": "discover/log-analyzer?patternId=12&indexPattern=log-o365-*&logx.o365.Workload.keyword=IS->SharePoint",
+                "position": 9,
+                "isActive": false,
+                "isAction": false,
+                "module": "O365"
+            },
+            {
+                "id": 25,
+                "name": "AWS",
+                "url": "discover/log-analyzer?patternId=10&indexPattern=log-aws-*",
+                "position": 2,
+                "isActive": false,
+                "isAction": false,
+                "module": "AWS"
+            },
+            {
+                "id": 26,
+                "name": "Azure",
+                "url": "discover/log-analyzer?patternId=10&indexPattern=log-azure-*",
+                "position": 1,
+                "isActive": false,
+                "isAction": false,
+                "module": "AZURE"
+            },
+            {
+                "id": 105,
+                "name": "DNS",
+                "url": "discover/log-analyzer?patternId=6&indexPattern=log-dns-*",
+                "position": 11,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 141,
+                "name": "Sophos",
+                "url": "discover/log-analyzer?patternId=17&indexPattern=log-firewall-sophos-*",
+                "position": 12,
+                "isActive": true,
+                "isAction": false
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Threat Management",
+        "position": 1,
+        "isActive": true,
+        "isAction": false,
+        "icon": "PROMOTION.svg",
+        "submenus": [
+            {
+                "id": 28,
+                "name": "Alerts",
+                "url": "data/alert/view?alertType=ALERT",
+                "position": 0,
+                "isActive": true,
+                "isAction": true
+            },
+            {
+                "id": 31,
+                "name": "Alerts: Threat Intelligence",
+                "url": "data/alert/view?category.keyword=IS->Threat Intelligence&alertType=ALERT",
+                "position": 0,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 32,
+                "name": "Alerts: Azure",
+                "url": "data/alert/view?dataType.keyword=IS->azure&alertType=ALERT",
+                "position": 1,
+                "isActive": false,
+                "isAction": false,
+                "module": "AZURE"
+            },
+            {
+                "id": 33,
+                "name": "Alerts: Office365",
+                "url": "data/alert/view?dataType.keyword=IS->o365&alertType=ALERT",
+                "position": 2,
+                "isActive": false,
+                "isAction": false,
+                "module": "O365"
+            },
+            {
+                "id": 142,
+                "name": "Alerts: AWS",
+                "url": "data/alert/view?dataType.keyword=IS->aws&alertType=ALERT",
+                "position": 3,
+                "isActive": false,
+                "isAction": false,
+                "module": "AWS"
+            },
+            {
+                "id": 143,
+                "name": "Alerts: Network flow",
+                "url": "data/alert/view?dataType.keyword=IS->network_flow&alertType=ALERT",
+                "position": 4,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 144,
+                "name": "Alerts: HIDS",
+                "url": "data/alert/view?dataType.keyword=IS->hids&alertType=ALERT",
+                "position": 5,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 145,
+                "name": "Alerts: NIDS",
+                "url": "data/alert/view?dataType.keyword=IS->nids&alertType=ALERT",
+                "position": 6,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 146,
+                "name": "Alerts: DNS",
+                "url": "data/alert/view?dataType.keyword=IS->dns&alertType=ALERT",
+                "position": 7,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 147,
+                "name": "Alerts: Windows",
+                "url": "data/alert/view?dataType.keyword=IS->wineventlog&alertType=ALERT",
+                "position": 8,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 148,
+                "name": "Alerts: Linux",
+                "url": "data/alert/view?dataType.keyword=IS->ufw&alertType=ALERT",
+                "position": 9,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 149,
+                "name": "Alerts: MacOS",
+                "url": "data/alert/view?dataType.keyword=IS->macos&alertType=ALERT",
+                "position": 10,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 150,
+                "name": "Alerts: Metric beat",
+                "url": "data/alert/view?dataType.keyword=IS->metric&alertType=ALERT",
+                "position": 11,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 151,
+                "name": "Alert Ignored & tags rules",
+                "url": "/data/alert/alert-rule-management",
+                "position": 1,
+                "isActive": true,
+                "isAction": true
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Incidents",
+        "position": 2,
+        "isActive": true,
+        "isAction": false,
+        "icon": "VISION.svg",
+        "submenus": [
+            {
+                "id": 30,
+                "name": "Incident Response",
+                "url": "incident-response/view",
+                "position": 0,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 63,
+                "name": "Alerts",
+                "url": "data/alert/view?isIncident=IS->true&alertType=INCIDENT",
+                "position": 1,
+                "isActive": true,
+                "isAction": false
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Compliance",
+        "position": 4,
+        "isActive": true,
+        "isAction": false,
+        "icon": "BALANCE.svg",
+        "submenus": [
+            {
+                "id": 37,
+                "name": "New Compliance Report",
+                "url": "app-management/settings/compliance-management?onInitAction=showCreateModal",
+                "position": 0,
+                "isActive": true,
+                "isAction": true
+            },
+            {
+                "id": 38,
+                "name": "HIPAA Dashboard",
+                "url": "compliance/templates?standardId=1&standardName=HIPAA",
+                "position": 0,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 39,
+                "name": "GDPR Dashboard",
+                "url": "compliance/templates?standardId=2&standardName=GPDR",
+                "position": 1,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 40,
+                "name": "GLBA Dashboard",
+                "url": "compliance/templates?standardId=3&standardName=GLBA",
+                "position": 2,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 41,
+                "name": "SOC 2 Dashboard",
+                "url": "compliance/templates?standardId=4&standardName=SOC",
+                "position": 3,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 42,
+                "name": "FISMA Dashboard",
+                "url": "compliance/templates?standardId=5&standardName=FISMA",
+                "position": 4,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 154,
+                "name": "CMMC Dashboard",
+                "url": "compliance/templates?standardId=6&standardName=CMMC",
+                "position": 5,
+                "isActive": true,
+                "isAction": false
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Technical reports",
+        "url": "reports/templates",
+        "position": 5,
+        "isActive": true,
+        "isAction": true,
+        "icon": "DOCUMENT.svg"
+    },
+    {
+        "id": 7,
+        "name": "Assets Management",
+        "position": 9,
+        "isActive": false,
+        "isAction": false,
+        "icon": "NETWORK.svg",
+        "module": "ASSET_MANAGEMENT",
+        "submenus": [
+            {
+                "id": 139,
+                "name": "Assets",
+                "url": "assets-discover/assets",
+                "position": 0,
+                "isActive": false,
+                "isAction": false,
+                "module": "ASSET_MANAGEMENT"
+            },
+            {
+                "id": 140,
+                "name": "Asset Groups",
+                "url": "assets-discover/assets-groups",
+                "position": 1,
+                "isActive": false,
+                "isAction": false,
+                "module": "ASSET_MANAGEMENT"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Vulnerabilities",
+        "position": 8,
+        "isActive": false,
+        "isAction": false,
+        "icon": "TROJAN_HORSE.svg",
+        "module": "VULNERABILITIES",
+        "submenus": [
+            {
+                "id": 44,
+                "name": "Overview",
+                "url": "vulnerability-scanner/overview",
+                "position": 0,
+                "isActive": false,
+                "isAction": false,
+                "module": "VULNERABILITIES"
+            },
+            {
+                "id": 45,
+                "name": "Tasks",
+                "url": "vulnerability-scanner/tasks",
+                "position": 1,
+                "isActive": false,
+                "isAction": false,
+                "module": "VULNERABILITIES"
+            },
+            {
+                "id": 46,
+                "name": "New Scan",
+                "url": "vulnerability-scanner/tasks?onInitAction=showCreateModal",
+                "position": 0,
+                "isActive": false,
+                "isAction": true,
+                "module": "VULNERABILITIES"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "AD Audit",
+        "position": 10,
+        "isActive": false,
+        "isAction": false,
+        "icon": "USERS.svg",
+        "module": "AD_AUDIT",
+        "submenus": [
+            {
+                "id": 47,
+                "name": "Overview",
+                "url": "active-directory/overview",
+                "position": 0,
+                "isActive": false,
+                "isAction": true,
+                "module": "AD_AUDIT"
+            },
+            {
+                "id": 48,
+                "name": "AD Auditor",
+                "url": "active-directory/view",
+                "position": 1,
+                "isActive": false,
+                "isAction": true,
+                "module": "AD_AUDIT"
+            },
+            {
+                "id": 49,
+                "name": "Activity Tracker",
+                "url": "active-directory/tracker",
+                "position": 2,
+                "isActive": false,
+                "isAction": true,
+                "module": "AD_AUDIT"
+            },
+            {
+                "id": 132,
+                "name": "User account management",
+                "url": "dashboard/render/257/user-account-management",
+                "position": 5,
+                "isActive": false,
+                "isAction": false,
+                "module": "AD_AUDIT"
+            },
+            {
+                "id": 133,
+                "name": "Logon Failure",
+                "url": "dashboard/render/255/logon-failure",
+                "position": 7,
+                "isActive": false,
+                "isAction": false,
+                "module": "AD_AUDIT"
+            },
+            {
+                "id": 134,
+                "name": "Privilege Use",
+                "url": "dashboard/render/258/privilege-use",
+                "position": 4,
+                "isActive": false,
+                "isAction": true,
+                "module": "AD_AUDIT"
+            },
+            {
+                "id": 135,
+                "name": "Password changes",
+                "url": "dashboard/render/259/password-changes",
+                "position": 8,
+                "isActive": false,
+                "isAction": false,
+                "module": "AD_AUDIT"
+            },
+            {
+                "id": 136,
+                "name": "Access attempts to files",
+                "url": "dashboard/render/229/access-attempts-to-files",
+                "position": 9,
+                "isActive": false,
+                "isAction": false,
+                "module": "AD_AUDIT"
+            },
+            {
+                "id": 137,
+                "name": "Logon/Logoff events",
+                "url": "dashboard/render/256/logon-logoff-events",
+                "position": 6,
+                "isActive": false,
+                "isAction": false,
+                "module": "AD_AUDIT"
+            },
+            {
+                "id": 138,
+                "name": "Policy change",
+                "url": "dashboard/render/244/policy-change",
+                "position": 3,
+                "isActive": false,
+                "isAction": false,
+                "module": "AD_AUDIT"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Datasources",
+        "position": 7,
+        "isActive": true,
+        "isAction": false,
+        "icon": "DATA_MANAGEMENT.svg",
+        "submenus": [
+            {
+                "id": 111,
+                "name": "Log sources",
+                "url": "dashboard/log-sources",
+                "position": 0,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 152,
+                "name": "Data Parsing",
+                "url": "filters/logs-filters",
+                "position": 1,
+                "isActive": true,
+                "isAction": false
+            },
+            {
+                "id": 153,
+                "name": "Correlation rules",
+                "url": "explore/correlation-rules",
+                "position": 2,
+                "isActive": true,
+                "isAction": false
+            }
+        ]
+    },
+    {
+        "id": 64,
+        "name": "File Classification",
+        "position": 11,
+        "isActive": false,
+        "isAction": false,
+        "icon": "FILE_INTEGRITY.svg",
+        "module": "FILE_INTEGRITY",
+        "submenus": [
+            {
+                "id": 65,
+                "name": "Event Explorer",
+                "url": "data/file/view?filterBy=ALL_EVENTS",
+                "position": 0,
+                "isActive": false,
+                "isAction": true,
+                "module": "FILE_INTEGRITY"
+            },
+            {
+                "id": 95,
+                "name": "Created Files",
+                "url": "data/file/view?filterBy=FILES_CREATED",
+                "position": 0,
+                "isActive": false,
+                "isAction": false,
+                "module": "FILE_INTEGRITY"
+            },
+            {
+                "id": 96,
+                "name": "Deleted Files",
+                "url": "data/file/view?filterBy=FILES_DELETED",
+                "position": 1,
+                "isActive": false,
+                "isAction": false,
+                "module": "FILE_INTEGRITY"
+            },
+            {
+                "id": 97,
+                "name": "Permission Change",
+                "url": "data/file/view?filterBy=PERMISSION_CHANGE",
+                "position": 2,
+                "isActive": false,
+                "isAction": false,
+                "module": "FILE_INTEGRITY"
+            },
+            {
+                "id": 98,
+                "name": "Shared Files",
+                "url": "data/file/view?filterBy=FILES_SHARED",
+                "position": 3,
+                "isActive": false,
+                "isAction": false,
+                "module": "FILE_INTEGRITY"
+            }
+        ]
+    },
+    {
+        "id": 94,
+        "name": "Integrations",
+        "url": "integrations/guide",
+        "position": 6,
+        "isActive": true,
+        "isAction": true,
+        "icon": "SOLUTIONS.svg"
+    },
+    {
+        "id": 100,
+        "name": "Office 365",
+        "position": 12,
+        "isActive": true,
+        "isAction": false,
+        "icon": "OFFICE.svg",
+        "module": "O365",
+        "submenus": [
+            {
+                "id": 110,
+                "name": "O365 Overview",
+                "url": "dashboard/render/189/o365-overview",
+                "position": 0,
+                "isActive": false,
+                "isAction": false,
+                "module": "O365"
+            },
+            {
+                "id": 118,
+                "name": "Exchange",
+                "url": "dashboard/render/190/o365-exchange",
+                "position": 1,
+                "isActive": false,
+                "isAction": false,
+                "module": "O365"
+            },
+            {
+                "id": 119,
+                "name": "Active Directory",
+                "url": "dashboard/render/188/o365-active-directory",
+                "position": 2,
+                "isActive": false,
+                "isAction": false,
+                "module": "O365"
+            },
+            {
+                "id": 120,
+                "name": "SharePoint",
+                "url": "dashboard/render/186/o365-sharepoint",
+                "position": 3,
+                "isActive": false,
+                "isAction": false,
+                "module": "O365"
+            },
+            {
+                "id": 121,
+                "name": "O365 Threat Intelligence",
+                "url": "dashboard/render/187/o365-threat-intelligence",
+                "position": 4,
+                "isActive": false,
+                "isAction": false,
+                "module": "O365"
             }
         ]
     }
