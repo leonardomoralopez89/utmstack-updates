@@ -1,0 +1,149 @@
+[
+    {
+        "id": 1,
+        "name": "aws",
+        "description": "Aws",
+        "filters": [
+            {
+                "filename": "aws-cwg.conf",
+                "path": "filters/aws/aws-cwg.conf"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "azure",
+        "description": "Azure",
+        "filters": [
+            {
+                "filename": "azure-eventhub.conf",
+                "path": "filters/azure/azure-eventhub.conf"
+            },
+            {
+                "filename": "azure-management.conf",
+                "path": "filters/azure/azure-management.conf"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "cisco",
+        "description": "Cisco",
+        "filters": [
+            {
+                "filename": "cisco-asa.conf",
+                "path": "filters/cisco/cisco-asa.conf"
+            },
+            {
+                "filename": "cisco-meraki-events.conf",
+                "path": "filters/cisco/cisco-meraki-events.conf"
+            },
+            {
+                "filename": "cisco-meraki-flows.conf",
+                "path": "filters/cisco/cisco-meraki-flows.conf"
+            },
+            {
+                "filename": "cisco-meraki-ids.conf",
+                "path": "filters/cisco/cisco-meraki-ids.conf"
+            },
+            {
+                "filename": "cisco-meraki-urls.conf",
+                "path": "filters/cisco/cisco-meraki-urls.conf"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "hids",
+        "description": "Hids",
+        "filters": [
+            {
+                "filename": "hids-wazuh.conf",
+                "path": "filters/hids/hids-wazuh.conf"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "linux",
+        "description": "Linux",
+        "filters": [
+            {
+                "filename": "linux-ufw.conf",
+                "path": "filters/linux/linux-ufw.conf"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "macos",
+        "description": "MacOs",
+        "filters": [
+            {
+                "filename": "macos-syslog.conf",
+                "path": "filters/macos/macos-syslog.conf"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "nids",
+        "description": "Nids",
+        "filters": [
+            {
+                "filename": "nids-dns.conf",
+                "path": "filters/nids/nids-dns.conf"
+            },
+            {
+                "filename": "nids-flow.conf",
+                "path": "filters/nids/nids-flow.conf"
+            },
+            {
+                "filename": "nids-dns.conf",
+                "path": "filters/nids/nids-ids.conf"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "o365",
+        "description": "Office 365",
+        "filters": [
+            {
+                "filename": "o365-all.conf",
+                "path": "filters/office365/o365-all.conf"
+            }
+        ]
+    }
+    ,
+    {
+        "id": 9,
+        "name": "windows",
+        "description": "Windows",
+        "filters": [
+            {
+                "filename": "windows-events.conf",
+                "path": "filters/windows/windows-events.conf"
+            },
+            {
+                "filename": "windows-iis.conf",
+                "path": "filters/windows/windows-iis.conf"
+            },
+            {
+                "filename": "windows-metrics.conf",
+                "path": "filters/windows/windows-metrics.conf"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "sophos",
+        "description": "Sophos",
+        "filters": [
+            {
+                "filename": "sophos-xg.conf",
+                "path": "filters/sophos/sophos-xg.conf"
+            }
+        ]
+    }
+]
