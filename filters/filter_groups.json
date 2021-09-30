@@ -5,7 +5,8 @@
         "description": "Aws",
         "filters": [
             {
-                "filename": "aws-cwg.conf",
+                "id": 1,
+                "name": "aws-cwg",
                 "path": "filters/aws/aws-cwg.conf"
             }
         ]
@@ -16,11 +17,13 @@
         "description": "Azure",
         "filters": [
             {
-                "filename": "azure-eventhub.conf",
+                "id": 2,
+                "name": "azure-eventhub",
                 "path": "filters/azure/azure-eventhub.conf"
             },
             {
-                "filename": "azure-management.conf",
+                "id": 3,
+                "name": "azure-management",
                 "path": "filters/azure/azure-management.conf"
             }
         ]
@@ -31,23 +34,28 @@
         "description": "Cisco",
         "filters": [
             {
-                "filename": "cisco-asa.conf",
+                "id": 4,
+                "name": "cisco-asa",
                 "path": "filters/cisco/cisco-asa.conf"
             },
             {
-                "filename": "cisco-meraki-events.conf",
+                "id": 5,
+                "name": "cisco-meraki-events",
                 "path": "filters/cisco/cisco-meraki-events.conf"
             },
             {
-                "filename": "cisco-meraki-flows.conf",
+                "id": 6,
+                "name": "cisco-meraki-flows",
                 "path": "filters/cisco/cisco-meraki-flows.conf"
             },
             {
-                "filename": "cisco-meraki-ids.conf",
+                "id": 7,
+                "name": "cisco-meraki-ids",
                 "path": "filters/cisco/cisco-meraki-ids.conf"
             },
             {
-                "filename": "cisco-meraki-urls.conf",
+                "id": 8,
+                "name": "cisco-meraki-urls",
                 "path": "filters/cisco/cisco-meraki-urls.conf"
             }
         ]
@@ -58,7 +66,8 @@
         "description": "Hids",
         "filters": [
             {
-                "filename": "hids-wazuh.conf",
+                "id": 9,
+                "name": "hids-wazuh",
                 "path": "filters/hids/hids-wazuh.conf"
             }
         ]
@@ -69,7 +78,8 @@
         "description": "Linux",
         "filters": [
             {
-                "filename": "linux-ufw.conf",
+                "id": 10,
+                "name": "linux-ufw",
                 "path": "filters/linux/linux-ufw.conf"
             }
         ]
@@ -80,7 +90,8 @@
         "description": "MacOs",
         "filters": [
             {
-                "filename": "macos-syslog.conf",
+                "id": 11,
+                "name": "macos-syslog",
                 "path": "filters/macos/macos-syslog.conf"
             }
         ]
@@ -91,15 +102,18 @@
         "description": "Nids",
         "filters": [
             {
-                "filename": "nids-dns.conf",
+                "id": 12,
+                "name": "nids-dns",
                 "path": "filters/nids/nids-dns.conf"
             },
             {
-                "filename": "nids-flow.conf",
+                "id": 13,
+                "name": "nids-flow",
                 "path": "filters/nids/nids-flow.conf"
             },
             {
-                "filename": "nids-dns.conf",
+                "id": 14,
+                "name": "nids-ids",
                 "path": "filters/nids/nids-ids.conf"
             }
         ]
@@ -110,27 +124,30 @@
         "description": "Office 365",
         "filters": [
             {
-                "filename": "o365-all.conf",
+                "id": 15,
+                "name": "o365-all",
                 "path": "filters/office365/o365-all.conf"
             }
         ]
-    }
-    ,
+    },
     {
         "id": 9,
         "name": "windows",
         "description": "Windows",
         "filters": [
             {
-                "filename": "windows-events.conf",
+                "id": 16,
+                "name": "windows-events",
                 "path": "filters/windows/windows-events.conf"
             },
             {
-                "filename": "windows-iis.conf",
+                "id": 17,
+                "name": "windows-iis",
                 "path": "filters/windows/windows-iis.conf"
             },
             {
-                "filename": "windows-metrics.conf",
+                "id": 18,
+                "name": "windows-metrics",
                 "path": "filters/windows/windows-metrics.conf"
             }
         ]
@@ -141,7 +158,8 @@
         "description": "Sophos",
         "filters": [
             {
-                "filename": "sophos-xg.conf",
+                "id": 19,
+                "name": "sophos-xg",
                 "path": "filters/sophos/sophos-xg.conf"
             }
         ]
