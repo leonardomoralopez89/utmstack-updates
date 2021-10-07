@@ -1,0 +1,32 @@
+{
+    "id": 1,
+    "name": "System Reports",
+    "description": "In this section all the system reports are defined",
+    "reports": [
+        {
+            "id": 5,
+            "name": "Asset Management",
+            "description": "This report provide audit information over all assets on your network",
+            "type": "CUSTOM_PDF",
+            "restApiUrl": "api/custom-reports/buildAssetManagement",
+            "restApiMethod": "GET",
+            "module": "ASSET_MANAGEMENT"
+        },
+        {
+            "id": 7,
+            "name": "Alert Threat Activity",
+            "description": "This report provide audit information over all alerts of threat on your network",
+            "type": "CUSTOM_PDF",
+            "restApiUrl": "api/custom-reports/buildThreatActivityForAlerts",
+            "restApiMethod": "GET"
+        },
+        {
+            "id": 8,
+            "name": "Incident Threat Activity",
+            "description": "This report provide audit information over all incidents of threat on your network",
+            "type": "CUSTOM_PDF",
+            "restApiUrl": "api/custom-reports/buildThreatActivityForIncidents",
+            "restApiMethod": "GET"
+        }
+    ]
+}

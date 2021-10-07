@@ -1,0 +1,28 @@
+{
+    "id": 4,
+    "name": "Removable Storage Device",
+    "description": "This reporting module provides audit information on files acceded in the removable storage device. These reports can also be select to run at hourly, daily, weekly or monthly intervals.",
+    "reports": [
+        {
+            "id": 26,
+            "name": "Attempting to access a file from an external device",
+            "description": "This report is based on a complete record of users are attempting to access a file on an external device.",
+            "type": "TEMPLATE",
+            "dashboardId": 224
+        },
+        {
+            "id": 27,
+            "name": "A new external device was recognized by the system.",
+            "description": "This report is based on a complete record of when the system recognized a new external device.",
+            "type": "TEMPLATE",
+            "dashboardId": 227
+        },
+        {
+            "id": 28,
+            "name": "File and folder deletions in the storage device",
+            "description": "This report is based complete record of all file and folder deletions in the storage device, along with details on who deleted what, when, and where.",
+            "type": "TEMPLATE",
+            "dashboardId": 260
+        }
+    ]
+}
