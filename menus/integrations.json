@@ -1,0 +1,13 @@
+{
+    "id": 1200,
+    "name": "Integrations",
+    "url": "integrations/guide",
+    "position": 6,
+    "isActive": true,
+    "isAction": true,
+    "icon": "SOLUTIONS.svg",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ]
+}

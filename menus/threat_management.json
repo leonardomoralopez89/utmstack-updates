@@ -1,0 +1,199 @@
+{
+    "id": 300,
+    "name": "Threat Management",
+    "position": 1,
+    "isActive": true,
+    "isAction": false,
+    "icon": "PROMOTION.svg",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ],
+    "submenus": [
+        {
+            "id": 301,
+            "parentId": 300,
+            "name": "Alerts",
+            "url": "data/alert/view?alertType=ALERT",
+            "position": 0,
+            "isActive": true,
+            "isAction": true,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 302,
+            "parentId": 300,
+            "name": "Alerts: Threat Intelligence",
+            "url": "data/alert/view?category.keyword=IS->Threat Intelligence&alertType=ALERT",
+            "position": 0,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 303,
+            "parentId": 300,
+            "name": "Alerts: Azure",
+            "url": "data/alert/view?dataType.keyword=IS->azure&alertType=ALERT",
+            "position": 1,
+            "isActive": false,
+            "isAction": false,
+            "module": "AZURE",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 304,
+            "parentId": 300,
+            "name": "Alerts: Office365",
+            "url": "data/alert/view?dataType.keyword=IS->o365&alertType=ALERT",
+            "position": 2,
+            "isActive": false,
+            "isAction": false,
+            "module": "O365",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 305,
+            "parentId": 300,
+            "name": "Alerts: AWS",
+            "url": "data/alert/view?dataType.keyword=IS->aws&alertType=ALERT",
+            "position": 300,
+            "isActive": false,
+            "isAction": false,
+            "module": "AWS",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 306,
+            "parentId": 300,
+            "name": "Alerts: Network flow",
+            "url": "data/alert/view?dataType.keyword=IS->network_flow&alertType=ALERT",
+            "position": 4,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 307,
+            "parentId": 300,
+            "name": "Alerts: HIDS",
+            "url": "data/alert/view?dataType.keyword=IS->hids&alertType=ALERT",
+            "position": 5,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 308,
+            "parentId": 300,
+            "name": "Alerts: NIDS",
+            "url": "data/alert/view?dataType.keyword=IS->nids&alertType=ALERT",
+            "position": 6,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 309,
+            "parentId": 300,
+            "name": "Alerts: DNS",
+            "url": "data/alert/view?dataType.keyword=IS->dns&alertType=ALERT",
+            "position": 7,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 310,
+            "parentId": 300,
+            "name": "Alerts: Windows",
+            "url": "data/alert/view?dataType.keyword=IS->wineventlog&alertType=ALERT",
+            "position": 8,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 311,
+            "parentId": 300,
+            "name": "Alerts: Linux",
+            "url": "data/alert/view?dataType.keyword=IS->ufw&alertType=ALERT",
+            "position": 9,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 312,
+            "parentId": 300,
+            "name": "Alerts: MacOS",
+            "url": "data/alert/view?dataType.keyword=IS->macos&alertType=ALERT",
+            "position": 10,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 313,
+            "parentId": 300,
+            "name": "Alerts: Metric beat",
+            "url": "data/alert/view?dataType.keyword=IS->metric&alertType=ALERT",
+            "position": 11,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 314,
+            "parentId": 300,
+            "name": "Alert Ignored & tags rules",
+            "url": "/data/alert/alert-rule-management",
+            "position": 1,
+            "isActive": true,
+            "isAction": true,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        }
+    ]
+}

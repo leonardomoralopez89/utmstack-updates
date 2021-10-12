@@ -1,0 +1,105 @@
+{
+    "id": 500,
+    "name": "Compliance",
+    "position": 4,
+    "isActive": true,
+    "isAction": false,
+    "icon": "BALANCE.svg",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ],
+    "submenus": [
+        {
+            "id": 501,
+            "parentId": 500,
+            "name": "New Compliance Report",
+            "url": "app-management/settings/compliance-management?onInitAction=showCreateModal",
+            "position": 0,
+            "isActive": true,
+            "isAction": true,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 502,
+            "parentId": 500,
+            "name": "HIPAA Dashboard",
+            "url": "compliance/templates?standardId=1&standardName=HIPAA",
+            "position": 0,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 503,
+            "parentId": 500,
+            "name": "GDPR Dashboard",
+            "url": "compliance/templates?standardId=2&standardName=GPDR",
+            "position": 1,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 504,
+            "parentId": 500,
+            "name": "GLBA Dashboard",
+            "url": "compliance/templates?standardId=3&standardName=GLBA",
+            "position": 2,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 505,
+            "parentId": 500,
+            "name": "SOC 2 Dashboard",
+            "url": "compliance/templates?standardId=4&standardName=SOC",
+            "position": 3,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 506,
+            "parentId": 500,
+            "name": "FISMA Dashboard",
+            "url": "compliance/templates?standardId=5&standardName=FISMA",
+            "position": 4,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 507,
+            "parentId": 500,
+            "name": "CMMC Dashboard",
+            "url": "compliance/templates?standardId=6&standardName=CMMC",
+            "position": 500,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        }
+    ]
+}

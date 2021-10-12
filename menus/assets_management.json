@@ -1,0 +1,43 @@
+{
+    "id": 700,
+    "name": "Assets Management",
+    "position": 9,
+    "isActive": false,
+    "isAction": false,
+    "icon": "NETWORK.svg",
+    "module": "ASSET_MANAGEMENT",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ],
+    "submenus": [
+        {
+            "id": 701,
+            "parentId": 700,
+            "name": "Assets",
+            "url": "assets-discover/assets",
+            "position": 0,
+            "isActive": false,
+            "isAction": false,
+            "module": "ASSET_MANAGEMENT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 702,
+            "parentId": 700,
+            "name": "Asset Groups",
+            "url": "assets-discover/assets-groups",
+            "position": 1,
+            "isActive": false,
+            "isAction": false,
+            "module": "ASSET_MANAGEMENT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        }
+    ]
+}

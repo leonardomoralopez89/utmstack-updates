@@ -1,0 +1,13 @@
+{
+    "id": 600,
+    "name": "Technical reports",
+    "url": "reports/templates",
+    "position": 5,
+    "isActive": true,
+    "isAction": true,
+    "icon": "DOCUMENT.svg",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ]
+}
