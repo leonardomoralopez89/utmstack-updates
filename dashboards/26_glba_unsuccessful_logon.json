@@ -1,0 +1,537 @@
+[
+    {
+        "idVisualization": 109,
+        "idDashboard": 26,
+        "order": 4,
+        "width": 324.8,
+        "height": 213.2,
+        "top": 0,
+        "left": 24,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":6,\"id\":\"f26d14f6-6414-e742-5e84-f5349594cd38\",\"rows\":4,\"x\":24,\"y\":0}",
+        "visualization": {
+            "id": 109,
+            "name": "Tried to logon outside day restrictions",
+            "description": "Tried to logon outside day restrictions",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-13T03:37:40.624Z",
+            "modifiedDate": "2021-02-27T04:36:35.533Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[{\"metricId\":\"1\",\"icon\":null,\"color\":\"#b71c1c\",\"decimal\":0}]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.SubStatus.keyword",
+                    "value": "0xc000006f"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 26,
+            "name": "GLBA Unsuccessful Logon",
+            "description": "Unsuccessful Logon",
+            "refreshTime": null,
+            "createdDate": "2020-07-13T04:03:00.373Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 111,
+        "idDashboard": 26,
+        "order": 1,
+        "width": 324.8,
+        "height": 213.2,
+        "top": 0,
+        "left": 6,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":6,\"id\":\"160d2fc2-cad5-e010-b142-5d3f94461d14\",\"rows\":4,\"x\":6,\"y\":0}",
+        "visualization": {
+            "id": 111,
+            "name": "Expired password",
+            "description": "",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-13T03:44:30.282Z",
+            "modifiedDate": "2021-02-27T04:37:41.428Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[{\"metricId\":\"1\",\"icon\":null,\"color\":\"#b71c1c\",\"decimal\":0}]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.SubStatus.keyword",
+                    "value": "0xc0000071"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 26,
+            "name": "GLBA Unsuccessful Logon",
+            "description": "Unsuccessful Logon",
+            "refreshTime": null,
+            "createdDate": "2020-07-13T04:03:00.373Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 110,
+        "idDashboard": 26,
+        "order": 0,
+        "width": 324.8,
+        "height": 213.2,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":6,\"id\":\"b77a96e5-4dbb-d154-44a3-12ab8b0ff8b3\",\"rows\":4,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 110,
+            "name": "Password is wrong",
+            "description": "Password is wrong",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-13T03:41:01.772Z",
+            "modifiedDate": "2021-02-27T04:54:14.145Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[{\"metricId\":\"1\",\"icon\":null,\"color\":\"#b71c1c\",\"decimal\":0}]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.SubStatus.keyword",
+                    "value": "0xc000006a"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 26,
+            "name": "GLBA Unsuccessful Logon",
+            "description": "Unsuccessful Logon",
+            "refreshTime": null,
+            "createdDate": "2020-07-13T04:03:00.373Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 113,
+        "idDashboard": 26,
+        "order": 5,
+        "width": 1664,
+        "height": 436.4,
+        "top": 4,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"3d847d09-b586-790f-e1f9-23b1d186624a\",\"rows\":8,\"x\":0,\"y\":4}",
+        "visualization": {
+            "id": 113,
+            "name": "TOP 10 unsuccessful logon",
+            "description": "Unsuccessful logon",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-13T03:01:44.242Z",
+            "modifiedDate": "2021-02-27T04:37:05.789Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"ADMINISTRATOR\",\"ADMIN\",\"utmstack\",\"central\",\"italy\",\"USER\",\"administrator\",\"PC\",\"Administrator\",\"HP\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"COUNT\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":\"1\",\"name\":\"\",\"type\":\"bar\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"ADMINISTRATOR\",\"type\":\"bar\",\"data\":[{\"value\":8278,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"ADMIN\",\"type\":\"bar\",\"data\":[{\"value\":478,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"utmstack\",\"type\":\"bar\",\"data\":[{\"value\":311,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"central\",\"type\":\"bar\",\"data\":[{\"value\":296,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"italy\",\"type\":\"bar\",\"data\":[{\"value\":271,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"USER\",\"type\":\"bar\",\"data\":[{\"value\":221,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"administrator\",\"type\":\"bar\",\"data\":[{\"value\":180,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"PC\",\"type\":\"bar\",\"data\":[{\"value\":131,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"Administrator\",\"type\":\"bar\",\"data\":[{\"value\":115,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"HP\",\"type\":\"bar\",\"data\":[{\"value\":115,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "VERTICAL_BAR_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 26,
+            "name": "GLBA Unsuccessful Logon",
+            "description": "Unsuccessful Logon",
+            "refreshTime": null,
+            "createdDate": "2020-07-13T04:03:00.373Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 112,
+        "idDashboard": 26,
+        "order": 2,
+        "width": 324.8,
+        "height": 213.2,
+        "top": 0,
+        "left": 12,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":6,\"id\":\"38e37c89-3318-2132-b185-e40b71bbdb71\",\"rows\":4,\"x\":12,\"y\":0}",
+        "visualization": {
+            "id": 112,
+            "name": "Account expiration",
+            "description": "",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-13T03:48:34.526Z",
+            "modifiedDate": "2021-02-27T05:03:20.599Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[{\"metricId\":\"1\",\"icon\":null,\"color\":\"#b71c1c\",\"decimal\":0}]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.SubStatus.keyword",
+                    "value": "0xC0000193"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserSid",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 26,
+            "name": "GLBA Unsuccessful Logon",
+            "description": "Unsuccessful Logon",
+            "refreshTime": null,
+            "createdDate": "2020-07-13T04:03:00.373Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 114,
+        "idDashboard": 26,
+        "order": 3,
+        "width": 324.8,
+        "height": 213.2,
+        "top": 0,
+        "left": 18,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":6,\"id\":\"bb86273a-98ae-7a82-da5a-f3ac2dfb96c3\",\"rows\":4,\"x\":18,\"y\":0}",
+        "visualization": {
+            "id": 114,
+            "name": "User locked out",
+            "description": "",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-13T03:30:33.777Z",
+            "modifiedDate": "2021-02-27T04:37:24.892Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[{\"metricId\":\"1\",\"icon\":null,\"color\":\"#b71c1c\",\"decimal\":0}]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.SubStatus.keyword",
+                    "value": "0xC0000234"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 26,
+            "name": "GLBA Unsuccessful Logon",
+            "description": "Unsuccessful Logon",
+            "refreshTime": null,
+            "createdDate": "2020-07-13T04:03:00.373Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 108,
+        "idDashboard": 26,
+        "order": 6,
+        "width": 1664,
+        "height": 548,
+        "top": 12,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"b91fc2c4-9c4e-c867-2a8b-4de1faa2186b\",\"rows\":10,\"x\":0,\"y\":12}",
+        "visualization": {
+            "id": 108,
+            "name": "Top 10 Unsuccessful users logons by device",
+            "description": "Top 10 Unsuccessful users logons by device",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-06-09T16:42:55.402Z",
+            "modifiedDate": "2021-02-20T07:06:40.277Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "Username",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.beat.hostname.keyword",
+                        "customLabel": "Device",
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 10
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 26,
+            "name": "GLBA Unsuccessful Logon",
+            "description": "Unsuccessful Logon",
+            "refreshTime": null,
+            "createdDate": "2020-07-13T04:03:00.373Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

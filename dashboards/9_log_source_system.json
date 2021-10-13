@@ -1,0 +1,155 @@
+[
+    {
+        "idVisualization": 44,
+        "idDashboard": 9,
+        "order": 0,
+        "width": 1664,
+        "height": 380.6,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"64f99b71-e708-7677-f212-53cbead2206b\",\"rows\":7,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 44,
+            "name": "Top 10 Event Types",
+            "description": "",
+            "eventType": "log-*",
+            "createdDate": "2020-08-28T17:58:45.945Z",
+            "modifiedDate": "2021-01-03T19:05:52.602Z",
+            "userCreated": "demo",
+            "userModified": "admin",
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"syslog\",\"network_flow\",\"firewall\",\"wineventlog\",\"metric\",\"dns\",\"aws\",\"hids\",\"nids\",\"iis\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"COUNT\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":1,\"name\":\"\",\"type\":\"bar\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"syslog\",\"type\":\"bar\",\"data\":[{\"value\":19478984,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"network_flow\",\"type\":\"bar\",\"data\":[{\"value\":15583715,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"firewall\",\"type\":\"bar\",\"data\":[{\"value\":10343152,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"wineventlog\",\"type\":\"bar\",\"data\":[{\"value\":6326377,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"metric\",\"type\":\"bar\",\"data\":[{\"value\":2075505,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"dns\",\"type\":\"bar\",\"data\":[{\"value\":1371792,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"aws\",\"type\":\"bar\",\"data\":[{\"value\":821803,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"hids\",\"type\":\"bar\",\"data\":[{\"value\":474826,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"nids\",\"type\":\"bar\",\"data\":[{\"value\":392230,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"iis\",\"type\":\"bar\",\"data\":[{\"value\":147461,\"name\":\"COUNT\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 1,
+            "chartType": "VERTICAL_BAR_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "logx.type.keyword",
+                    "customLabel": "Log",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 1,
+                "pattern": "log-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 9,
+            "name": "Log source system",
+            "description": "",
+            "refreshTime": null,
+            "createdDate": "2020-08-28T18:09:57.494Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 46,
+        "idDashboard": 9,
+        "order": 1,
+        "width": 1664,
+        "height": 603.8,
+        "top": 7,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"b652c2a8-8307-6681-ddcc-1fc0a651debd\",\"rows\":11,\"x\":0,\"y\":7}",
+        "visualization": {
+            "id": 46,
+            "name": "Log Volume by Type",
+            "description": "",
+            "eventType": "log-*",
+            "createdDate": "2020-08-28T18:04:10.912Z",
+            "modifiedDate": "2021-01-03T19:06:12.748Z",
+            "userCreated": "demo",
+            "userModified": "admin",
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"logx.type.keyword:=syslog\",\"logx.type.keyword:=network_flow\",\"logx.type.keyword:=wineventlog\",\"logx.type.keyword:=nids\",\"logx.type.keyword:=hids\",\"logx.type.keyword:=dns\",\"logx.type.keyword:=metric\",\"logx.type.keyword:=aws\",\"logx.type.keyword:=agent\",\"logx.type.keyword:=syscheck\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"2020-08-27T18:00:00.000Z\",\"2020-08-27T19:00:00.000Z\",\"2020-08-27T20:00:00.000Z\",\"2020-08-27T21:00:00.000Z\",\"2020-08-27T22:00:00.000Z\",\"2020-08-27T23:00:00.000Z\",\"2020-08-28T00:00:00.000Z\",\"2020-08-28T01:00:00.000Z\",\"2020-08-28T02:00:00.000Z\",\"2020-08-28T03:00:00.000Z\",\"2020-08-28T04:00:00.000Z\",\"2020-08-28T05:00:00.000Z\",\"2020-08-28T06:00:00.000Z\",\"2020-08-28T07:00:00.000Z\",\"2020-08-28T08:00:00.000Z\",\"2020-08-28T09:00:00.000Z\",\"2020-08-28T10:00:00.000Z\",\"2020-08-28T11:00:00.000Z\",\"2020-08-28T12:00:00.000Z\",\"2020-08-28T13:00:00.000Z\",\"2020-08-28T14:00:00.000Z\",\"2020-08-28T15:00:00.000Z\",\"2020-08-28T16:00:00.000Z\",\"2020-08-28T17:00:00.000Z\",\"2020-08-28T18:00:00.000Z\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":\"1\",\"name\":\"\",\"type\":\"line\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"logx.type.keyword:=syslog\",\"type\":\"line\",\"data\":[18678,22348,19878,19472,21571,20614,19924,18668,23230,27108,36618,35347,37388,35435,36974,38656,22653,34247,28801,24079,27250,19802,20057,23063,4707],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null},{\"name\":\"logx.type.keyword:=network_flow\",\"type\":\"line\",\"data\":[8906,9300,8569,9564,8963,15933,9551,9477,9569,10360,9918,15970,9482,10072,9221,10540,10421,17870,9758,10592,12494,11688,10582,19159,2325],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null},{\"name\":\"logx.type.keyword:=wineventlog\",\"type\":\"line\",\"data\":[1902,1730,1948,1811,1695,1655,2994,1915,2059,1870,1740,1347,1952,1871,2093,1627,2598,1646,2586,1736,1506,1635,1549,1432,331],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null},{\"name\":\"logx.type.keyword:=nids\",\"type\":\"line\",\"data\":[414,381,221,149,215,145,307,275,221,244,174,325,127,145,130,287,267,134,172,349,390,143,159,314,17],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null},{\"name\":\"logx.type.keyword:=hids\",\"type\":\"line\",\"data\":[227,297,395,371,308,347,349,373,352,411,325,356,298,326,360,306,333,307,360,365,816,356,339,334,78],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null},{\"name\":\"logx.type.keyword:=dns\",\"type\":\"line\",\"data\":[33,96,67,70,101,450,139,71,121,501,1159,1551,1095,1144,1129,1105,1034,1480,1299,1503,996,997,1141,1486,250],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null},{\"name\":\"logx.type.keyword:=metric\",\"type\":\"line\",\"data\":[0,0,0,0,0,0,303,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null},{\"name\":\"logx.type.keyword:=aws\",\"type\":\"line\",\"data\":[0,0,0,0,0,0,0,0,0,2,70,56,58,61,64,74,66,47,63,81,58,44,55,36,17],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null},{\"name\":\"logx.type.keyword:=agent\",\"type\":\"line\",\"data\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,3,2],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null},{\"name\":\"logx.type.keyword:=syscheck\",\"type\":\"line\",\"data\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 1,
+            "chartType": "LINE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-1d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "DATE_HISTOGRAM",
+                    "type": "AXIS",
+                    "field": "@timestamp",
+                    "customLabel": "Hours",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.type.keyword",
+                        "customLabel": "",
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 20
+                        }
+                    },
+                    "dateHistogram": {
+                        "interval": "1h"
+                    }
+                }
+            },
+            "pattern": {
+                "id": 1,
+                "pattern": "log-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 9,
+            "name": "Log source system",
+            "description": "",
+            "refreshTime": null,
+            "createdDate": "2020-08-28T18:09:57.494Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

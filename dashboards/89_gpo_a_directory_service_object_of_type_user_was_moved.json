@@ -1,0 +1,160 @@
+[
+    {
+        "idVisualization": 239,
+        "idDashboard": 89,
+        "order": 0,
+        "width": 1672,
+        "height": 718.86664,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"2e2a4e0a-2207-7164-f987-a84cc750a88f\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 239,
+            "name": "GPO: A directory service object of type user was moved",
+            "description": "GPO: A directory service object of type user was moved.",
+            "eventType": "LOGX",
+            "createdDate": "2021-03-02T14:51:34.360Z",
+            "modifiedDate": null,
+            "userCreated": "admin",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "5139"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.ObjectClass.keyword",
+                    "value": "user"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_name.keyword",
+                    "customLabel": "Action",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.computer_name.keyword",
+                        "customLabel": "Where",
+                        "subBucket": {
+                            "id": "1003",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.ObjectClass.keyword",
+                            "customLabel": "Object",
+                            "subBucket": {
+                                "id": "1004",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                                "customLabel": "Who",
+                                "subBucket": {
+                                    "id": "1005",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "logx.wineventlog.event_data.NewObjectDN.keyword",
+                                    "customLabel": "New Object DN",
+                                    "subBucket": {
+                                        "id": "1006",
+                                        "aggregation": "TERMS",
+                                        "type": "BUCKET",
+                                        "field": "logx.wineventlog.event_data.OldObjectDN.keyword",
+                                        "customLabel": "Old Object DN",
+                                        "subBucket": {
+                                            "id": "1007",
+                                            "aggregation": "TERMS",
+                                            "type": "BUCKET",
+                                            "field": "@timestamp",
+                                            "customLabel": "When",
+                                            "terms": {
+                                                "sortBy": "_count",
+                                                "asc": false,
+                                                "size": 5
+                                            }
+                                        },
+                                        "terms": {
+                                            "sortBy": "_count",
+                                            "asc": false,
+                                            "size": 5
+                                        }
+                                    },
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 89,
+            "name": "GPO: A directory service object of type user was moved",
+            "description": "GPO: A directory service object of type user was moved",
+            "refreshTime": null,
+            "createdDate": "2021-03-02T14:56:43.225Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

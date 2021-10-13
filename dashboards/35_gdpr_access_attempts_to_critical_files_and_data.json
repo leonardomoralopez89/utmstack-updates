@@ -1,0 +1,155 @@
+[
+    {
+        "idVisualization": 136,
+        "idDashboard": 35,
+        "order": 0,
+        "width": 1672,
+        "height": 662.8,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"ead153ed-f812-7796-6b6c-658fb46c855d\",\"rows\":12,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 136,
+            "name": "Access to critical files",
+            "description": "Audits file and folder actions including create, rename, delete, copy, and more.",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-07T14:36:45.754Z",
+            "modifiedDate": "2021-02-27T05:15:49.826Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "\"\\\"{\\\\\\\"itemsPerPage\\\\\\\":10,\\\\\\\"showTotal\\\\\\\":false,\\\\\\\"totalFunction\\\\\\\":\\\\\\\"sum\\\\\\\",\\\\\\\"exportCsv\\\\\\\":true,\\\\\\\"dynamicPageSize\\\\\\\":true}\\\"\"",
+            "chartAction": "\"\\\"{\\\\\\\"active\\\\\\\":true,\\\\\\\"customUrl\\\\\\\":false,\\\\\\\"navigate\\\\\\\":null,\\\\\\\"customNavigate\\\\\\\":null}\\\"\"",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.AccessMask.keyword",
+                    "value": [
+                        "0x2",
+                        "0x4",
+                        "0x10",
+                        "0x40",
+                        "0x100",
+                        "0x10000",
+                        "0x40000",
+                        "0x80000"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": "File"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "@timestamp",
+                    "customLabel": "Date",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                        "customLabel": "User",
+                        "subBucket": {
+                            "id": "1007",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.beat.hostname.keyword",
+                            "customLabel": "Computer",
+                            "subBucket": {
+                                "id": "1009",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.ObjectName.keyword",
+                                "customLabel": "Object",
+                                "subBucket": {
+                                    "id": "1010",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "logx.wineventlog.access_description.keyword",
+                                    "customLabel": "Access description",
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 35,
+            "name": "GDPR (Article 5(1)(f)): Access attempts to critical files and data",
+            "description": "GDPR (Article 5(1)(f)): Access attempts to critical files and data",
+            "refreshTime": null,
+            "createdDate": "2021-02-07T14:38:21.302Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

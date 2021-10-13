@@ -1,0 +1,528 @@
+[
+    {
+        "idVisualization": 20,
+        "idDashboard": 18,
+        "order": 0,
+        "width": 771.2,
+        "height": 548,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":14,\"id\":\"ea40acd1-fd31-2192-408b-0179e23fba3a\",\"rows\":10,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 20,
+            "name": "Created files or folders",
+            "description": "Article 5 [1B, 1F-Objects access]",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-11-27T19:41:54.189Z",
+            "modifiedDate": "2021-03-07T22:00:45.425Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": [
+                        "File",
+                        "Folder"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4656"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "@timestamp",
+                    "customLabel": "Event date",
+                    "subBucket": {
+                        "id": "1004",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                        "customLabel": "User",
+                        "subBucket": {
+                            "id": "1005",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.ObjectName.keyword",
+                            "customLabel": "Object name",
+                            "subBucket": {
+                                "id": "1006",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.ProcessName.keyword",
+                                "customLabel": "Process",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 18,
+            "name": "HIPAA: 164.306 (a)(1) - Security standards",
+            "description": "Ensure the confidentiality, integrity, and availability of all electronic protected health information the covered entity or business associate creates, receives, maintains, or transmits.",
+            "refreshTime": null,
+            "createdDate": "2020-12-29T17:32:29.470Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 18,
+        "idDashboard": 18,
+        "order": 3,
+        "width": 882.8,
+        "height": 603.8,
+        "top": 10,
+        "left": 14,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":16,\"id\":\"6f77f94f-1c34-47a5-163f-823e61628a51\",\"rows\":11,\"x\":14,\"y\":10}",
+        "visualization": {
+            "id": 18,
+            "name": "Unmodified files",
+            "description": "Article 5 [1B, 1F-Objects access]",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-11-27T20:19:55.933Z",
+            "modifiedDate": "2021-02-20T08:16:24.051Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": [
+                        "File",
+                        "Folder"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.AccessMask.keyword",
+                    "value": [
+                        "0x4",
+                        "0x40000"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "@timestamp",
+                    "customLabel": "Event date",
+                    "subBucket": {
+                        "id": "1004",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                        "customLabel": "User",
+                        "subBucket": {
+                            "id": "1005",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.ObjectName.keyword",
+                            "customLabel": "Object name",
+                            "subBucket": {
+                                "id": "1006",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.ProcessName.keyword",
+                                "customLabel": "Process",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 18,
+            "name": "HIPAA: 164.306 (a)(1) - Security standards",
+            "description": "Ensure the confidentiality, integrity, and availability of all electronic protected health information the covered entity or business associate creates, receives, maintains, or transmits.",
+            "refreshTime": null,
+            "createdDate": "2020-12-29T17:32:29.470Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 21,
+        "idDashboard": 18,
+        "order": 1,
+        "width": 882.8,
+        "height": 548,
+        "top": 0,
+        "left": 14,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":16,\"id\":\"71aa64c8-7dac-bd34-8479-0d97df7e0628\",\"rows\":10,\"x\":14,\"y\":0}",
+        "visualization": {
+            "id": 21,
+            "name": "Deleted files or folders",
+            "description": "Article 5 [1B, 1F-Objects access]",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-11-27T19:47:25.114Z",
+            "modifiedDate": "2021-02-20T08:28:29.768Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": [
+                        "File",
+                        "Folder"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.AccessMask.keyword",
+                    "value": [
+                        "0x10000"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "@timestamp",
+                    "customLabel": "Event date",
+                    "subBucket": {
+                        "id": "1004",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                        "customLabel": "User",
+                        "subBucket": {
+                            "id": "1005",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.ObjectName.keyword",
+                            "customLabel": "Object name",
+                            "subBucket": {
+                                "id": "1006",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.ProcessName.keyword",
+                                "customLabel": "Process",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 18,
+            "name": "HIPAA: 164.306 (a)(1) - Security standards",
+            "description": "Ensure the confidentiality, integrity, and availability of all electronic protected health information the covered entity or business associate creates, receives, maintains, or transmits.",
+            "refreshTime": null,
+            "createdDate": "2020-12-29T17:32:29.470Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 17,
+        "idDashboard": 18,
+        "order": 2,
+        "width": 771.2,
+        "height": 659.6,
+        "top": 10,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":14,\"id\":\"0450d723-7e17-7fa2-e344-20baec75b2d4\",\"rows\":12,\"x\":0,\"y\":10}",
+        "visualization": {
+            "id": 17,
+            "name": "Modified files or folders",
+            "description": "Article 5 [1B, 1F-Objects access]",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-11-27T19:56:37.307Z",
+            "modifiedDate": "2021-03-07T21:59:32.412Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": [
+                        "File",
+                        "Folder"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.AccessMask.keyword",
+                    "value": [
+                        "0x2"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "@timestamp",
+                    "customLabel": "Event date",
+                    "subBucket": {
+                        "id": "1004",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                        "customLabel": "User",
+                        "subBucket": {
+                            "id": "1005",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.ObjectName.keyword",
+                            "customLabel": "Object name",
+                            "subBucket": {
+                                "id": "1006",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.ProcessName.keyword",
+                                "customLabel": "Process",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 18,
+            "name": "HIPAA: 164.306 (a)(1) - Security standards",
+            "description": "Ensure the confidentiality, integrity, and availability of all electronic protected health information the covered entity or business associate creates, receives, maintains, or transmits.",
+            "refreshTime": null,
+            "createdDate": "2020-12-29T17:32:29.470Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

@@ -1,0 +1,295 @@
+[
+    {
+        "idVisualization": 40,
+        "idDashboard": 8,
+        "order": 3,
+        "width": 548,
+        "height": 492.2,
+        "top": 6,
+        "left": 20,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"0c2b6c37-acee-04c7-469f-b77c30fa22ad\",\"rows\":9,\"x\":20,\"y\":6}",
+        "visualization": {
+            "id": 40,
+            "name": "NIDS top 10 events",
+            "description": "",
+            "eventType": "log-nids-*",
+            "createdDate": "2020-05-20T16:13:21.306Z",
+            "modifiedDate": null,
+            "userCreated": "rick",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 5,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "EXIST",
+                    "field": "logx.nids.name"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-30d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "NIDS Event"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.nids.name.keyword",
+                    "customLabel": "Event Count",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 5,
+                "pattern": "log-nids-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 8,
+            "name": "Network Intrusion Detection",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T05:16:37.256Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 42,
+        "idDashboard": 8,
+        "order": 2,
+        "width": 603.8,
+        "height": 492.2,
+        "top": 6,
+        "left": 9,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":11,\"id\":\"f14ca925-fbc0-59a9-0ce0-524a46a65fee\",\"rows\":9,\"x\":9,\"y\":6}",
+        "visualization": {
+            "id": 42,
+            "name": "NIDS alert per host",
+            "description": "NIDS",
+            "eventType": "log-nids-*",
+            "createdDate": "2020-08-01T02:53:59.328Z",
+            "modifiedDate": null,
+            "userCreated": "demo",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 5,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.nids.src_hostname.keyword",
+                    "customLabel": "Source",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.nids.dest_hostname.keyword",
+                        "customLabel": "Destination",
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 5,
+                "pattern": "log-nids-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 8,
+            "name": "Network Intrusion Detection",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T05:16:37.256Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 43,
+        "idDashboard": 8,
+        "order": 0,
+        "width": 1664,
+        "height": 324.8,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"aef7426e-2b34-fdbd-6b50-e4b035c6596f\",\"rows\":6,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 43,
+            "name": "NIDS Alerts Count",
+            "description": "",
+            "eventType": "log-nids-*",
+            "createdDate": "2020-05-20T16:11:08.072Z",
+            "modifiedDate": "2020-05-20T16:24:55.331Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "{\"color\":[\"#c05050\",\"#e5cf0d\",\"#b6a2de\",\"#2ec7c9\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"SURICATA STREAM Packet with invalid timestamp\",\"ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management\",\"SURICATA Applayer Protocol detection skipped\",\"SURICATA STREAM excessive retransmissions\",\"SURICATA HTTP on unusual port\",\"POLICY [PTsecurity] LDAP Cleartext credentials exposure\",\"SURICATA STREAM ESTABLISHED invalid ack\",\"SURICATA STREAM FIN invalid ack\",\"SURICATA STREAM FIN out of window\",\"SURICATA STREAM Packet with invalid ack\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"Count\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":\"1\",\"name\":\"\",\"type\":\"bar\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"SURICATA STREAM Packet with invalid timestamp\",\"type\":\"bar\",\"data\":[{\"value\":33,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management\",\"type\":\"bar\",\"data\":[{\"value\":28,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"SURICATA Applayer Protocol detection skipped\",\"type\":\"bar\",\"data\":[{\"value\":18,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"SURICATA STREAM excessive retransmissions\",\"type\":\"bar\",\"data\":[{\"value\":4,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"SURICATA HTTP on unusual port\",\"type\":\"bar\",\"data\":[{\"value\":3,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"POLICY [PTsecurity] LDAP Cleartext credentials exposure\",\"type\":\"bar\",\"data\":[{\"value\":2,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"SURICATA STREAM ESTABLISHED invalid ack\",\"type\":\"bar\",\"data\":[{\"value\":2,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"SURICATA STREAM FIN invalid ack\",\"type\":\"bar\",\"data\":[{\"value\":2,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"SURICATA STREAM FIN out of window\",\"type\":\"bar\",\"data\":[{\"value\":2,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"SURICATA STREAM Packet with invalid ack\",\"type\":\"bar\",\"data\":[{\"value\":2,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 5,
+            "chartType": "VERTICAL_BAR_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "logx.nids.name.keyword",
+                    "customLabel": "Alert Name",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 5,
+                "pattern": "log-nids-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 8,
+            "name": "Network Intrusion Detection",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T05:16:37.256Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 41,
+        "idDashboard": 8,
+        "order": 1,
+        "width": 492.2,
+        "height": 492.2,
+        "top": 6,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":9,\"id\":\"0544098a-1766-68a4-11c3-de6301db1b22\",\"rows\":9,\"x\":0,\"y\":6}",
+        "visualization": {
+            "id": 41,
+            "name": "NIDS alert category",
+            "description": "NIDS",
+            "eventType": "log-nids-*",
+            "createdDate": "2020-08-01T02:46:46.414Z",
+            "modifiedDate": null,
+            "userCreated": "demo",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 5,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.nids.category.keyword",
+                    "customLabel": "NIDS alert category",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 5,
+                "pattern": "log-nids-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 8,
+            "name": "Network Intrusion Detection",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T05:16:37.256Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

@@ -1,0 +1,160 @@
+[
+    {
+        "idVisualization": 191,
+        "idDashboard": 66,
+        "order": 0,
+        "width": 1672,
+        "height": 662.8,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"6fab15e0-2bc2-a958-a450-6953874e98f9\",\"rows\":12,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 191,
+            "name": "Files Modified",
+            "description": "Files Modified",
+            "eventType": "LOGX",
+            "createdDate": "2020-12-29T21:30:39.394Z",
+            "modifiedDate": "2021-03-07T22:02:17.323Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.AccessMask.keyword",
+                    "value": [
+                        "0x2",
+                        "0x4",
+                        "0x10",
+                        "0x40",
+                        "0x100",
+                        "0x10000",
+                        "0x40000",
+                        "0x80000"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": "File"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.access_description.keyword",
+                    "value": "The right to change the owner in the object's security descriptor"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "@timestamp",
+                    "customLabel": "Date",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                        "customLabel": "User",
+                        "subBucket": {
+                            "id": "1007",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.beat.hostname.keyword",
+                            "customLabel": "Computer",
+                            "subBucket": {
+                                "id": "1009",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.ObjectName.keyword",
+                                "customLabel": "Object",
+                                "subBucket": {
+                                    "id": "1010",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "logx.wineventlog.access_description.keyword",
+                                    "customLabel": "Access description",
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 66,
+            "name": "Files Modified",
+            "description": "Files Modified",
+            "refreshTime": null,
+            "createdDate": "2020-12-29T21:47:58.161Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

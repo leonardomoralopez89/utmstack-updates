@@ -1,0 +1,642 @@
+[
+    {
+        "idVisualization": 32,
+        "idDashboard": 7,
+        "order": 3,
+        "width": 342.33334,
+        "height": 191.33333,
+        "top": 0,
+        "left": 23,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":7,\"id\":\"f29375a7-05c8-6e6f-a993-761466873d27\",\"rows\":4,\"x\":23,\"y\":0}",
+        "visualization": {
+            "id": 32,
+            "name": "Advanced Threat Report - Total Events",
+            "description": "",
+            "eventType": "alert-*",
+            "createdDate": "2020-04-14T21:03:55.173Z",
+            "modifiedDate": "2020-04-16T22:59:44.278Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "[{\"metricId\":1,\"icon\":\"icon-file-text2\",\"color\":\"#37474f\",\"decimal\":0}]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-30d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Logs Collected this Month"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 7,
+            "name": "Threat Activity",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T04:59:38.865Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 33,
+        "idDashboard": 7,
+        "order": 4,
+        "width": 443,
+        "height": 342.33334,
+        "top": 4,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":9,\"id\":\"3a2c7344-de10-7cd2-0a60-35c41512cb9f\",\"rows\":7,\"x\":0,\"y\":4}",
+        "visualization": {
+            "id": 33,
+            "name": "Advanced Threat Report - Alerts by Severity",
+            "description": "",
+            "eventType": "alert-*",
+            "createdDate": "2020-04-14T16:26:51.080Z",
+            "modifiedDate": "2020-06-05T22:48:44.820Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "{\"pieType\":\"pie\",\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\"},\"color\":[\"#03A9F4\",\"#FF7043\",\"#e5cf0d\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":false,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":false,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":false}},\"orient\":\"horizontal\",\"itemSize\":14,\"showTitle\":null,\"left\":\"right\",\"top\":\"top\",\"width\":null,\"height\":null,\"iconStyle\":null},\"grid\":{\"top\":0,\"right\":0,\"left\":0,\"bottom\":0}}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "PIE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-30d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "EXIST",
+                    "field": "severityLabel"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Alerts by Severity"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "severityLabel.keyword",
+                    "customLabel": "Alerts by Severity",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 7,
+            "name": "Threat Activity",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T04:59:38.865Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 34,
+        "idDashboard": 7,
+        "order": 0,
+        "width": 392.66666,
+        "height": 191.33333,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"d5afe85c-ded4-4452-70e2-fb40a6f601bd\",\"rows\":4,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 34,
+            "name": "Advanced Threat Report - Total Alerts",
+            "description": "",
+            "eventType": "alert-*",
+            "createdDate": "2020-04-14T20:56:00.530Z",
+            "modifiedDate": "2020-06-05T21:55:17.412Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "[{\"metricId\":1,\"icon\":\"icon-bubble-notification\",\"color\":\"#37474f\",\"decimal\":0}]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "EXIST",
+                    "field": "name"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-30d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "id",
+                        "customLabel": "Total Alerts"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 7,
+            "name": "Threat Activity",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T04:59:38.865Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 35,
+        "idDashboard": 7,
+        "order": 1,
+        "width": 392.66666,
+        "height": 191.33333,
+        "top": 0,
+        "left": 8,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"a39f5a92-1da0-9df0-2587-4113a035771c\",\"rows\":4,\"x\":8,\"y\":0}",
+        "visualization": {
+            "id": 35,
+            "name": "Advanced Threat Report Open Alerts",
+            "description": "",
+            "eventType": "alert-*",
+            "createdDate": "2020-04-16T22:57:04.906Z",
+            "modifiedDate": "2021-07-29T19:15:23.817Z",
+            "userCreated": "rick",
+            "userModified": "admin",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "statusLabel.keyword",
+                    "value": "Open"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-30d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "isIncident",
+                    "value": "false"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Alerts under Investigation"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "statusLabel.keyword",
+                    "customLabel": "Total Open Alerts",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 7,
+            "name": "Threat Activity",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T04:59:38.865Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 37,
+        "idDashboard": 7,
+        "order": 6,
+        "width": 493.33334,
+        "height": 443,
+        "top": 11,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"8355560c-c1d6-7854-ac91-4e45bb611be7\",\"rows\":9,\"x\":0,\"y\":11}",
+        "visualization": {
+            "id": 37,
+            "name": "Advanced Threat Report - Top Alert Sources",
+            "description": "",
+            "eventType": "alert-*",
+            "createdDate": "2020-04-16T15:15:57.309Z",
+            "modifiedDate": "2020-06-05T15:07:22.840Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Top Alert Sources"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "source.ip.keyword",
+                    "customLabel": "Alert Source",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 7,
+            "name": "Threat Activity",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T04:59:38.865Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 38,
+        "idDashboard": 7,
+        "order": 7,
+        "width": 543.6667,
+        "height": 443,
+        "top": 11,
+        "left": 10,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":11,\"id\":\"cd88922d-0817-6aec-723e-ee6cc9462b63\",\"rows\":9,\"x\":10,\"y\":11}",
+        "visualization": {
+            "id": 38,
+            "name": "Advanced Threat Report - Top Alerts Count",
+            "description": "",
+            "eventType": "alert-*",
+            "createdDate": "2020-04-16T15:10:26.369Z",
+            "modifiedDate": "2020-06-05T15:05:40.204Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Top 10 Alerts"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "name.keyword",
+                    "customLabel": "Top alerts by amount",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 7,
+            "name": "Threat Activity",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T04:59:38.865Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 39,
+        "idDashboard": 7,
+        "order": 8,
+        "width": 443,
+        "height": 443,
+        "top": 11,
+        "left": 21,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":9,\"id\":\"0f4c3293-10f1-31fc-47db-025abcdd5e86\",\"rows\":9,\"x\":21,\"y\":11}",
+        "visualization": {
+            "id": 39,
+            "name": "Advanced Threat Report - Top Targets",
+            "description": "",
+            "eventType": "EVENT",
+            "createdDate": "2020-04-16T15:17:49.730Z",
+            "modifiedDate": null,
+            "userCreated": "rick",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Top Targets"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "destination.ip.keyword",
+                    "customLabel": "Top Targets",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 7,
+            "name": "Threat Activity",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T04:59:38.865Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 251,
+        "idDashboard": 7,
+        "order": 2,
+        "width": 342.33334,
+        "height": 191.33333,
+        "top": 0,
+        "left": 16,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":7,\"id\":\"f9ee280e-b8f7-9efd-e25a-c975e8c6e7e9\",\"rows\":4,\"x\":16,\"y\":0}",
+        "visualization": {
+            "id": 251,
+            "name": "Reported alerts",
+            "description": "",
+            "eventType": null,
+            "createdDate": "2021-08-06T13:01:37.571Z",
+            "modifiedDate": "2021-08-06T13:07:04.294Z",
+            "userCreated": "admin",
+            "userModified": "admin",
+            "chartConfig": "[{\"metricId\":\"1\",\"icon\":\"icon-mail5\",\"color\":\"#263238\",\"decimal\":0}]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-30d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "statusLabel",
+                    "value": "3"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Reported alerts"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 7,
+            "name": "Threat Activity",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T04:59:38.865Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 36,
+        "idDashboard": 7,
+        "order": 5,
+        "width": 1047,
+        "height": 342.33334,
+        "top": 4,
+        "left": 9,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":21,\"id\":\"2a5afdb8-0f4c-7c1d-0683-e5f2b15cc1fd\",\"rows\":7,\"x\":9,\"y\":4}",
+        "visualization": {
+            "id": 36,
+            "name": "Advanced Threat Report - Alerts by category",
+            "description": "",
+            "eventType": "alert-*",
+            "createdDate": "2020-04-14T19:16:08.740Z",
+            "modifiedDate": "2020-06-05T21:56:24.541Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"Potentially Malicious Activity\",\"Generic Protocol Command Decode\",\"Misc Attack\",\"Targeted Malicious Activity was Detected\",\"Potentially Bad Traffic\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"Alerts by Category\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":\"1\",\"name\":\"\",\"type\":\"bar\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"Potentially Malicious Activity\",\"type\":\"bar\",\"data\":[{\"value\":456,\"name\":\"Alerts by Category\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"Generic Protocol Command Decode\",\"type\":\"bar\",\"data\":[{\"value\":159,\"name\":\"Alerts by Category\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"Misc Attack\",\"type\":\"bar\",\"data\":[{\"value\":128,\"name\":\"Alerts by Category\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"Targeted Malicious Activity was Detected\",\"type\":\"bar\",\"data\":[{\"value\":55,\"name\":\"Alerts by Category\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"Potentially Bad Traffic\",\"type\":\"bar\",\"data\":[{\"value\":15,\"name\":\"Alerts by Category\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "VERTICAL_BAR_CHART",
+            "filterType": [
+                {
+                    "operator": "EXIST",
+                    "field": "category"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Alerts by Category"
+                    }
+                ],
+                "bucket": {
+                    "id": "1002",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "category.keyword",
+                    "customLabel": "Alert Type",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 7,
+            "name": "Threat Activity",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T04:59:38.865Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

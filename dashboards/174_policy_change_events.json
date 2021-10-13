@@ -1,0 +1,128 @@
+[
+    {
+        "idVisualization": 166,
+        "idDashboard": 174,
+        "order": 0,
+        "width": 1671,
+        "height": 718.43335,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"bb4c6b41-8a38-44df-de26-5fe046b591da\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 166,
+            "name": "Policy Change Events",
+            "description": "The Policy Change audit category includes six subcategories and provides notification of changes to important security policies on the local system.",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-01T22:40:01.861Z",
+            "modifiedDate": "2021-02-20T21:23:44.076Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4715",
+                        "4719",
+                        "4902",
+                        "4904",
+                        "4905",
+                        "4906",
+                        "4907",
+                        "4912",
+                        "4706",
+                        "4707",
+                        "4713",
+                        "4716",
+                        "4717",
+                        "4718",
+                        "4865",
+                        "4866",
+                        "4867",
+                        "4704",
+                        "4705",
+                        "4714"
+                    ]
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_name.keyword",
+                    "customLabel": "Policy Change Events",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "@timestamp",
+                        "customLabel": "Date",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.message.keyword",
+                            "customLabel": "Detail",
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 174,
+            "name": "Policy Change Events",
+            "description": "Policy Change Events",
+            "refreshTime": null,
+            "createdDate": "2021-09-14T03:10:34.523Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

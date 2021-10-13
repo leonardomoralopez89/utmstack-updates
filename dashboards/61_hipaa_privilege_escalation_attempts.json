@@ -1,0 +1,128 @@
+[
+    {
+        "idVisualization": 181,
+        "idDashboard": 61,
+        "order": 0,
+        "width": 1672,
+        "height": 703.57574,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":33,\"id\":\"d4eb894e-4f75-002d-4e6b-e32740613f38\",\"rows\":14,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 181,
+            "name": "Privilege escalation attempts",
+            "description": "Privilege escalation attempts",
+            "eventType": "LOGX",
+            "createdDate": "2020-12-21T00:14:11.054Z",
+            "modifiedDate": "2021-02-27T04:30:03.080Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "\"{\\\"itemsPerPage\\\":10,\\\"showTotal\\\":false,\\\"totalFunction\\\":\\\"sum\\\",\\\"exportCsv\\\":true,\\\"dynamicPageSize\\\":true}\"",
+            "chartAction": "\"{\\\"active\\\":true,\\\"customUrl\\\":false,\\\"navigate\\\":null,\\\"customNavigate\\\":null}\"",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4728",
+                        "4732",
+                        "4738",
+                        "4741",
+                        "4742",
+                        "4746",
+                        "4756",
+                        "4761",
+                        "4781",
+                        "4720",
+                        "4703"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1003",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "Username",
+                    "subBucket": {
+                        "id": "1004",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.beat.hostname.keyword",
+                        "customLabel": "Hostname",
+                        "subBucket": {
+                            "id": "1005",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_name.keyword",
+                            "customLabel": "Privilege",
+                            "subBucket": {
+                                "id": "1006",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "@timestamp",
+                                "customLabel": "Date",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 61,
+            "name": "HIPAA: Privilege escalation attempts",
+            "description": "HIPAA: Privilege escalation attempts",
+            "refreshTime": null,
+            "createdDate": "2020-12-21T02:41:10.862Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

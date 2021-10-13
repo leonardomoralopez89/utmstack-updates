@@ -1,0 +1,379 @@
+[
+    {
+        "idVisualization": 177,
+        "idDashboard": 60,
+        "order": 0,
+        "width": 548,
+        "height": 436.4,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"b7c23a9e-834d-581d-075f-4eb6d3f68696\",\"rows\":8,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 177,
+            "name": "Login success",
+            "description": "Logon success",
+            "eventType": "LOGX",
+            "createdDate": "2020-12-20T23:08:31.651Z",
+            "modifiedDate": "2021-02-27T03:51:05.187Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "\"[{\\\"metricId\\\":1,\\\"icon\\\":null,\\\"color\\\":\\\"#b71c1c\\\",\\\"decimal\\\":0}]\"",
+            "chartAction": "\"{\\\"active\\\":true,\\\"customUrl\\\":false,\\\"navigate\\\":null,\\\"customNavigate\\\":null}\"",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4624"
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                    "value": [
+                        "None",
+                        "An Error occurred during Logon"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "success"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 60,
+            "name": "HIPAA: Logon success",
+            "description": "HIPAA: Logon success",
+            "refreshTime": null,
+            "createdDate": "2020-12-20T23:17:27.216Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 178,
+        "idDashboard": 60,
+        "order": 1,
+        "width": 548,
+        "height": 436.4,
+        "top": 0,
+        "left": 10,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"539e18e8-d207-2028-7229-b6fd934439f6\",\"rows\":8,\"x\":10,\"y\":0}",
+        "visualization": {
+            "id": 178,
+            "name": "Local Login success",
+            "description": "Local Logon success",
+            "eventType": "LOGX",
+            "createdDate": "2020-12-20T23:18:23.998Z",
+            "modifiedDate": "2021-02-27T03:51:24.677Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "\"[{\\\"metricId\\\":1,\\\"icon\\\":null,\\\"color\\\":\\\"#b71c1c\\\",\\\"decimal\\\":0}]\"",
+            "chartAction": "\"{\\\"active\\\":true,\\\"customUrl\\\":false,\\\"navigate\\\":null,\\\"customNavigate\\\":null}\"",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4624"
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                    "value": [
+                        "None",
+                        "An Error occurred during Logon"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.LogonType.keyword",
+                    "value": "2"
+                },
+                {
+                    "operator": "NOT_START_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "success"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 60,
+            "name": "HIPAA: Logon success",
+            "description": "HIPAA: Logon success",
+            "refreshTime": null,
+            "createdDate": "2020-12-20T23:17:27.216Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 179,
+        "idDashboard": 60,
+        "order": 2,
+        "width": 548,
+        "height": 436.4,
+        "top": 0,
+        "left": 20,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"82d8859b-65d7-ed66-c99c-ace677e4a336\",\"rows\":8,\"x\":20,\"y\":0}",
+        "visualization": {
+            "id": 179,
+            "name": "Top 5 user Login success",
+            "description": "Top 5 user Logon success",
+            "eventType": "LOGX",
+            "createdDate": "2020-12-20T23:09:45.964Z",
+            "modifiedDate": "2021-02-27T03:09:23.905Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "\"\\\"{\\\\\\\"pieType\\\\\\\":\\\\\\\"pie\\\\\\\",\\\\\\\"legend\\\\\\\":{\\\\\\\"show\\\\\\\":true,\\\\\\\"type\\\\\\\":\\\\\\\"scroll\\\\\\\",\\\\\\\"top\\\\\\\":\\\\\\\"bottom\\\\\\\",\\\\\\\"left\\\\\\\":\\\\\\\"center\\\\\\\",\\\\\\\"orient\\\\\\\":\\\\\\\"horizontal\\\\\\\",\\\\\\\"itemHeight\\\\\\\":8,\\\\\\\"itemWidth\\\\\\\":8,\\\\\\\"icon\\\\\\\":\\\\\\\"roundRect\\\\\\\",\\\\\\\"extraCssText\\\\\\\":\\\\\\\"z-index:100\\\\\\\",\\\\\\\"data\\\\\\\":[\\\\\\\"admin-probe\\\\\\\",\\\\\\\"SYSTEM\\\\\\\",\\\\\\\"utm603677\\\\\\\",\\\\\\\"utm943348\\\\\\\",\\\\\\\"DWM-1\\\\\\\"]},\\\\\\\"color\\\\\\\":[\\\\\\\"#03A9F4\\\\\\\",\\\\\\\"#FF7043\\\\\\\",\\\\\\\"#EC407A\\\\\\\",\\\\\\\"#8BC34A\\\\\\\",\\\\\\\"#FF9800\\\\\\\",\\\\\\\"#795548\\\\\\\",\\\\\\\"#777777\\\\\\\",\\\\\\\"#607D8B\\\\\\\",\\\\\\\"#42A5F5\\\\\\\",\\\\\\\"#EF5350\\\\\\\",\\\\\\\"#66BB6A\\\\\\\",\\\\\\\"#009688\\\\\\\",\\\\\\\"#26C6DA\\\\\\\",\\\\\\\"#AB47BC\\\\\\\",\\\\\\\"#7E57C2\\\\\\\",\\\\\\\"#2196F3\\\\\\\",\\\\\\\"#F44336\\\\\\\",\\\\\\\"#4CAF50\\\\\\\",\\\\\\\"#F4511E\\\\\\\",\\\\\\\"#00BCD4\\\\\\\",\\\\\\\"#E91E63\\\\\\\",\\\\\\\"#9C27B0\\\\\\\",\\\\\\\"#673AB7\\\\\\\",\\\\\\\"#3F51B5\\\\\\\",\\\\\\\"#5C6BC0\\\\\\\",\\\\\\\"#29B6F6\\\\\\\",\\\\\\\"#26A69A\\\\\\\",\\\\\\\"#9CCC65\\\\\\\",\\\\\\\"#FFA726\\\\\\\",\\\\\\\"#8D6E63\\\\\\\",\\\\\\\"#888888\\\\\\\",\\\\\\\"#78909C\\\\\\\",\\\\\\\"#2196F3\\\\\\\",\\\\\\\"#F44336\\\\\\\",\\\\\\\"#3F51B5\\\\\\\",\\\\\\\"#ffebee\\\\\\\",\\\\\\\"#ffcdd2\\\\\\\",\\\\\\\"#ef9a9a\\\\\\\",\\\\\\\"#e57373\\\\\\\",\\\\\\\"#ef5350\\\\\\\",\\\\\\\"#f44336\\\\\\\",\\\\\\\"#e53935\\\\\\\",\\\\\\\"#d32f2f\\\\\\\",\\\\\\\"#c62828\\\\\\\",\\\\\\\"#b71c1c\\\\\\\",\\\\\\\"#ff8a80\\\\\\\",\\\\\\\"#ff5252\\\\\\\",\\\\\\\"#ff1744\\\\\\\",\\\\\\\"#d50000\\\\\\\",\\\\\\\"#2ec7c9\\\\\\\",\\\\\\\"#b6a2de\\\\\\\",\\\\\\\"#d87a80\\\\\\\",\\\\\\\"#8d98b3\\\\\\\",\\\\\\\"#59678c\\\\\\\",\\\\\\\"#e5cf0d\\\\\\\",\\\\\\\"#97b552\\\\\\\",\\\\\\\"#95706d\\\\\\\",\\\\\\\"#dc69aa\\\\\\\",\\\\\\\"#07a2a4\\\\\\\",\\\\\\\"#9a7fd1\\\\\\\",\\\\\\\"#588dd5\\\\\\\",\\\\\\\"#f5994e\\\\\\\",\\\\\\\"#c05050\\\\\\\",\\\\\\\"#c9ab00\\\\\\\",\\\\\\\"#7eb00a\\\\\\\",\\\\\\\"#6f5553\\\\\\\",\\\\\\\"#c14089\\\\\\\",\\\\\\\"#ffb980\\\\\\\",\\\\\\\"#5ab1ef\\\\\\\",\\\\\\\"#F06292\\\\\\\"],\\\\\\\"toolbox\\\\\\\":{\\\\\\\"show\\\\\\\":true,\\\\\\\"feature\\\\\\\":{\\\\\\\"saveAsImage\\\\\\\":{\\\\\\\"show\\\\\\\":true,\\\\\\\"type\\\\\\\":\\\\\\\"png\\\\\\\",\\\\\\\"name\\\\\\\":\\\\\\\"utm-chart\\\\\\\",\\\\\\\"title\\\\\\\":\\\\\\\"Save as image\\\\\\\"},\\\\\\\"restore\\\\\\\":{\\\\\\\"show\\\\\\\":true,\\\\\\\"title\\\\\\\":\\\\\\\"Restore\\\\\\\"},\\\\\\\"dataView\\\\\\\":{\\\\\\\"show\\\\\\\":true,\\\\\\\"title\\\\\\\":\\\\\\\"Data view\\\\\\\",\\\\\\\"readOnly\\\\\\\":true,\\\\\\\"lang\\\\\\\":[\\\\\\\"Data view\\\\\\\",\\\\\\\"Close\\\\\\\",\\\\\\\"Refresh\\\\\\\"],\\\\\\\"backgroundColor\\\\\\\":null,\\\\\\\"textareaColor\\\\\\\":null,\\\\\\\"textareaBorderColor\\\\\\\":null,\\\\\\\"textColor\\\\\\\":null,\\\\\\\"buttonColor\\\\\\\":\\\\\\\"#0277bd\\\\\\\",\\\\\\\"buttonTextColor\\\\\\\":\\\\\\\"#fff\\\\\\\"},\\\\\\\"dataZoom\\\\\\\":{\\\\\\\"show\\\\\\\":false,\\\\\\\"title\\\\\\\":{\\\\\\\"zoom\\\\\\\":[\\\\\\\"Zoom\\\\\\\"],\\\\\\\"back\\\\\\\":[\\\\\\\"Step back\\\\\\\"]}},\\\\\\\"magicType\\\\\\\":{\\\\\\\"show\\\\\\\":false,\\\\\\\"type\\\\\\\":null,\\\\\\\"title\\\\\\\":{\\\\\\\"line\\\\\\\":\\\\\\\"Line\\\\\\\",\\\\\\\"bar\\\\\\\":\\\\\\\"Bar\\\\\\\",\\\\\\\"stack\\\\\\\":\\\\\\\"Stack\\\\\\\",\\\\\\\"tiled\\\\\\\":\\\\\\\"Tiled\\\\\\\"}},\\\\\\\"brush\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"rect\\\\\\\"},\\\\\\\"mark\\\\\\\":{\\\\\\\"show\\\\\\\":false}},\\\\\\\"orient\\\\\\\":\\\\\\\"horizontal\\\\\\\",\\\\\\\"itemSize\\\\\\\":14,\\\\\\\"left\\\\\\\":\\\\\\\"right\\\\\\\",\\\\\\\"top\\\\\\\":\\\\\\\"top\\\\\\\"},\\\\\\\"grid\\\\\\\":{}}\\\"\"",
+            "chartAction": "\"\\\"{\\\\\\\"active\\\\\\\":true,\\\\\\\"customUrl\\\\\\\":false,\\\\\\\"navigate\\\\\\\":null,\\\\\\\"customNavigate\\\\\\\":null}\\\"\"",
+            "idPattern": 8,
+            "chartType": "PIE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4624"
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                    "value": [
+                        "None",
+                        "An Error occurred during Logon"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 60,
+            "name": "HIPAA: Logon success",
+            "description": "HIPAA: Logon success",
+            "refreshTime": null,
+            "createdDate": "2020-12-20T23:17:27.216Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 180,
+        "idDashboard": 60,
+        "order": 3,
+        "width": 1664,
+        "height": 436.4,
+        "top": 8,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"2c5825e9-070b-5230-8788-20c3188060a9\",\"rows\":8,\"x\":0,\"y\":8}",
+        "visualization": {
+            "id": 180,
+            "name": "Detail User Login success",
+            "description": "Detail user Login success",
+            "eventType": "LOGX",
+            "createdDate": "2020-12-20T23:14:36.422Z",
+            "modifiedDate": "2021-02-27T03:01:46.820Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "\"\\\"{\\\\\\\"itemsPerPage\\\\\\\":10,\\\\\\\"showTotal\\\\\\\":false,\\\\\\\"totalFunction\\\\\\\":\\\\\\\"sum\\\\\\\",\\\\\\\"exportCsv\\\\\\\":true,\\\\\\\"dynamicPageSize\\\\\\\":true}\\\"\"",
+            "chartAction": "\"\\\"{\\\\\\\"active\\\\\\\":true,\\\\\\\"customUrl\\\\\\\":false,\\\\\\\"navigate\\\\\\\":null,\\\\\\\"customNavigate\\\\\\\":null}\\\"\"",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4624"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                    "value": [
+                        "None",
+                        "An Error occurred during Logon"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1001",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "Username",
+                    "subBucket": {
+                        "id": "1002",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.beat.hostname.keyword",
+                        "customLabel": "Computer",
+                        "subBucket": {
+                            "id": "1008",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "@timestamp",
+                            "customLabel": "Date",
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 60,
+            "name": "HIPAA: Logon success",
+            "description": "HIPAA: Logon success",
+            "refreshTime": null,
+            "createdDate": "2020-12-20T23:17:27.216Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

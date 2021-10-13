@@ -1,0 +1,107 @@
+[
+    {
+        "idVisualization": 266,
+        "idDashboard": 129,
+        "order": 0,
+        "width": 1679,
+        "height": 676.15625,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":32,\"id\":\"59367d50-b2fc-4ae7-7215-c061a9e1c3c7\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 266,
+            "name": "A security-disabled local group was deleted",
+            "description": "A security-disabled local group was deleted",
+            "eventType": null,
+            "createdDate": "2021-08-28T03:29:28.531Z",
+            "modifiedDate": null,
+            "userCreated": "anniel",
+            "userModified": null,
+            "chartConfig": "\"\\\"{\\\\\\\"itemsPerPage\\\\\\\":10,\\\\\\\"showTotal\\\\\\\":false,\\\\\\\"totalFunction\\\\\\\":\\\\\\\"sum\\\\\\\",\\\\\\\"exportCsv\\\\\\\":true,\\\\\\\"dynamicPageSize\\\\\\\":true}\\\"\"",
+            "chartAction": "\"\\\"{\\\\\\\"active\\\\\\\":true,\\\\\\\"customUrl\\\\\\\":false,\\\\\\\"navigate\\\\\\\":null,\\\\\\\"customNavigate\\\\\\\":null}\\\"\"",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4748"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                    "customLabel": "Username",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                        "customLabel": "Group Name",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.message.keyword",
+                            "customLabel": "Message",
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 129,
+            "name": "A security-disabled local group was deleted",
+            "description": "A security-disabled local group was deleted",
+            "refreshTime": null,
+            "createdDate": "2021-08-28T03:29:52.829Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]
