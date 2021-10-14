@@ -8,14 +8,14 @@
             "name": "Detail user privilege escalation",
             "description": "This reporting provides detailed user privilege escalation",
             "type": "TEMPLATE",
-            "dashboardId": 274
+            "dashboardId": 78
         },
         {
             "id": 36,
             "name": "Processes run with administrator privileges",
             "description": "This reporting provides details of the processes run with administrator privileges",
             "type": "TEMPLATE",
-            "dashboardId": 275
+            "dashboardId": 79
         }
     ]
 }

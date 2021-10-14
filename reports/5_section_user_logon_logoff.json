@@ -8,42 +8,42 @@
             "name": "User local logon success",
             "description": "This reporting provides detailed user local logon success",
             "type": "TEMPLATE",
-            "dashboardId": 261
+            "dashboardId": 73
         },
         {
             "id": 30,
             "name": "User network logon success",
             "description": "This reporting provides detailed user network logon success",
             "type": "TEMPLATE",
-            "dashboardId": 262
+            "dashboardId": 74
         },
         {
             "id": 31,
             "name": "User Logon success",
             "description": "This reporting provides detailed user Login success",
             "type": "TEMPLATE",
-            "dashboardId": 263
+            "dashboardId": 75
         },
         {
             "id": 32,
             "name": "Recent User Logon Activity",
             "description": "This reporting provides detailed recent User Logon Activity",
             "type": "TEMPLATE",
-            "dashboardId": 220
+            "dashboardId": 34
         },
         {
             "id": 33,
             "name": "A logon was attempted using explicit credentials",
             "description": "This reporting provides detailed a logon was attempted using explicit credentials",
             "type": "TEMPLATE",
-            "dashboardId": 266
+            "dashboardId": 76
         },
         {
             "id": 34,
             "name": "Detail users logon/logoff",
             "description": "This reporting provides detailed detail of users logon/logoff",
             "type": "TEMPLATE",
-            "dashboardId": 273
+            "dashboardId": 77
         }
     ]
 }

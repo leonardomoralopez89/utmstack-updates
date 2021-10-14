@@ -8,21 +8,21 @@
             "name": "Attempting to access a file from an external device",
             "description": "This report is based on a complete record of users are attempting to access a file on an external device.",
             "type": "TEMPLATE",
-            "dashboardId": 224
+            "dashboardId": 38
         },
         {
             "id": 27,
             "name": "A new external device was recognized by the system.",
             "description": "This report is based on a complete record of when the system recognized a new external device.",
             "type": "TEMPLATE",
-            "dashboardId": 227
+            "dashboardId": 41
         },
         {
             "id": 28,
             "name": "File and folder deletions in the storage device",
             "description": "This report is based complete record of all file and folder deletions in the storage device, along with details on who deleted what, when, and where.",
             "type": "TEMPLATE",
-            "dashboardId": 260
+            "dashboardId": 72
         }
     ]
 }
