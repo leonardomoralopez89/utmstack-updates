@@ -1,26 +1,26 @@
 [
     {
-        "configSolution": "Threat Intelligence",
+        "configSolution": "User Management Reports (Disabled users)",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 14,
+        "standardSectionId": 33,
         "configReportEditable": true,
-        "dashboardId": 81,
+        "dashboardId": 48,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 14,
-            "standardId": 4,
-            "standardSectionName": "CC3.2 Risk Assessment",
-            "standardSectionDescription": "UTMSTACK Identifies and analyzes risks to entities for determining how risks should be managed. Designs, develop and implement controls to prepare the risk mitigation strategy.",
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -28,27 +28,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Threat Intelligence<br/>",
+        "configSolution": "User Management Reports (Locked out users)",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 23,
+        "standardSectionId": 33,
         "configReportEditable": true,
-        "dashboardId": 81,
+        "dashboardId": 49,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 23,
-            "standardId": 4,
-            "standardSectionName": "CC4.1 Monitoring Activities",
-            "standardSectionDescription": "The monitoring activities common criteria (CC4) covers the ongoing evaluation of the system at the service organization and the notification to relevant personnel if there is a breakdown in the system.",
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -56,27 +56,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Detection of unauthorized access",
+        "configSolution": "User Management Reports (User account management)",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
+        "standardSectionId": 33,
         "configReportEditable": true,
-        "dashboardId": 2,
+        "dashboardId": 69,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 24,
-            "standardId": 4,
-            "standardSectionName": "CC5.1 Control Activities",
-            "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -84,27 +84,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Log Management",
+        "configSolution": "GPO: A directory service object of type computer was modified",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
+        "standardSectionId": 33,
         "configReportEditable": true,
-        "dashboardId": 82,
+        "dashboardId": 87,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 24,
-            "standardId": 4,
-            "standardSectionName": "CC5.1 Control Activities",
-            "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -112,27 +112,755 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Access and modification of files and content",
+        "configSolution": "GPO: A directory service object of type user was modified",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 25,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 88,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "GPO: A directory service object of type user was moved",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 89,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "GPO: A directory service object of type computer was moved",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 90,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "GPO: A directory service object of type user was created",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 91,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "GPO: A directory service object of type computer was created",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 92,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Computer Management (Recently Created Computers)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 96,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Computer Management (Recently Modified Computers)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 97,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Computer Management (Recently deleted Computers)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 98,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": " Recent logon success",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 37,
+        "configReportEditable": true,
+        "dashboardId": 17,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 37,
+            "standardId": 5,
+            "standardSectionName": "IA-2 Identification and authentication",
+            "standardSectionDescription": "Organizational users",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A logon was attempted using explicit credentials.",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 37,
+        "configReportEditable": true,
+        "dashboardId": 76,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 37,
+            "standardId": 5,
+            "standardSectionName": "IA-2 Identification and authentication",
+            "standardSectionDescription": "Organizational users",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "This report shows the files created by a user",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 32,
+        "configReportEditable": true,
+        "dashboardId": 85,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 32,
+            "standardId": 5,
+            "standardSectionName": "AU-3 (A.10.10.1) / AU-5 (A.10.10.1, A.10.3.1) Audit & Accountability",
+            "standardSectionDescription": "This section implements the audit records and response to audit processing failures.",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User Management Reports (Failures due to Bad Password)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 52,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "GPO: Auditing settings on object were changed.",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 94,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "RADIUS Login Failures (NPS)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 34,
+        "configReportEditable": true,
+        "dashboardId": 22,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 34,
+            "standardId": 5,
+            "standardSectionName": "AC-7 Unsuccessful Login failures via Interactive / Remote Sessions",
+            "standardSectionDescription": "AC-7 (A.11.5.1) Unsuccessful Login failures via Interactive / Remote Sessions",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Logon History",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 34,
+        "configReportEditable": true,
+        "dashboardId": 77,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 34,
+            "standardId": 5,
+            "standardSectionName": "AC-7 Unsuccessful Login failures via Interactive / Remote Sessions",
+            "standardSectionDescription": "AC-7 (A.11.5.1) Unsuccessful Login failures via Interactive / Remote Sessions",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Logon History",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 36,
+        "configReportEditable": true,
+        "dashboardId": 4,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 36,
+            "standardId": 5,
+            "standardSectionName": "AC-17 Terminal Service Activity",
+            "standardSectionDescription": "AC-17 (A.10.6.1, A.10.8.1, A.11.1.1, A.11.4.1, A.11.4.2, A.11.4.4, A.11.4.6, A.11.4.7, A.11.7.1, A.11.7.2) Terminal Service Activity",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "RADIUS Logon Failures (NPS) ",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 36,
+        "configReportEditable": true,
+        "dashboardId": 22,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 36,
+            "standardId": 5,
+            "standardSectionName": "AC-17 Terminal Service Activity",
+            "standardSectionDescription": "AC-17 (A.10.6.1, A.10.8.1, A.11.1.1, A.11.4.1, A.11.4.2, A.11.4.4, A.11.4.6, A.11.4.7, A.11.7.1, A.11.7.2) Terminal Service Activity",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": " Interactive Logon Failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 36,
+        "configReportEditable": true,
+        "dashboardId": 99,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 36,
+            "standardId": 5,
+            "standardSectionName": "AC-17 Terminal Service Activity",
+            "standardSectionDescription": "AC-17 (A.10.6.1, A.10.8.1, A.11.1.1, A.11.4.1, A.11.4.2, A.11.4.4, A.11.4.6, A.11.4.7, A.11.7.1, A.11.7.2) Terminal Service Activity",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Local Logon Failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 37,
+        "configReportEditable": true,
+        "dashboardId": 3,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 37,
+            "standardId": 5,
+            "standardSectionName": "IA-2 Identification and authentication",
+            "standardSectionDescription": "Organizational users",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Logon success on Local Computers and Network",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 37,
+        "configReportEditable": true,
+        "dashboardId": 4,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 37,
+            "standardId": 5,
+            "standardSectionName": "IA-2 Identification and authentication",
+            "standardSectionDescription": "Organizational users",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Recent logon failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 37,
+        "configReportEditable": true,
+        "dashboardId": 16,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 37,
+            "standardId": 5,
+            "standardSectionName": "IA-2 Identification and authentication",
+            "standardSectionDescription": "Organizational users",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Logon Failures based on users",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 37,
+        "configReportEditable": true,
+        "dashboardId": 51,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 37,
+            "standardId": 5,
+            "standardSectionName": "IA-2 Identification and authentication",
+            "standardSectionDescription": "Organizational users",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Failures due to Bad Password",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 37,
+        "configReportEditable": true,
+        "dashboardId": 52,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 37,
+            "standardId": 5,
+            "standardSectionName": "IA-2 Identification and authentication",
+            "standardSectionDescription": "Organizational users",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Failures due to Bad User Name",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 37,
+        "configReportEditable": true,
+        "dashboardId": 56,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 37,
+            "standardId": 5,
+            "standardSectionName": "IA-2 Identification and authentication",
+            "standardSectionDescription": "Organizational users",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User network logon success",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 37,
+        "configReportEditable": true,
+        "dashboardId": 74,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 37,
+            "standardId": 5,
+            "standardSectionName": "IA-2 Identification and authentication",
+            "standardSectionDescription": "Organizational users",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User Logon success",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 37,
+        "configReportEditable": true,
+        "dashboardId": 75,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 37,
+            "standardId": 5,
+            "standardSectionName": "IA-2 Identification and authentication",
+            "standardSectionDescription": "Organizational users",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Access attempts to files",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 32,
         "configReportEditable": true,
         "dashboardId": 43,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 25,
-            "standardId": 4,
-            "standardSectionName": "CC5.3 Control Activities",
-            "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
+            "id": 32,
+            "standardId": 5,
+            "standardSectionName": "AU-3 (A.10.10.1) / AU-5 (A.10.10.1, A.10.3.1) Audit & Accountability",
+            "standardSectionDescription": "This section implements the audit records and response to audit processing failures.",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -140,139 +868,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "O365 Threat Intelligence<br/>",
+        "configSolution": "This report shows the deletion of the file by a user",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 26,
-        "configReportEditable": true,
-        "dashboardId": 11,
-        "configType": "TEMPLATE",
-        "configUrl": null,
-        "section": {
-            "id": 26,
-            "standardId": 4,
-            "standardSectionName": "CC5.6 Control Activities",
-            "standardSectionDescription": "Implement security measures to protect against Security Principle threats from sources outside the boundaries of the system.",
-            "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
-            }
-        },
-        "columns": null,
-        "requestBodyFilters": null,
-        "requestParamFilters": null
-    },
-    {
-        "configSolution": "Threat Intelligence",
-        "configReportResourceUrl": null,
-        "configReportRequestType": null,
-        "configReportPageable": null,
-        "configReportFilterByTime": null,
-        "configReportDataOrigin": null,
-        "configReportExportCsvUrl": null,
-        "standardSectionId": 28,
-        "configReportEditable": true,
-        "dashboardId": 81,
-        "configType": "TEMPLATE",
-        "configUrl": null,
-        "section": {
-            "id": 28,
-            "standardId": 4,
-            "standardSectionName": "CC6.1 Logical and Physical Access Controls",
-            "standardSectionDescription": "Monitor and evaluate breaches and incidents due to malicious acts, natural disasters, or errors to implement countermeasures to compensate for known and new vulnerabilities.",
-            "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
-            }
-        },
-        "columns": null,
-        "requestBodyFilters": null,
-        "requestParamFilters": null
-    },
-    {
-        "configSolution": "Threat Intelligence",
-        "configReportResourceUrl": null,
-        "configReportRequestType": null,
-        "configReportPageable": null,
-        "configReportFilterByTime": null,
-        "configReportDataOrigin": null,
-        "configReportExportCsvUrl": null,
-        "standardSectionId": 29,
-        "configReportEditable": true,
-        "dashboardId": 81,
-        "configType": "TEMPLATE",
-        "configUrl": null,
-        "section": {
-            "id": 29,
-            "standardId": 4,
-            "standardSectionName": "CC7.3 System Operations",
-            "standardSectionDescription": "Addresses how service organization controls monitor systems for potential anomalies, events, and configuration changes that may carry security risks.",
-            "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
-            }
-        },
-        "columns": null,
-        "requestBodyFilters": null,
-        "requestParamFilters": null
-    },
-    {
-        "configSolution": "File Integrity Monitoring",
-        "configReportResourceUrl": null,
-        "configReportRequestType": null,
-        "configReportPageable": null,
-        "configReportFilterByTime": null,
-        "configReportDataOrigin": null,
-        "configReportExportCsvUrl": null,
-        "standardSectionId": 30,
-        "configReportEditable": true,
-        "dashboardId": 43,
-        "configType": "TEMPLATE",
-        "configUrl": null,
-        "section": {
-            "id": 30,
-            "standardId": 4,
-            "standardSectionName": "CC7.4 System Operations",
-            "standardSectionDescription": "Addresses how service organization controls monitor systems for potential anomalies, events, and configuration changes that may carry security risks.",
-            "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
-            }
-        },
-        "columns": null,
-        "requestBodyFilters": null,
-        "requestParamFilters": null
-    },
-    {
-        "configSolution": "File deleted",
-        "configReportResourceUrl": null,
-        "configReportRequestType": null,
-        "configReportPageable": null,
-        "configReportFilterByTime": null,
-        "configReportDataOrigin": null,
-        "configReportExportCsvUrl": null,
-        "standardSectionId": 30,
+        "standardSectionId": 32,
         "configReportEditable": true,
         "dashboardId": 65,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 30,
-            "standardId": 4,
-            "standardSectionName": "CC7.4 System Operations",
-            "standardSectionDescription": "Addresses how service organization controls monitor systems for potential anomalies, events, and configuration changes that may carry security risks.",
+            "id": 32,
+            "standardId": 5,
+            "standardSectionName": "AU-3 (A.10.10.1) / AU-5 (A.10.10.1, A.10.3.1) Audit & Accountability",
+            "standardSectionDescription": "This section implements the audit records and response to audit processing failures.",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -280,27 +896,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "File modified",
+        "configSolution": "This report shows the files modified by a user",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 30,
+        "standardSectionId": 32,
         "configReportEditable": true,
         "dashboardId": 66,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 30,
-            "standardId": 4,
-            "standardSectionName": "CC7.4 System Operations",
-            "standardSectionDescription": "Addresses how service organization controls monitor systems for potential anomalies, events, and configuration changes that may carry security risks.",
+            "id": 32,
+            "standardId": 5,
+            "standardSectionName": "AU-3 (A.10.10.1) / AU-5 (A.10.10.1, A.10.3.1) Audit & Accountability",
+            "standardSectionDescription": "This section implements the audit records and response to audit processing failures.",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -308,27 +924,335 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "File and folder deletions in the storage device<br/>",
+        "configSolution": "User Management Reports (Users password changes)",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 30,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 44,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User Management Reports (Unlocked users)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 50,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User Management Reports (Changed user account)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 54,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User Management Reports (Password management)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 64,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "GPO: Permissions on an object were changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 95,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Interactive Logon Failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 34,
+        "configReportEditable": true,
+        "dashboardId": 99,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 34,
+            "standardId": 5,
+            "standardSectionName": "AC-7 Unsuccessful Login failures via Interactive / Remote Sessions",
+            "standardSectionDescription": "AC-7 (A.11.5.1) Unsuccessful Login failures via Interactive / Remote Sessions",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Local Login Failures",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 35,
+        "configReportEditable": true,
+        "dashboardId": 3,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 35,
+            "standardId": 5,
+            "standardSectionName": "AC-11 Session Lock / Unlock",
+            "standardSectionDescription": "AC-11 (A.11.3.2, A.11.3.3, A.11.5.5) Session Lock / Unlock",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Interactive Logon Failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 35,
+        "configReportEditable": true,
+        "dashboardId": 99,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 35,
+            "standardId": 5,
+            "standardSectionName": "AC-11 Session Lock / Unlock",
+            "standardSectionDescription": "AC-11 (A.11.3.2, A.11.3.3, A.11.5.5) Session Lock / Unlock",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Unsuccessful user logons",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 37,
+        "configReportEditable": true,
+        "dashboardId": 25,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 37,
+            "standardId": 5,
+            "standardSectionName": "IA-2 Identification and authentication",
+            "standardSectionDescription": "Organizational users",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Access attempts to critical files and data in real-time",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 32,
+        "configReportEditable": true,
+        "dashboardId": 36,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 32,
+            "standardId": 5,
+            "standardSectionName": "AU-3 (A.10.10.1) / AU-5 (A.10.10.1, A.10.3.1) Audit & Accountability",
+            "standardSectionDescription": "This section implements the audit records and response to audit processing failures.",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Attempting to access a file from an external device",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 32,
+        "configReportEditable": true,
+        "dashboardId": 38,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 32,
+            "standardId": 5,
+            "standardSectionName": "AU-3 (A.10.10.1) / AU-5 (A.10.10.1, A.10.3.1) Audit & Accountability",
+            "standardSectionDescription": "This section implements the audit records and response to audit processing failures.",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "File and folder deletions in the storage device",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 32,
         "configReportEditable": true,
         "dashboardId": 72,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 30,
-            "standardId": 4,
-            "standardSectionName": "CC7.4 System Operations",
-            "standardSectionDescription": "Addresses how service organization controls monitor systems for potential anomalies, events, and configuration changes that may carry security risks.",
+            "id": 32,
+            "standardId": 5,
+            "standardSectionName": "AU-3 (A.10.10.1) / AU-5 (A.10.10.1, A.10.3.1) Audit & Accountability",
+            "standardSectionDescription": "This section implements the audit records and response to audit processing failures.",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -336,27 +1260,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Incident Response",
+        "configSolution": "Group Management Reports (Group Membership Changes Active Directory)",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 14,
+        "standardSectionId": 33,
         "configReportEditable": true,
-        "dashboardId": 80,
+        "dashboardId": 20,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 14,
-            "standardId": 4,
-            "standardSectionName": "CC3.2 Risk Assessment",
-            "standardSectionDescription": "UTMSTACK Identifies and analyzes risks to entities for determining how risks should be managed. Designs, develop and implement controls to prepare the risk mitigation strategy.",
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -364,27 +1288,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Threat Detection (HIDS)<br/>",
+        "configSolution": "User Management Reports (Created users)",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
+        "standardSectionId": 33,
         "configReportEditable": true,
-        "dashboardId": 83,
+        "dashboardId": 46,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 24,
-            "standardId": 4,
-            "standardSectionName": "CC5.1 Control Activities",
-            "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -392,27 +1316,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Threat Detection (NIDS)",
+        "configSolution": "User Management Reports (Enabled users)",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
+        "standardSectionId": 33,
         "configReportEditable": true,
-        "dashboardId": 84,
+        "dashboardId": 47,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 24,
-            "standardId": 4,
-            "standardSectionName": "CC5.1 Control Activities",
-            "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -420,27 +1344,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Successful logon events to assets by internal and external users.",
+        "configSolution": "Recent logon failure",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 25,
+        "standardSectionId": 34,
         "configReportEditable": true,
-        "dashboardId": 68,
+        "dashboardId": 16,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 25,
-            "standardId": 4,
-            "standardSectionName": "CC5.3 Control Activities",
-            "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
+            "id": 34,
+            "standardId": 5,
+            "standardSectionName": "AC-7 Unsuccessful Login failures via Interactive / Remote Sessions",
+            "standardSectionDescription": "AC-7 (A.11.5.1) Unsuccessful Login failures via Interactive / Remote Sessions",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -448,27 +1372,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Threat Intelligence",
+        "configSolution": "History Login Failures",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 26,
+        "standardSectionId": 34,
         "configReportEditable": true,
-        "dashboardId": 81,
+        "dashboardId": 55,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 26,
-            "standardId": 4,
-            "standardSectionName": "CC5.6 Control Activities",
-            "standardSectionDescription": "Implement security measures to protect against Security Principle threats from sources outside the boundaries of the system.",
+            "id": 34,
+            "standardId": 5,
+            "standardSectionName": "AC-7 Unsuccessful Login failures via Interactive / Remote Sessions",
+            "standardSectionDescription": "AC-7 (A.11.5.1) Unsuccessful Login failures via Interactive / Remote Sessions",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -476,27 +1400,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Threat Detection (HIDS)",
+        "configSolution": "Recent logon failure",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 27,
+        "standardSectionId": 35,
         "configReportEditable": true,
-        "dashboardId": 83,
+        "dashboardId": 16,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 27,
-            "standardId": 4,
-            "standardSectionName": "CC5.8 Control Activities",
-            "standardSectionDescription": "This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly. Implemented to prevent or detect and act upon the introduction of unauthorized or malicious software.",
+            "id": 35,
+            "standardId": 5,
+            "standardSectionName": "AC-11 Session Lock / Unlock",
+            "standardSectionDescription": "AC-11 (A.11.3.2, A.11.3.3, A.11.5.5) Session Lock / Unlock",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -504,27 +1428,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "O365 Threat Intelligence<br/>",
+        "configSolution": "RADIUS Login Failures (NPS)",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 28,
+        "standardSectionId": 35,
         "configReportEditable": true,
-        "dashboardId": 11,
+        "dashboardId": 22,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 28,
-            "standardId": 4,
-            "standardSectionName": "CC6.1 Logical and Physical Access Controls",
-            "standardSectionDescription": "Monitor and evaluate breaches and incidents due to malicious acts, natural disasters, or errors to implement countermeasures to compensate for known and new vulnerabilities.",
+            "id": 35,
+            "standardId": 5,
+            "standardSectionName": "AC-11 Session Lock / Unlock",
+            "standardSectionDescription": "AC-11 (A.11.3.2, A.11.3.3, A.11.5.5) Session Lock / Unlock",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -532,167 +1456,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "File Integrity Monitoring",
+        "configSolution": "History Login Failures",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 28,
-        "configReportEditable": true,
-        "dashboardId": 43,
-        "configType": "TEMPLATE",
-        "configUrl": null,
-        "section": {
-            "id": 28,
-            "standardId": 4,
-            "standardSectionName": "CC6.1 Logical and Physical Access Controls",
-            "standardSectionDescription": "Monitor and evaluate breaches and incidents due to malicious acts, natural disasters, or errors to implement countermeasures to compensate for known and new vulnerabilities.",
-            "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
-            }
-        },
-        "columns": null,
-        "requestBodyFilters": null,
-        "requestParamFilters": null
-    },
-    {
-        "configSolution": "Threats activity",
-        "configReportResourceUrl": null,
-        "configReportRequestType": null,
-        "configReportPageable": null,
-        "configReportFilterByTime": null,
-        "configReportDataOrigin": null,
-        "configReportExportCsvUrl": null,
-        "standardSectionId": 14,
-        "configReportEditable": true,
-        "dashboardId": 7,
-        "configType": "TEMPLATE",
-        "configUrl": null,
-        "section": {
-            "id": 14,
-            "standardId": 4,
-            "standardSectionName": "CC3.2 Risk Assessment",
-            "standardSectionDescription": "UTMSTACK Identifies and analyzes risks to entities for determining how risks should be managed. Designs, develop and implement controls to prepare the risk mitigation strategy.",
-            "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
-            }
-        },
-        "columns": null,
-        "requestBodyFilters": null,
-        "requestParamFilters": null
-    },
-    {
-        "configSolution": "The risks level of that threat<br/>",
-        "configReportResourceUrl": null,
-        "configReportRequestType": null,
-        "configReportPageable": null,
-        "configReportFilterByTime": null,
-        "configReportDataOrigin": null,
-        "configReportExportCsvUrl": null,
-        "standardSectionId": 14,
-        "configReportEditable": true,
-        "dashboardId": 27,
-        "configType": "TEMPLATE",
-        "configUrl": null,
-        "section": {
-            "id": 14,
-            "standardId": 4,
-            "standardSectionName": "CC3.2 Risk Assessment",
-            "standardSectionDescription": "UTMSTACK Identifies and analyzes risks to entities for determining how risks should be managed. Designs, develop and implement controls to prepare the risk mitigation strategy.",
-            "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
-            }
-        },
-        "columns": null,
-        "requestBodyFilters": null,
-        "requestParamFilters": null
-    },
-    {
-        "configSolution": "File Integrity Monitoring",
-        "configReportResourceUrl": null,
-        "configReportRequestType": null,
-        "configReportPageable": null,
-        "configReportFilterByTime": null,
-        "configReportDataOrigin": null,
-        "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
-        "configReportEditable": true,
-        "dashboardId": 63,
-        "configType": "TEMPLATE",
-        "configUrl": null,
-        "section": {
-            "id": 24,
-            "standardId": 4,
-            "standardSectionName": "CC5.1 Control Activities",
-            "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
-            "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
-            }
-        },
-        "columns": null,
-        "requestBodyFilters": null,
-        "requestParamFilters": null
-    },
-    {
-        "configSolution": "Threat Intelligence",
-        "configReportResourceUrl": null,
-        "configReportRequestType": null,
-        "configReportPageable": null,
-        "configReportFilterByTime": null,
-        "configReportDataOrigin": null,
-        "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
-        "configReportEditable": true,
-        "dashboardId": 81,
-        "configType": "TEMPLATE",
-        "configUrl": null,
-        "section": {
-            "id": 24,
-            "standardId": 4,
-            "standardSectionName": "CC5.1 Control Activities",
-            "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
-            "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
-            }
-        },
-        "columns": null,
-        "requestBodyFilters": null,
-        "requestParamFilters": null
-    },
-    {
-        "configSolution": "Failed logon events to assets by internal and external users",
-        "configReportResourceUrl": null,
-        "configReportRequestType": null,
-        "configReportPageable": null,
-        "configReportFilterByTime": null,
-        "configReportDataOrigin": null,
-        "configReportExportCsvUrl": null,
-        "standardSectionId": 25,
+        "standardSectionId": 35,
         "configReportEditable": true,
         "dashboardId": 67,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 25,
-            "standardId": 4,
-            "standardSectionName": "CC5.3 Control Activities",
-            "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
+            "id": 35,
+            "standardId": 5,
+            "standardSectionName": "AC-11 Session Lock / Unlock",
+            "standardSectionDescription": "AC-11 (A.11.3.2, A.11.3.3, A.11.5.5) Session Lock / Unlock",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -700,27 +1484,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Incident Response",
+        "configSolution": "Logon History",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 26,
+        "standardSectionId": 35,
         "configReportEditable": true,
-        "dashboardId": 80,
+        "dashboardId": 77,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 26,
-            "standardId": 4,
-            "standardSectionName": "CC5.6 Control Activities",
-            "standardSectionDescription": "Implement security measures to protect against Security Principle threats from sources outside the boundaries of the system.",
+            "id": 35,
+            "standardId": 5,
+            "standardSectionName": "AC-11 Session Lock / Unlock",
+            "standardSectionDescription": "AC-11 (A.11.3.2, A.11.3.3, A.11.5.5) Session Lock / Unlock",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -728,27 +1512,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Threat Detection (NIDS)<br/>",
+        "configSolution": "Currently Logged On Users",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 26,
+        "standardSectionId": 36,
         "configReportEditable": true,
-        "dashboardId": 84,
+        "dashboardId": 17,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 26,
-            "standardId": 4,
-            "standardSectionName": "CC5.6 Control Activities",
-            "standardSectionDescription": "Implement security measures to protect against Security Principle threats from sources outside the boundaries of the system.",
+            "id": 36,
+            "standardId": 5,
+            "standardSectionName": "AC-17 Terminal Service Activity",
+            "standardSectionDescription": "AC-17 (A.10.6.1, A.10.8.1, A.11.1.1, A.11.4.1, A.11.4.2, A.11.4.4, A.11.4.6, A.11.4.7, A.11.7.1, A.11.7.2) Terminal Service Activity",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -756,85 +1540,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Asset Discovery",
+        "configSolution": "Users password changes",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 14,
-        "configReportEditable": false,
-        "dashboardId": null,
-        "configType": "CUSTOM",
-        "configUrl": "api/compliance/custom/assetsDiscovered",
-        "dashboard": null,
-        "section": {
-            "id": 14,
-            "standardId": 4,
-            "standardSectionName": "CC3.2 Risk Assessment",
-            "standardSectionDescription": "UTMSTACK Identifies and analyzes risks to entities for determining how risks should be managed. Designs, develop and implement controls to prepare the risk mitigation strategy.",
-            "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
-            }
-        },
-        "columns": null,
-        "requestBodyFilters": null,
-        "requestParamFilters": null
-    },
-    {
-        "configSolution": "Asset Discovery",
-        "configReportResourceUrl": null,
-        "configReportRequestType": null,
-        "configReportPageable": null,
-        "configReportFilterByTime": null,
-        "configReportDataOrigin": null,
-        "configReportExportCsvUrl": null,
-        "standardSectionId": 23,
-        "configReportEditable": false,
-        "dashboardId": null,
-        "configType": "CUSTOM",
-        "configUrl": "api/compliance/custom/assetsDiscovered",
-        "dashboard": null,
-        "section": {
-            "id": 23,
-            "standardId": 4,
-            "standardSectionName": "CC4.1 Monitoring Activities",
-            "standardSectionDescription": "The monitoring activities common criteria (CC4) covers the ongoing evaluation of the system at the service organization and the notification to relevant personnel if there is a breakdown in the system.",
-            "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
-            }
-        },
-        "columns": null,
-        "requestBodyFilters": null,
-        "requestParamFilters": null
-    },
-    {
-        "configSolution": "Threat Intelligence",
-        "configReportResourceUrl": null,
-        "configReportRequestType": null,
-        "configReportPageable": null,
-        "configReportFilterByTime": null,
-        "configReportDataOrigin": null,
-        "configReportExportCsvUrl": null,
-        "standardSectionId": 27,
+        "standardSectionId": 38,
         "configReportEditable": true,
-        "dashboardId": 81,
+        "dashboardId": 44,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 27,
-            "standardId": 4,
-            "standardSectionName": "CC5.8 Control Activities",
-            "standardSectionDescription": "This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly. Implemented to prevent or detect and act upon the introduction of unauthorized or malicious software.",
+            "id": 38,
+            "standardId": 5,
+            "standardSectionName": "IA-5 Authenticator Management",
+            "standardSectionDescription": "Password-based authentication",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -842,27 +1568,27 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Threat Detection (NIDS)",
+        "configSolution": "Password changes attempted by an Administrator.",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 27,
+        "standardSectionId": 38,
         "configReportEditable": true,
-        "dashboardId": 84,
+        "dashboardId": 45,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 27,
-            "standardId": 4,
-            "standardSectionName": "CC5.8 Control Activities",
-            "standardSectionDescription": "This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly. Implemented to prevent or detect and act upon the introduction of unauthorized or malicious software.",
+            "id": 38,
+            "standardId": 5,
+            "standardSectionName": "IA-5 Authenticator Management",
+            "standardSectionDescription": "Password-based authentication",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
@@ -870,28 +1596,251 @@
         "requestParamFilters": null
     },
     {
-        "configSolution": "Asset Discovery",
+        "configSolution": "Failures due to Bad Password",
         "configReportResourceUrl": null,
         "configReportRequestType": null,
         "configReportPageable": null,
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 28,
-        "configReportEditable": false,
-        "dashboardId": null,
-        "configType": "CUSTOM",
-        "configUrl": "api/compliance/custom/assetsDiscovered",
-        "dashboard": null,
+        "standardSectionId": 38,
+        "configReportEditable": true,
+        "dashboardId": 52,
+        "configType": "TEMPLATE",
+        "configUrl": null,
         "section": {
-            "id": 28,
-            "standardId": 4,
-            "standardSectionName": "CC6.1 Logical and Physical Access Controls",
-            "standardSectionDescription": "Monitor and evaluate breaches and incidents due to malicious acts, natural disasters, or errors to implement countermeasures to compensate for known and new vulnerabilities.",
+            "id": 38,
+            "standardId": 5,
+            "standardSectionName": "IA-5 Authenticator Management",
+            "standardSectionDescription": "Password-based authentication",
             "standard": {
-                "id": 4,
-                "standardName": "SOC 2",
-                "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Password management",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 38,
+        "configReportEditable": true,
+        "dashboardId": 64,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 38,
+            "standardId": 5,
+            "standardSectionName": "IA-5 Authenticator Management",
+            "standardSectionDescription": "Password-based authentication",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User Management Reports (Password changes attempted by an Administrator)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 45,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User Management Reports (Deleted users)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 53,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "GPO: Domain Policy was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 93,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User Added to Privileged Group",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 100,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Member added to a group",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 33,
+        "configReportEditable": true,
+        "dashboardId": 101,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 33,
+            "standardId": 5,
+            "standardSectionName": "AC-2 Access Control",
+            "standardSectionDescription": "AC-2 (A.8.3.3, A.11.2.1, A.11.2.2, A.11.2.4, A.15.2.1) User Management Reports, Group Management Reports, Computer Management Reports, GPO Management Reports",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Local Logon Failures",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 34,
+        "configReportEditable": true,
+        "dashboardId": 3,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 34,
+            "standardId": 5,
+            "standardSectionName": "AC-7 Unsuccessful Login failures via Interactive / Remote Sessions",
+            "standardSectionDescription": "AC-7 (A.11.5.1) Unsuccessful Login failures via Interactive / Remote Sessions",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Local Logon Failures",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 36,
+        "configReportEditable": true,
+        "dashboardId": 3,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 36,
+            "standardId": 5,
+            "standardSectionName": "AC-17 Terminal Service Activity",
+            "standardSectionDescription": "AC-17 (A.10.6.1, A.10.8.1, A.11.1.1, A.11.4.1, A.11.4.2, A.11.4.4, A.11.4.6, A.11.4.7, A.11.7.1, A.11.7.2) Terminal Service Activity",
+            "standard": {
+                "id": 5,
+                "standardName": "FISMA",
+                "standardDescription": "The Federal Information Security Management Act (FISMA) is a United States federal law passed in 2002 that made it a requirement for federal agencies to develop, document, and implement an information security and protection program. FISMA is part of the larger E-Government Act of 2002 introduced to improve electronic government services and processes."
             }
         },
         "columns": null,
