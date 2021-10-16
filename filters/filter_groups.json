@@ -1,166 +1,185 @@
 [
     {
-        "id": 1,
+        "id": 100,
         "name": "aws",
         "description": "Aws",
         "filters": [
             {
-                "id": 1,
+                "id": 101,
                 "name": "aws-cwg",
                 "path": "filters/aws/aws-cwg.conf"
             }
         ]
     },
     {
-        "id": 2,
+        "id": 200,
         "name": "azure",
         "description": "Azure",
         "filters": [
             {
-                "id": 2,
+                "id": 201,
                 "name": "azure-eventhub",
                 "path": "filters/azure/azure-eventhub.conf"
             },
             {
-                "id": 3,
+                "id": 202,
                 "name": "azure-management",
                 "path": "filters/azure/azure-management.conf"
             }
         ]
     },
     {
-        "id": 3,
+        "id": 300,
         "name": "cisco",
         "description": "Cisco",
         "filters": [
             {
-                "id": 4,
+                "id": 301,
                 "name": "cisco-asa",
-                "path": "filters/cisco/cisco-asa.conf"
+                "path": "filters/cisco/asa.conf"
             },
             {
-                "id": 5,
+                "id": 302,
                 "name": "cisco-meraki-events",
-                "path": "filters/cisco/cisco-meraki-events.conf"
+                "path": "filters/cisco/meraki-events.conf"
             },
             {
-                "id": 6,
+                "id": 303,
                 "name": "cisco-meraki-flows",
-                "path": "filters/cisco/cisco-meraki-flows.conf"
+                "path": "filters/cisco/meraki-flows.conf"
             },
             {
-                "id": 7,
+                "id": 304,
                 "name": "cisco-meraki-ids",
-                "path": "filters/cisco/cisco-meraki-ids.conf"
+                "path": "filters/cisco/meraki-ids-alerts.conf"
             },
             {
-                "id": 8,
+                "id": 305,
                 "name": "cisco-meraki-urls",
-                "path": "filters/cisco/cisco-meraki-urls.conf"
+                "path": "filters/cisco/meraki-security_events.conf"
             }
         ]
     },
     {
-        "id": 4,
+        "id": 400,
         "name": "hids",
         "description": "Hids",
         "filters": [
             {
-                "id": 9,
+                "id": 401,
                 "name": "hids-wazuh",
                 "path": "filters/hids/hids-wazuh.conf"
             }
         ]
     },
     {
-        "id": 5,
+        "id": 500,
         "name": "linux",
         "description": "Linux",
         "filters": [
             {
-                "id": 10,
+                "id": 501,
                 "name": "linux-ufw",
                 "path": "filters/linux/linux-ufw.conf"
             }
         ]
     },
     {
-        "id": 6,
+        "id": 600,
         "name": "macos",
         "description": "MacOs",
         "filters": [
             {
-                "id": 11,
+                "id": 601,
                 "name": "macos-syslog",
                 "path": "filters/macos/macos-syslog.conf"
             }
         ]
     },
     {
-        "id": 7,
+        "id": 700,
         "name": "nids",
         "description": "Nids",
         "filters": [
             {
-                "id": 12,
-                "name": "nids-dns",
-                "path": "filters/nids/nids-dns.conf"
-            },
-            {
-                "id": 13,
-                "name": "nids-flow",
-                "path": "filters/nids/nids-flow.conf"
-            },
-            {
-                "id": 14,
+                "id": 701,
                 "name": "nids-ids",
                 "path": "filters/nids/nids-ids.conf"
             }
         ]
     },
     {
-        "id": 8,
+        "id": 800,
         "name": "o365",
         "description": "Office 365",
         "filters": [
             {
-                "id": 15,
+                "id": 801,
                 "name": "o365-all",
                 "path": "filters/office365/o365-all.conf"
             }
         ]
     },
     {
-        "id": 9,
+        "id": 900,
         "name": "windows",
         "description": "Windows",
         "filters": [
             {
-                "id": 16,
+                "id": 901,
                 "name": "windows-events",
                 "path": "filters/windows/windows-events.conf"
             },
             {
-                "id": 17,
+                "id": 902,
                 "name": "windows-iis",
                 "path": "filters/windows/windows-iis.conf"
             },
             {
-                "id": 18,
+                "id": 903,
                 "name": "windows-metrics",
                 "path": "filters/windows/windows-metrics.conf"
             }
         ]
     },
     {
-        "id": 10,
+        "id": 1000,
         "name": "sophos",
         "description": "Sophos",
         "filters": [
             {
-                "id": 19,
+                "id": 1001,
                 "name": "sophos-xg",
                 "path": "filters/sophos/sophos-xg.conf"
+            },
+            {
+                "id": 1002,
+                "name": "sophos_xg_firewall",
+                "path": "filters/sophos/sophos_xg_firewall.conf"
+            }
+        ]
+    },
+    {
+        "id": 1100,
+        "name": "fortinet",
+        "description": "Fortinet",
+        "filters": [
+            {
+                "id": 1101,
+                "name": "fortinet",
+                "path": "filters/fortinet/fortinet.conf"
+            }
+        ]
+    },
+    {
+        "id": 1200,
+        "name": "vmware",
+        "description": "VMware",
+        "filters": [
+            {
+                "id": 1201,
+                "name": "vmware-esxi",
+                "path": "filters/vmware/vmware-esxi.conf"
             }
         ]
     }
