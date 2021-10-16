@@ -46,7 +46,7 @@
             {
                 "id": 303,
                 "name": "cisco-meraki-flows",
-                "path": "filters/cisco/meraki-flows.conf"
+                "path": "filters/cisco/meraki-flow.conf"
             },
             {
                 "id": 304,
