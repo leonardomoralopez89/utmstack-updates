@@ -93,7 +93,7 @@
             "parentId": 500,
             "name": "CMMC Dashboard",
             "url": "compliance/templates?standardId=600&standardName=CMMC",
-            "position": 500,
+            "position": 5,
             "isActive": true,
             "isAction": false,
             "authorities": [
@@ -106,7 +106,7 @@
             "parentId": 500,
             "name": "PCI-DSS Dashboard",
             "url": "compliance/templates?standardId=700&standardName=PCI-DSS",
-            "position": 500,
+            "position": 6,
             "isActive": true,
             "isAction": false,
             "authorities": [
