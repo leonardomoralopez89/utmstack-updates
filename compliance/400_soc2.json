@@ -7,18 +7,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 14,
+        "standardSectionId": 401,
         "configReportEditable": true,
         "dashboardId": 81,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 14,
-            "standardId": 4,
+            "id": 401,
+            "standardId": 400,
             "standardSectionName": "CC3.2 Risk Assessment",
             "standardSectionDescription": "UTMSTACK Identifies and analyzes risks to entities for determining how risks should be managed. Designs, develop and implement controls to prepare the risk mitigation strategy.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -35,18 +35,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 23,
+        "standardSectionId": 402,
         "configReportEditable": true,
         "dashboardId": 81,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 23,
-            "standardId": 4,
+            "id": 402,
+            "standardId": 400,
             "standardSectionName": "CC4.1 Monitoring Activities",
             "standardSectionDescription": "The monitoring activities common criteria (CC4) covers the ongoing evaluation of the system at the service organization and the notification to relevant personnel if there is a breakdown in the system.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -63,18 +63,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
+        "standardSectionId": 403,
         "configReportEditable": true,
         "dashboardId": 2,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 24,
-            "standardId": 4,
+            "id": 403,
+            "standardId": 400,
             "standardSectionName": "CC5.1 Control Activities",
             "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -91,18 +91,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
+        "standardSectionId": 403,
         "configReportEditable": true,
         "dashboardId": 82,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 24,
-            "standardId": 4,
+            "id": 403,
+            "standardId": 400,
             "standardSectionName": "CC5.1 Control Activities",
             "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -119,18 +119,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 25,
+        "standardSectionId": 404,
         "configReportEditable": true,
         "dashboardId": 43,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 25,
-            "standardId": 4,
+            "id": 404,
+            "standardId": 400,
             "standardSectionName": "CC5.3 Control Activities",
             "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -147,18 +147,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 26,
+        "standardSectionId": 405,
         "configReportEditable": true,
         "dashboardId": 11,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 26,
-            "standardId": 4,
+            "id": 405,
+            "standardId": 400,
             "standardSectionName": "CC5.6 Control Activities",
             "standardSectionDescription": "Implement security measures to protect against Security Principle threats from sources outside the boundaries of the system.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -175,18 +175,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 28,
+        "standardSectionId": 407,
         "configReportEditable": true,
         "dashboardId": 81,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 28,
-            "standardId": 4,
+            "id": 407,
+            "standardId": 400,
             "standardSectionName": "CC6.1 Logical and Physical Access Controls",
             "standardSectionDescription": "Monitor and evaluate breaches and incidents due to malicious acts, natural disasters, or errors to implement countermeasures to compensate for known and new vulnerabilities.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -203,18 +203,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 29,
+        "standardSectionId": 408,
         "configReportEditable": true,
         "dashboardId": 81,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 29,
-            "standardId": 4,
+            "id": 408,
+            "standardId": 400,
             "standardSectionName": "CC7.3 System Operations",
             "standardSectionDescription": "Addresses how service organization controls monitor systems for potential anomalies, events, and configuration changes that may carry security risks.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -231,18 +231,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 30,
+        "standardSectionId": 409,
         "configReportEditable": true,
         "dashboardId": 43,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 30,
-            "standardId": 4,
+            "id": 409,
+            "standardId": 400,
             "standardSectionName": "CC7.4 System Operations",
             "standardSectionDescription": "Addresses how service organization controls monitor systems for potential anomalies, events, and configuration changes that may carry security risks.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -259,18 +259,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 30,
+        "standardSectionId": 409,
         "configReportEditable": true,
         "dashboardId": 65,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 30,
-            "standardId": 4,
+            "id": 409,
+            "standardId": 400,
             "standardSectionName": "CC7.4 System Operations",
             "standardSectionDescription": "Addresses how service organization controls monitor systems for potential anomalies, events, and configuration changes that may carry security risks.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -287,18 +287,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 30,
+        "standardSectionId": 409,
         "configReportEditable": true,
         "dashboardId": 66,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 30,
-            "standardId": 4,
+            "id": 409,
+            "standardId": 400,
             "standardSectionName": "CC7.4 System Operations",
             "standardSectionDescription": "Addresses how service organization controls monitor systems for potential anomalies, events, and configuration changes that may carry security risks.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -315,18 +315,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 30,
+        "standardSectionId": 409,
         "configReportEditable": true,
         "dashboardId": 72,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 30,
-            "standardId": 4,
+            "id": 409,
+            "standardId": 400,
             "standardSectionName": "CC7.4 System Operations",
             "standardSectionDescription": "Addresses how service organization controls monitor systems for potential anomalies, events, and configuration changes that may carry security risks.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -343,18 +343,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 14,
+        "standardSectionId": 401,
         "configReportEditable": true,
         "dashboardId": 80,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 14,
-            "standardId": 4,
+            "id": 401,
+            "standardId": 400,
             "standardSectionName": "CC3.2 Risk Assessment",
             "standardSectionDescription": "UTMSTACK Identifies and analyzes risks to entities for determining how risks should be managed. Designs, develop and implement controls to prepare the risk mitigation strategy.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -371,18 +371,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
+        "standardSectionId": 403,
         "configReportEditable": true,
         "dashboardId": 83,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 24,
-            "standardId": 4,
+            "id": 403,
+            "standardId": 400,
             "standardSectionName": "CC5.1 Control Activities",
             "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -399,18 +399,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
+        "standardSectionId": 403,
         "configReportEditable": true,
         "dashboardId": 84,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 24,
-            "standardId": 4,
+            "id": 403,
+            "standardId": 400,
             "standardSectionName": "CC5.1 Control Activities",
             "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -427,18 +427,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 25,
+        "standardSectionId": 404,
         "configReportEditable": true,
         "dashboardId": 68,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 25,
-            "standardId": 4,
+            "id": 404,
+            "standardId": 400,
             "standardSectionName": "CC5.3 Control Activities",
             "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -455,18 +455,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 26,
+        "standardSectionId": 405,
         "configReportEditable": true,
         "dashboardId": 81,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 26,
-            "standardId": 4,
+            "id": 405,
+            "standardId": 400,
             "standardSectionName": "CC5.6 Control Activities",
             "standardSectionDescription": "Implement security measures to protect against Security Principle threats from sources outside the boundaries of the system.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -483,18 +483,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 27,
+        "standardSectionId": 406,
         "configReportEditable": true,
         "dashboardId": 83,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 27,
-            "standardId": 4,
+            "id": 406,
+            "standardId": 400,
             "standardSectionName": "CC5.8 Control Activities",
             "standardSectionDescription": "This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly. Implemented to prevent or detect and act upon the introduction of unauthorized or malicious software.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -511,18 +511,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 28,
+        "standardSectionId": 407,
         "configReportEditable": true,
         "dashboardId": 11,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 28,
-            "standardId": 4,
+            "id": 407,
+            "standardId": 400,
             "standardSectionName": "CC6.1 Logical and Physical Access Controls",
             "standardSectionDescription": "Monitor and evaluate breaches and incidents due to malicious acts, natural disasters, or errors to implement countermeasures to compensate for known and new vulnerabilities.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -539,18 +539,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 28,
+        "standardSectionId": 407,
         "configReportEditable": true,
         "dashboardId": 43,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 28,
-            "standardId": 4,
+            "id": 407,
+            "standardId": 400,
             "standardSectionName": "CC6.1 Logical and Physical Access Controls",
             "standardSectionDescription": "Monitor and evaluate breaches and incidents due to malicious acts, natural disasters, or errors to implement countermeasures to compensate for known and new vulnerabilities.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -567,18 +567,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 14,
+        "standardSectionId": 401,
         "configReportEditable": true,
         "dashboardId": 7,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 14,
-            "standardId": 4,
+            "id": 401,
+            "standardId": 400,
             "standardSectionName": "CC3.2 Risk Assessment",
             "standardSectionDescription": "UTMSTACK Identifies and analyzes risks to entities for determining how risks should be managed. Designs, develop and implement controls to prepare the risk mitigation strategy.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -595,18 +595,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 14,
+        "standardSectionId": 401,
         "configReportEditable": true,
         "dashboardId": 27,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 14,
-            "standardId": 4,
+            "id": 401,
+            "standardId": 400,
             "standardSectionName": "CC3.2 Risk Assessment",
             "standardSectionDescription": "UTMSTACK Identifies and analyzes risks to entities for determining how risks should be managed. Designs, develop and implement controls to prepare the risk mitigation strategy.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -623,18 +623,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
+        "standardSectionId": 403,
         "configReportEditable": true,
         "dashboardId": 63,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 24,
-            "standardId": 4,
+            "id": 403,
+            "standardId": 400,
             "standardSectionName": "CC5.1 Control Activities",
             "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -651,18 +651,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 24,
+        "standardSectionId": 403,
         "configReportEditable": true,
         "dashboardId": 81,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 24,
-            "standardId": 4,
+            "id": 403,
+            "standardId": 400,
             "standardSectionName": "CC5.1 Control Activities",
             "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -679,18 +679,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 25,
+        "standardSectionId": 404,
         "configReportEditable": true,
         "dashboardId": 67,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 25,
-            "standardId": 4,
+            "id": 404,
+            "standardId": 400,
             "standardSectionName": "CC5.3 Control Activities",
             "standardSectionDescription": "The control activities common criteria (CC5) covers COSO Principles 10-12. This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -707,18 +707,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 26,
+        "standardSectionId": 405,
         "configReportEditable": true,
         "dashboardId": 80,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 26,
-            "standardId": 4,
+            "id": 405,
+            "standardId": 400,
             "standardSectionName": "CC5.6 Control Activities",
             "standardSectionDescription": "Implement security measures to protect against Security Principle threats from sources outside the boundaries of the system.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -735,18 +735,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 26,
+        "standardSectionId": 405,
         "configReportEditable": true,
         "dashboardId": 84,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 26,
-            "standardId": 4,
+            "id": 405,
+            "standardId": 400,
             "standardSectionName": "CC5.6 Control Activities",
             "standardSectionDescription": "Implement security measures to protect against Security Principle threats from sources outside the boundaries of the system.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -763,19 +763,19 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 14,
+        "standardSectionId": 401,
         "configReportEditable": false,
         "dashboardId": null,
         "configType": "CUSTOM",
         "configUrl": "api/compliance/custom/assetsDiscovered",
         "dashboard": null,
         "section": {
-            "id": 14,
-            "standardId": 4,
+            "id": 401,
+            "standardId": 400,
             "standardSectionName": "CC3.2 Risk Assessment",
             "standardSectionDescription": "UTMSTACK Identifies and analyzes risks to entities for determining how risks should be managed. Designs, develop and implement controls to prepare the risk mitigation strategy.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -792,19 +792,19 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 23,
+        "standardSectionId": 402,
         "configReportEditable": false,
         "dashboardId": null,
         "configType": "CUSTOM",
         "configUrl": "api/compliance/custom/assetsDiscovered",
         "dashboard": null,
         "section": {
-            "id": 23,
-            "standardId": 4,
+            "id": 402,
+            "standardId": 400,
             "standardSectionName": "CC4.1 Monitoring Activities",
             "standardSectionDescription": "The monitoring activities common criteria (CC4) covers the ongoing evaluation of the system at the service organization and the notification to relevant personnel if there is a breakdown in the system.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -821,18 +821,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 27,
+        "standardSectionId": 406,
         "configReportEditable": true,
         "dashboardId": 81,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 27,
-            "standardId": 4,
+            "id": 406,
+            "standardId": 400,
             "standardSectionName": "CC5.8 Control Activities",
             "standardSectionDescription": "This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly. Implemented to prevent or detect and act upon the introduction of unauthorized or malicious software.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -849,18 +849,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 27,
+        "standardSectionId": 406,
         "configReportEditable": true,
         "dashboardId": 84,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 27,
-            "standardId": 4,
+            "id": 406,
+            "standardId": 400,
             "standardSectionName": "CC5.8 Control Activities",
             "standardSectionDescription": "This criteria section tests that the service organization has controls in place for the mitigation of risk and that the controls in place are monitored regularly. Implemented to prevent or detect and act upon the introduction of unauthorized or malicious software.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }
@@ -877,19 +877,19 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 28,
+        "standardSectionId": 407,
         "configReportEditable": false,
         "dashboardId": null,
         "configType": "CUSTOM",
         "configUrl": "api/compliance/custom/assetsDiscovered",
         "dashboard": null,
         "section": {
-            "id": 28,
-            "standardId": 4,
+            "id": 407,
+            "standardId": 400,
             "standardSectionName": "CC6.1 Logical and Physical Access Controls",
             "standardSectionDescription": "Monitor and evaluate breaches and incidents due to malicious acts, natural disasters, or errors to implement countermeasures to compensate for known and new vulnerabilities.",
             "standard": {
-                "id": 4,
+                "id": 400,
                 "standardName": "SOC 2",
                 "standardDescription": "The SOC 2 report was created to evaluate an organization’s information systems related to security, availability, processing, integrity, confidentiality, or privacy. If you are concerned about whether their data is secured, then the SOC 2 report is the way to go"
             }

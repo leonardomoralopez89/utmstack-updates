@@ -1,0 +1,128 @@
+[
+    {
+        "idVisualization": 315,
+        "idDashboard": 184,
+        "order": 0,
+        "width": 1565,
+        "height": 672.5,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"ed71efe0-00e6-6523-47f2-b43820f9938a\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 315,
+            "name": "Azure activity log",
+            "description": "Azure activity log",
+            "eventType": null,
+            "createdDate": "2021-09-27T20:22:30.546Z",
+            "modifiedDate": "2021-09-27T20:26:32.002Z",
+            "userCreated": "anniel",
+            "userModified": "anniel",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "systemOwner": null,
+            "idPattern": 11,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-30d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.azure.operationName.localizedValue.keyword",
+                    "customLabel": "Operation name",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.azure.status.value.keyword",
+                        "customLabel": "Status",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "@timestamp",
+                            "customLabel": "Time stamp",
+                            "subBucket": {
+                                "id": "1003",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.azure.subscriptionId.keyword",
+                                "customLabel": "Subscription ID",
+                                "subBucket": {
+                                    "id": "1004",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "logx.azure.caller.keyword",
+                                    "customLabel": "Event initiated by",
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 11,
+                "pattern": "log-azure-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 184,
+            "name": "Azure activity logs",
+            "description": "Azure activity logs",
+            "refreshTime": null,
+            "createdDate": "2021-09-27T22:13:15.772Z",
+            "modifiedDate": "2021-09-27T22:13:09.350Z",
+            "userCreated": "anniel",
+            "userModified": "1",
+            "filters": null,
+            "dashboardType": null,
+            "systemOwner": null
+        }
+    }
+]

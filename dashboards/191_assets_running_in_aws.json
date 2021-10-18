@@ -1,0 +1,92 @@
+[
+    {
+        "idVisualization": 321,
+        "idDashboard": 191,
+        "order": 0,
+        "width": 1565,
+        "height": 672.5,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"315f7373-3ef9-b75f-6ab7-57c15b56930d\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 321,
+            "name": "Assets running in AWS",
+            "description": "Assets running in AWS",
+            "eventType": null,
+            "createdDate": "2021-09-24T03:29:46.856Z",
+            "modifiedDate": "2021-09-24T03:32:29.238Z",
+            "userCreated": "anniel",
+            "userModified": "anniel",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "systemOwner": null,
+            "idPattern": 10,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "dataSource.keyword",
+                    "customLabel": "Data source",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.aws.sourceIPAddress.keyword",
+                        "customLabel": "Assets",
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 10,
+                "pattern": "log-aws-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 191,
+            "name": "Assets running in AWS",
+            "description": "Assets running in AWS",
+            "refreshTime": null,
+            "createdDate": "2021-09-24T03:30:15.333Z",
+            "modifiedDate": "2021-09-24T03:32:50.796Z",
+            "userCreated": "anniel",
+            "userModified": "anniel",
+            "filters": null,
+            "dashboardType": null,
+            "systemOwner": null
+        }
+    }
+]
