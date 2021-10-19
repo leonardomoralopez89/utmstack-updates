@@ -1,0 +1,335 @@
+[
+    {
+        "idVisualization": 105,
+        "idDashboard": 25,
+        "order": 1,
+        "width": 548,
+        "height": 324.8,
+        "top": 0,
+        "left": 10,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"7b8c1c4e-c9df-bf39-1183-6045da47f37e\",\"rows\":6,\"x\":10,\"y\":0}",
+        "visualization": {
+            "id": 105,
+            "name": "Unsuccessful users networks logons",
+            "description": "gdpr",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-06-09T16:36:04.869Z",
+            "modifiedDate": "2021-02-20T22:22:02.054Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.LogonType.keyword",
+                    "value": [
+                        "3"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "failed"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 25,
+            "name": "GLBA Unsuccessful user logons",
+            "description": "GLBA",
+            "refreshTime": null,
+            "createdDate": "2020-07-26T05:30:03.775Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 108,
+        "idDashboard": 25,
+        "order": 3,
+        "width": 1664,
+        "height": 603.8,
+        "top": 6,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"ae099884-12ca-53b4-9481-941916ebfb5e\",\"rows\":11,\"x\":0,\"y\":6}",
+        "visualization": {
+            "id": 108,
+            "name": "Top 10 Unsuccessful users logons by device",
+            "description": "Top 10 Unsuccessful users logons by device",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-06-09T16:42:55.402Z",
+            "modifiedDate": "2021-02-20T07:06:40.277Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "Username",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.beat.hostname.keyword",
+                        "customLabel": "Device",
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 10
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 25,
+            "name": "GLBA Unsuccessful user logons",
+            "description": "GLBA",
+            "refreshTime": null,
+            "createdDate": "2020-07-26T05:30:03.775Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 106,
+        "idDashboard": 25,
+        "order": 2,
+        "width": 548,
+        "height": 324.8,
+        "top": 0,
+        "left": 20,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"e18196d0-ca73-a57a-c693-270dbc9352e0\",\"rows\":6,\"x\":20,\"y\":0}",
+        "visualization": {
+            "id": 106,
+            "name": "Unsuccessful users locals logons",
+            "description": "gdpr",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-06-09T16:37:10.005Z",
+            "modifiedDate": "2021-02-20T22:23:06.790Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.LogonType.keyword",
+                    "value": [
+                        "2"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "failed"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 25,
+            "name": "GLBA Unsuccessful user logons",
+            "description": "GLBA",
+            "refreshTime": null,
+            "createdDate": "2020-07-26T05:30:03.775Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 107,
+        "idDashboard": 25,
+        "order": 0,
+        "width": 548,
+        "height": 324.8,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"1f921962-6dc7-98c0-1d9f-b54f5ddbd127\",\"rows\":6,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 107,
+            "name": "Total unsuccessful users logons",
+            "description": "gdpr",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-06-09T16:40:21.576Z",
+            "modifiedDate": "2021-02-20T22:24:24.497Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.LogonType.keyword",
+                    "value": [
+                        "2",
+                        "3"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "failed"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 25,
+            "name": "GLBA Unsuccessful user logons",
+            "description": "GLBA",
+            "refreshTime": null,
+            "createdDate": "2020-07-26T05:30:03.775Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

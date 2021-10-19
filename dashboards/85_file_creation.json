@@ -1,0 +1,132 @@
+[
+    {
+        "idVisualization": 20,
+        "idDashboard": 85,
+        "order": 0,
+        "width": 1672,
+        "height": 662.8,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"d92c3b85-226a-4219-3d47-5d8bb9900ade\",\"rows\":12,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 20,
+            "name": "Created files or folders",
+            "description": "Article 5 [1B, 1F-Objects access]",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-11-27T19:41:54.189Z",
+            "modifiedDate": "2021-03-07T22:00:45.425Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_data.ObjectType.keyword",
+                    "value": [
+                        "File",
+                        "Folder"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4656"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "@timestamp",
+                    "customLabel": "Event date",
+                    "subBucket": {
+                        "id": "1004",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                        "customLabel": "User",
+                        "subBucket": {
+                            "id": "1005",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.ObjectName.keyword",
+                            "customLabel": "Object name",
+                            "subBucket": {
+                                "id": "1006",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.ProcessName.keyword",
+                                "customLabel": "Process",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 85,
+            "name": "File Creation",
+            "description": "File Creation",
+            "refreshTime": null,
+            "createdDate": "2021-02-28T16:08:15.315Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

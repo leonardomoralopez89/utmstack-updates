@@ -1,0 +1,92 @@
+[
+    {
+        "idVisualization": 317,
+        "idDashboard": 187,
+        "order": 0,
+        "width": 1565,
+        "height": 672.5,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"87fc3637-d7fe-5d2e-2e95-56c8881bbd51\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 317,
+            "name": "Assets running in Azure",
+            "description": "Assets running in Azure",
+            "eventType": null,
+            "createdDate": "2021-09-24T03:36:10.496Z",
+            "modifiedDate": null,
+            "userCreated": "anniel",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "systemOwner": null,
+            "idPattern": 11,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "dataSource.keyword",
+                    "customLabel": "Data source",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.azure.claims.ipaddr.keyword",
+                        "customLabel": "Assets",
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 100
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 100
+                    }
+                }
+            },
+            "pattern": {
+                "id": 11,
+                "pattern": "log-azure-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 187,
+            "name": "Assets running in Azure",
+            "description": "Assets running in Azure",
+            "refreshTime": null,
+            "createdDate": "2021-09-24T03:36:32.276Z",
+            "modifiedDate": "2021-09-24T03:36:35.596Z",
+            "userCreated": "anniel",
+            "userModified": "1",
+            "filters": null,
+            "dashboardType": null,
+            "systemOwner": null
+        }
+    }
+]

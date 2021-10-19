@@ -1,0 +1,152 @@
+[
+    {
+        "idVisualization": 1008,
+        "idDashboard": 183,
+        "order": 0,
+        "width": 1565,
+        "height": 672.5,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"1f0cb6d0-96b9-5d01-0ffa-f42d1e8d9231\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 309,
+            "name": "O365 audit logs",
+            "description": "O365 audit logs",
+            "eventType": null,
+            "createdDate": "2021-09-24T02:42:21.990Z",
+            "modifiedDate": "2021-09-24T13:47:38.410Z",
+            "userCreated": "anniel",
+            "userModified": "leo",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "systemOwner": null,
+            "idPattern": 12,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.Operation.keyword",
+                    "customLabel": "Operation",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.o365.Workload.keyword",
+                        "customLabel": "workload",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.o365.ResultStatus.keyword",
+                            "customLabel": "Result status",
+                            "subBucket": {
+                                "id": "1003",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.o365.UserId.keyword",
+                                "customLabel": "User",
+                                "subBucket": {
+                                    "id": "1004",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "logx.o365.ClientIP.keyword",
+                                    "customLabel": "Client IP",
+                                    "subBucket": {
+                                        "id": "1005",
+                                        "aggregation": "TERMS",
+                                        "type": "BUCKET",
+                                        "field": "@timestamp",
+                                        "customLabel": "When",
+                                        "subBucket": {
+                                            "id": "1006",
+                                            "aggregation": "TERMS",
+                                            "type": "BUCKET",
+                                            "field": "logx.o365.Category.keyword",
+                                            "customLabel": "Category",
+                                            "terms": {
+                                                "sortBy": "_count",
+                                                "asc": false,
+                                                "size": 5
+                                            }
+                                        },
+                                        "terms": {
+                                            "sortBy": "_count",
+                                            "asc": false,
+                                            "size": 5
+                                        }
+                                    },
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 186,
+            "name": "Monitor user and administrator activities in Office 365",
+            "description": "Monitor user and administrator activities in Office 365",
+            "refreshTime": null,
+            "createdDate": "2021-09-24T05:00:19.851Z",
+            "modifiedDate": "2021-09-24T02:47:43.634Z",
+            "userCreated": "anniel",
+            "userModified": "1",
+            "filters": null,
+            "dashboardType": null,
+            "systemOwner": null
+        }
+    }
+]

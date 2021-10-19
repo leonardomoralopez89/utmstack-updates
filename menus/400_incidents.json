@@ -1,0 +1,40 @@
+{
+    "id": 400,
+    "name": "Incidents",
+    "position": 2,
+    "isActive": true,
+    "isAction": false,
+    "icon": "VISION.svg",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ],
+    "submenus": [
+        {
+            "id": 401,
+            "parentId": 400,
+            "name": "Incident Response",
+            "url": "incident-response/view",
+            "position": 0,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 402,
+            "parentId": 400,
+            "name": "Alerts",
+            "url": "data/alert/view?isIncident=IS->true&alertType=INCIDENT",
+            "position": 1,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        }
+    ]
+}

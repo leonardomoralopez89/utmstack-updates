@@ -1,0 +1,126 @@
+[
+    {
+        "idVisualization": 250,
+        "idDashboard": 101,
+        "order": 0,
+        "width": 1672,
+        "height": 718.86664,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"f714af5b-4a6f-bc1d-7f68-c68e95c2e0a0\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 250,
+            "name": "Member added to a group",
+            "description": "Member added to a group",
+            "eventType": "LOGX",
+            "createdDate": "2021-03-07T22:47:49.078Z",
+            "modifiedDate": null,
+            "userCreated": "siem",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4728",
+                        "4732",
+                        "4756",
+                        "4761",
+                        "4746",
+                        "4751"
+                    ]
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                    "customLabel": "User what execute the action",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.MemberName.keyword",
+                        "customLabel": "Member Name",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                            "customLabel": "Group",
+                            "subBucket": {
+                                "id": "1003",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "@timestamp",
+                                "customLabel": "When",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 101,
+            "name": "Member added to a group",
+            "description": "Member added to a group",
+            "refreshTime": null,
+            "createdDate": "2021-03-07T22:48:27.865Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

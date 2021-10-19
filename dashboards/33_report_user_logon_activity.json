@@ -1,0 +1,154 @@
+[
+    {
+        "idVisualization": 134,
+        "idDashboard": 33,
+        "order": 0,
+        "width": 1672,
+        "height": 662.8,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"1c45ab0b-9d03-52a7-4359-ec1b0ea73019\",\"rows\":12,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 134,
+            "name": "User Logon Activity",
+            "description": "User Logon Activity",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-07T13:54:21.009Z",
+            "modifiedDate": "2021-02-20T07:51:05.455Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625",
+                        "4624",
+                        "4634",
+                        "4647"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                    "value": [
+                        "None",
+                        "An Error occurred during Logon"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "Username",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.beat.hostname.keyword",
+                        "customLabel": "Computer",
+                        "subBucket": {
+                            "id": "1004",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_id",
+                            "customLabel": "Event ID",
+                            "subBucket": {
+                                "id": "1006",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_name.keyword",
+                                "customLabel": "Event Name",
+                                "subBucket": {
+                                    "id": "1007",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "@timestamp",
+                                    "customLabel": "Date",
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 33,
+            "name": "Report: User Logon Activity",
+            "description": "User Logon Activity",
+            "refreshTime": null,
+            "createdDate": "2021-02-07T13:56:16.293Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

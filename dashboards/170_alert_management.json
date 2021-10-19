@@ -1,0 +1,114 @@
+[
+    {
+        "idVisualization": 303,
+        "idDashboard": 170,
+        "order": 0,
+        "width": 1671,
+        "height": 718.43335,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"daba3c5f-ef48-7736-1793-aee18f2f902c\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 303,
+            "name": "Alert management",
+            "description": "Alert management",
+            "eventType": null,
+            "createdDate": "2021-09-14T01:53:11.677Z",
+            "modifiedDate": null,
+            "userCreated": "anniel",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "name.keyword",
+                    "customLabel": "Alert name",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "statusLabel.keyword",
+                        "customLabel": "Status",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "severityLabel.keyword",
+                            "customLabel": "Severity",
+                            "subBucket": {
+                                "id": "1003",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "@timestamp",
+                                "customLabel": "Date",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 170,
+            "name": "Alert management",
+            "description": "Alert management",
+            "refreshTime": null,
+            "createdDate": "2021-09-14T01:53:56.199Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

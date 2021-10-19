@@ -1,0 +1,143 @@
+[
+    {
+        "idVisualization": 244,
+        "idDashboard": 94,
+        "order": 0,
+        "width": 1672,
+        "height": 718.86664,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"30eb8f13-a7b0-4b84-1c3a-4fa77b63b5f7\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 244,
+            "name": "GPO: Auditing settings on object were changed.",
+            "description": "GPO: Auditing settings on object were changed.",
+            "eventType": "LOGX",
+            "createdDate": "2021-03-02T16:24:55.839Z",
+            "modifiedDate": null,
+            "userCreated": "siem",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4907"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.host.name.keyword",
+                    "customLabel": "Computer",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.ObjectName.keyword",
+                        "customLabel": "Object Name",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.ProcessName.keyword",
+                            "customLabel": "Process Name",
+                            "subBucket": {
+                                "id": "1005",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.OldSd.keyword",
+                                "customLabel": "Original Security Descriptor",
+                                "subBucket": {
+                                    "id": "1006",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "logx.wineventlog.event_data.NewSd.keyword",
+                                    "customLabel": "New Security Descriptor",
+                                    "subBucket": {
+                                        "id": "1007",
+                                        "aggregation": "TERMS",
+                                        "type": "BUCKET",
+                                        "field": "@timestamp",
+                                        "customLabel": "When",
+                                        "terms": {
+                                            "sortBy": "_count",
+                                            "asc": false,
+                                            "size": 5
+                                        }
+                                    },
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 94,
+            "name": "GPO: Auditing settings on object were changed",
+            "description": "GPO: Auditing settings on object were changed.",
+            "refreshTime": null,
+            "createdDate": "2021-03-02T16:25:37.775Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

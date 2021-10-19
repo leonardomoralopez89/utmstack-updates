@@ -1,0 +1,132 @@
+[
+    {
+        "idVisualization": 132,
+        "idDashboard": 141,
+        "order": 0,
+        "width": 1671,
+        "height": 662.4,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"ff2b790a-cf4f-05b6-24db-2e9a081f55f2\",\"rows\":12,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 132,
+            "name": "Logon Activity based on IP Address\t",
+            "description": "Logon Activity based on IP Address\t (event id 4624, 4625)",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-05T15:01:28.128Z",
+            "modifiedDate": "2021-02-20T07:46:42.666Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4624",
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.IpAddress.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.IpAddress.keyword",
+                    "customLabel": "IP Address",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                        "customLabel": "Username",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_name.keyword",
+                            "customLabel": "Action",
+                            "subBucket": {
+                                "id": "1003",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "@timestamp",
+                                "customLabel": "Date",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 141,
+            "name": "Logon Activity based on IP Address",
+            "description": "Logon Activity based on IP Address\t",
+            "refreshTime": null,
+            "createdDate": "2021-08-30T02:35:21.484Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

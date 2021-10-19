@@ -1,0 +1,166 @@
+[
+    {
+        "idVisualization": 294,
+        "idDashboard": 160,
+        "order": 0,
+        "width": 1671,
+        "height": 718.43335,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"c1d76f53-9a59-0004-08ba-f2349c754ec9\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 294,
+            "name": "An account failed, the specified user isn't allowed to sign in to the computer",
+            "description": "An account failed, the specified user isn't allowed to sign in to the computer",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2021-09-11T15:58:23.293Z",
+            "modifiedDate": "2021-02-19T21:54:45.456Z",
+            "userCreated": "anniel",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                    "value": [
+                        "None",
+                        "An Error occurred during Logon"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.SubStatus.keyword",
+                    "value": "0XC0000070"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1001",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "Username",
+                    "subBucket": {
+                        "id": "1002",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.beat.hostname.keyword",
+                        "customLabel": "Computer",
+                        "subBucket": {
+                            "id": "1003",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                            "customLabel": "Failure reason",
+                            "subBucket": {
+                                "id": "1004",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.StatusDescription.keyword",
+                                "customLabel": "Status",
+                                "subBucket": {
+                                    "id": "1007",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "logx.wineventlog.event_data.SubStatusDescription.keyword",
+                                    "customLabel": "Sub Status",
+                                    "subBucket": {
+                                        "id": "1008",
+                                        "aggregation": "TERMS",
+                                        "type": "BUCKET",
+                                        "field": "@timestamp",
+                                        "customLabel": "Date",
+                                        "terms": {
+                                            "sortBy": "_count",
+                                            "asc": false,
+                                            "size": 5
+                                        }
+                                    },
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 160,
+            "name": "An account failed, the specified user isn't allowed to sign in to the computer",
+            "description": "An account failed, the specified user isn't allowed to sign in to the computer",
+            "refreshTime": null,
+            "createdDate": "2021-09-11T15:58:59.169Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

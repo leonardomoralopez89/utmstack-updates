@@ -1,0 +1,126 @@
+[
+    {
+        "idVisualization": 305,
+        "idDashboard": 172,
+        "order": 0,
+        "width": 1671,
+        "height": 718.43335,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"a2cf78a3-432f-fb83-304c-38a6a70a7143\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 305,
+            "name": "HIDS Event logging",
+            "description": "HIDS Event logging",
+            "eventType": null,
+            "createdDate": "2021-09-14T02:32:41.149Z",
+            "modifiedDate": null,
+            "userCreated": "anniel",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 16,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.hids.rule.description.keyword",
+                    "customLabel": "Event",
+                    "subBucket": {
+                        "id": "1002",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.hids.severity_label.keyword",
+                        "customLabel": "Severity",
+                        "subBucket": {
+                            "id": "1003",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.hids.category.keyword",
+                            "customLabel": "Category",
+                            "subBucket": {
+                                "id": "1004",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.hids.agent.ip.keyword",
+                                "customLabel": "Workstation",
+                                "subBucket": {
+                                    "id": "1005",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "@timestamp",
+                                    "customLabel": "When",
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 16,
+                "pattern": "log-hids-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 172,
+            "name": "HIDS Event logging",
+            "description": "HIDS Event logging",
+            "refreshTime": null,
+            "createdDate": "2021-09-14T02:36:33.987Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

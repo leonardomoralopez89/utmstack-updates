@@ -1,0 +1,99 @@
+[
+    {
+        "idVisualization": 259,
+        "idDashboard": 122,
+        "order": 0,
+        "width": 1573,
+        "height": 623.2,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"162e2490-65bd-d082-c5ef-337c772740b4\",\"rows\":12,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 259,
+            "name": "Added members to a security-enabled local group.",
+            "description": "Added members to a security-enabled local group.",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2021-08-28T02:53:48.875Z",
+            "modifiedDate": "2021-02-27T04:53:22.221Z",
+            "userCreated": "anniel",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4732"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                    "customLabel": "The account logon name",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                        "customLabel": "Name of affected group",
+                        "subBucket": {
+                            "id": "1003",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.MemberName.keyword",
+                            "customLabel": "MemberName",
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 122,
+            "name": "Added members to a security-enabled local group",
+            "description": "Added members to a security-enabled local group.",
+            "refreshTime": null,
+            "createdDate": "2021-08-28T02:54:57.372Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

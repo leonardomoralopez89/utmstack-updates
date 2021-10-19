@@ -1,0 +1,80 @@
+[
+    {
+        "idVisualization": 311,
+        "idDashboard": 179,
+        "order": 0,
+        "width": 1565,
+        "height": 672.5,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"ce844215-c35a-f17d-dcf5-ad5366d0aa33\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 311,
+            "name": "Logs and events from systems, applications, and devices",
+            "description": "Logs and events from systems, applications, and devices from across your on-premises and cloud environments.",
+            "eventType": null,
+            "createdDate": "2021-09-24T04:22:20.119Z",
+            "modifiedDate": null,
+            "userCreated": "anniel",
+            "userModified": null,
+            "chartConfig": "\"\\\"\\\\\\\"{\\\\\\\\\\\\\\\"itemsPerPage\\\\\\\\\\\\\\\":10,\\\\\\\\\\\\\\\"showTotal\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"totalFunction\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"sum\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"exportCsv\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"dynamicPageSize\\\\\\\\\\\\\\\":true}\\\\\\\"\\\"\"",
+            "chartAction": "\"\\\"\\\\\\\"{\\\\\\\\\\\\\\\"active\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"customUrl\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"navigate\\\\\\\\\\\\\\\":null,\\\\\\\\\\\\\\\"customNavigate\\\\\\\\\\\\\\\":null}\\\\\\\"\\\"\"",
+            "systemOwner": null,
+            "idPattern": 1,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "dataType.keyword",
+                    "customLabel": "Data type",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 100
+                    }
+                }
+            },
+            "pattern": {
+                "id": 1,
+                "pattern": "log-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 179,
+            "name": "Logs and events from systems, applications, and devices",
+            "description": "Logs and events from systems, applications, and devices",
+            "refreshTime": null,
+            "createdDate": "2021-09-24T04:23:29.296Z",
+            "modifiedDate": "2021-09-24T04:23:26.348Z",
+            "userCreated": "anniel",
+            "userModified": "1",
+            "filters": null,
+            "dashboardType": null,
+            "systemOwner": null
+        }
+    }
+]

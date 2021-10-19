@@ -1,0 +1,53 @@
+{
+    "id": 1000,
+    "name": "Datasources",
+    "position": 7,
+    "isActive": true,
+    "isAction": false,
+    "icon": "DATA_MANAGEMENT.svg",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ],
+    "submenus": [
+        {
+            "id": 1001,
+            "parentId": 1000,
+            "name": "Log sources",
+            "url": "dashboard/log-sources",
+            "position": 0,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 1002,
+            "parentId": 1000,
+            "name": "Data Parsing",
+            "url": "filters/logs-filters",
+            "position": 1,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 1003,
+            "parentId": 1000,
+            "name": "Correlation rules",
+            "url": "explore/correlation-rules",
+            "position": 2,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+[
+    {
+        "idVisualization": 314,
+        "idDashboard": 182,
+        "order": 0,
+        "width": 1565,
+        "height": 672.5,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"6282a2f3-9307-99eb-ae8b-fa194971935c\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 314,
+            "name": "Alerts by labels",
+            "description": "Alerts by labels",
+            "eventType": null,
+            "createdDate": "2021-09-26T01:34:16.261Z",
+            "modifiedDate": null,
+            "userCreated": "anniel",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "systemOwner": null,
+            "idPattern": 2,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "EXIST",
+                    "field": "tags"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "name.keyword",
+                    "customLabel": "Alert name",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "severityLabel.keyword",
+                        "customLabel": "Severity",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "tags.keyword",
+                            "customLabel": "Tags",
+                            "subBucket": {
+                                "id": "1003",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "@timestamp",
+                                "customLabel": "When",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 182,
+            "name": "Alerts by labels",
+            "description": "Alerts by labels",
+            "refreshTime": null,
+            "createdDate": "2021-09-26T01:34:47.977Z",
+            "modifiedDate": "2021-09-26T01:34:58.380Z",
+            "userCreated": "anniel",
+            "userModified": "1",
+            "filters": null,
+            "dashboardType": null,
+            "systemOwner": null
+        }
+    }
+]

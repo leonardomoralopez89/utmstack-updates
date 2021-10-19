@@ -1,0 +1,49 @@
+{
+    "id": 500,
+    "name": "User logon/logoff report",
+    "description": "This reporting module provides audit information on user Logon and logoff on Local and network machines.",
+    "reports": [
+        {
+            "id": 501,
+            "name": "User local logon success",
+            "description": "This reporting provides detailed user local logon success",
+            "type": "TEMPLATE",
+            "dashboardId": 73
+        },
+        {
+            "id": 502,
+            "name": "User network logon success",
+            "description": "This reporting provides detailed user network logon success",
+            "type": "TEMPLATE",
+            "dashboardId": 74
+        },
+        {
+            "id": 503,
+            "name": "User Logon success",
+            "description": "This reporting provides detailed user Login success",
+            "type": "TEMPLATE",
+            "dashboardId": 75
+        },
+        {
+            "id": 504,
+            "name": "Recent User Logon Activity",
+            "description": "This reporting provides detailed recent User Logon Activity",
+            "type": "TEMPLATE",
+            "dashboardId": 34
+        },
+        {
+            "id": 505,
+            "name": "A logon was attempted using explicit credentials",
+            "description": "This reporting provides detailed a logon was attempted using explicit credentials",
+            "type": "TEMPLATE",
+            "dashboardId": 76
+        },
+        {
+            "id": 506,
+            "name": "Detail users logon/logoff",
+            "description": "This reporting provides detailed detail of users logon/logoff",
+            "type": "TEMPLATE",
+            "dashboardId": 77
+        }
+    ]
+}

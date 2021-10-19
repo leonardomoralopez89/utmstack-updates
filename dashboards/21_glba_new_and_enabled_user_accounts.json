@@ -1,0 +1,304 @@
+[
+    {
+        "idVisualization": 89,
+        "idDashboard": 21,
+        "order": 0,
+        "width": 494.6,
+        "height": 214.26666,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":9,\"id\":\"eda8e71b-35a0-8e6c-46bf-e33f53372950\",\"rows\":4,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 89,
+            "name": "User account creation Active Directory",
+            "description": "user account creation Active Directory",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-21T18:12:46.409Z",
+            "modifiedDate": "2021-02-27T04:35:42.118Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4720"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 21,
+            "name": "GLBA New and Enabled User Accounts",
+            "description": "",
+            "refreshTime": null,
+            "createdDate": "2020-07-22T02:43:41.722Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 90,
+        "idDashboard": 21,
+        "order": 3,
+        "width": 494.6,
+        "height": 214.26666,
+        "top": 4,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":9,\"id\":\"ca157f73-516a-8ba6-5f17-51fafc889bc6\",\"rows\":4,\"x\":0,\"y\":4}",
+        "visualization": {
+            "id": 90,
+            "name": "User account enabled Active Directory",
+            "description": "User account enabled Active Directory",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-21T18:15:13.120Z",
+            "modifiedDate": "2021-02-27T04:36:02.416Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4722"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 21,
+            "name": "GLBA New and Enabled User Accounts",
+            "description": "",
+            "refreshTime": null,
+            "createdDate": "2020-07-22T02:43:41.722Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 92,
+        "idDashboard": 21,
+        "order": 2,
+        "width": 606.73334,
+        "height": 438.53333,
+        "top": 0,
+        "left": 19,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":11,\"id\":\"d9ed99a5-0ca7-5c10-4f81-e6188776ad54\",\"rows\":8,\"x\":19,\"y\":0}",
+        "visualization": {
+            "id": 92,
+            "name": "Users account creation",
+            "description": "",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-21T18:29:58.862Z",
+            "modifiedDate": "2021-02-27T05:05:57.598Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4720"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                    "customLabel": "user creator",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.SamAccountName.keyword",
+                        "customLabel": "User created",
+                        "subBucket": {
+                            "id": "1003",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.DisplayName.keyword",
+                            "customLabel": "Display Name",
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 21,
+            "name": "GLBA New and Enabled User Accounts",
+            "description": "",
+            "refreshTime": null,
+            "createdDate": "2020-07-22T02:43:41.722Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 91,
+        "idDashboard": 21,
+        "order": 1,
+        "width": 550.6667,
+        "height": 438.53333,
+        "top": 0,
+        "left": 9,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"c69803c9-f4cd-0765-fb2a-342fe114f5dd\",\"rows\":8,\"x\":9,\"y\":0}",
+        "visualization": {
+            "id": 91,
+            "name": "Users account enabled",
+            "description": "",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-22T02:38:50.539Z",
+            "modifiedDate": "2021-02-27T04:37:56.857Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4722"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                    "customLabel": "user",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 21,
+            "name": "GLBA New and Enabled User Accounts",
+            "description": "",
+            "refreshTime": null,
+            "createdDate": "2020-07-22T02:43:41.722Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

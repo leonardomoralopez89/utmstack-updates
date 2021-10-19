@@ -1,0 +1,129 @@
+[
+    {
+        "idVisualization": 154,
+        "idDashboard": 106,
+        "order": 0,
+        "width": 1573,
+        "height": 623.2,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"a697991a-decc-179e-6296-364630cbde02\",\"rows\":12,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 154,
+            "name": "Disabled users",
+            "description": "Event ID 4725 - A user account was disabled",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-03T21:20:43.530Z",
+            "modifiedDate": "2021-02-20T08:55:30.513Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4725"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                    "customLabel": "The user who performed the action",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                        "customLabel": "Disabled user account ",
+                        "subBucket": {
+                            "id": "1004",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.source_name.keyword",
+                            "customLabel": "Source",
+                            "subBucket": {
+                                "id": "1005",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "@timestamp",
+                                "customLabel": "Date",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 106,
+            "name": "A user account was disabled",
+            "description": "A user account was disabled.",
+            "refreshTime": null,
+            "createdDate": "2021-08-19T04:39:17.676Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

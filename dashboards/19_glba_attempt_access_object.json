@@ -1,0 +1,216 @@
+[
+    {
+        "idVisualization": 82,
+        "idDashboard": 19,
+        "order": 2,
+        "width": 550.6667,
+        "height": 438.53333,
+        "top": 5,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"3d9338a7-dc0e-3443-4061-aea38da5ee31\",\"rows\":8,\"x\":0,\"y\":5}",
+        "visualization": {
+            "id": 82,
+            "name": "Top 10 users with more attempt access an object",
+            "description": "Top 10 users with more attempt access an object",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-13T12:29:40.515Z",
+            "modifiedDate": "2021-02-27T05:07:33.372Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                    "customLabel": "Username",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 19,
+            "name": "GLBA attempt access object",
+            "description": "",
+            "refreshTime": null,
+            "createdDate": "2020-07-13T14:10:06.523Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 81,
+        "idDashboard": 19,
+        "order": 0,
+        "width": 550.6667,
+        "height": 270.33334,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"e1c77c74-2f48-230f-7842-9428d7b5975e\",\"rows\":5,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 81,
+            "name": "Attempt access an object",
+            "description": "access file",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-13T11:51:53.368Z",
+            "modifiedDate": "2021-02-27T04:34:35.886Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[{\"metricId\":\"1\",\"icon\":null,\"color\":\"#b71c1c\",\"decimal\":0}]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4663"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "unsuccessful"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 19,
+            "name": "GLBA attempt access object",
+            "description": "",
+            "refreshTime": null,
+            "createdDate": "2020-07-13T14:10:06.523Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 83,
+        "idDashboard": 19,
+        "order": 1,
+        "width": 1111.3334,
+        "height": 718.86664,
+        "top": 0,
+        "left": 10,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":20,\"id\":\"c92f379d-a929-4a20-3d0c-a5032f415589\",\"rows\":13,\"x\":10,\"y\":0}",
+        "visualization": {
+            "id": 83,
+            "name": "Top 20 Object access",
+            "description": "",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-07-13T12:55:02.851Z",
+            "modifiedDate": "2021-02-27T04:33:34.118Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4663"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.ObjectName.keyword",
+                    "customLabel": "File acceses",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 20
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 19,
+            "name": "GLBA attempt access object",
+            "description": "",
+            "refreshTime": null,
+            "createdDate": "2020-07-13T14:10:06.523Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

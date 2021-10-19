@@ -1,0 +1,90 @@
+{
+    "id": 1300,
+    "name": "Office 365",
+    "position": 12,
+    "isActive": true,
+    "isAction": false,
+    "icon": "OFFICE.svg",
+    "module": "O365",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ],
+    "submenus": [
+        {
+            "id": 1301,
+            "parentId": 1300,
+            "name": "O365 Overview",
+            "url": "dashboard/render/13/o365-overview",
+            "dashboardId": 13,
+            "position": 0,
+            "isActive": false,
+            "isAction": false,
+            "module": "O365",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 1302,
+            "parentId": 1300,
+            "name": "Exchange",
+            "url": "dashboard/render/14/o365-exchange",
+            "dashboardId": 14,
+            "position": 1,
+            "isActive": false,
+            "isAction": false,
+            "module": "O365",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 1303,
+            "parentId": 1300,
+            "name": "Active Directory",
+            "url": "dashboard/render/12/o365-active-directory",
+            "dashboardId": 12,
+            "position": 2,
+            "isActive": false,
+            "isAction": false,
+            "module": "O365",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 1304,
+            "parentId": 1300,
+            "name": "SharePoint",
+            "url": "dashboard/render/10/o365-sharepoint",
+            "dashboardId": 10,
+            "position": 3,
+            "isActive": false,
+            "isAction": false,
+            "module": "O365",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 1305,
+            "parentId": 1300,
+            "name": "O365 Threat Intelligence",
+            "url": "dashboard/render/11/o365-threat-intelligence",
+            "dashboardId": 11,
+            "position": 4,
+            "isActive": false,
+            "isAction": false,
+            "module": "O365",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        }
+    ]
+}

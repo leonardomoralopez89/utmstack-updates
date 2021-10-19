@@ -1,0 +1,189 @@
+{
+    "id": 200,
+    "name": "Log Explorer",
+    "position": 3,
+    "isActive": true,
+    "isAction": false,
+    "icon": "ANALYTICS.svg",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ],
+    "submenus": [
+        {
+            "id": 201,
+            "parentId": 200,
+            "name": "Log Explorer",
+            "url": "discover/log-analyzer",
+            "position": 0,
+            "isActive": true,
+            "isAction": true,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 202,
+            "parentId": 200,
+            "name": "Windows",
+            "url": "discover/log-analyzer?patternId=8&indexPattern=log-wineventlog-*",
+            "position": 0,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 203,
+            "parentId": 200,
+            "name": "IIS Log",
+            "url": "discover/log-analyzer?patternId=18&indexPattern=log-iis-*",
+            "position": 3,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 204,
+            "parentId": 200,
+            "name": "Firewall",
+            "url": "discover/log-analyzer?patternId=14&indexPattern=log-firewall-*",
+            "position": 4,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 205,
+            "parentId": 200,
+            "name": "Login Failed",
+            "url": "discover/log-analyzer?patternId=8&indexPattern=log-wineventlog-*&logx.wineventlog.event_id=IS->4625",
+            "position": 5,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 206,
+            "parentId": 200,
+            "name": "Office365",
+            "url": "discover/log-analyzer?patternId=12&indexPattern=log-o365-*",
+            "position": 6,
+            "isActive": false,
+            "isAction": false,
+            "module": "O365",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 207,
+            "parentId": 200,
+            "name": "Threat Intelligence",
+            "url": "discover/log-analyzer?patternId=12&indexPattern=log-o365-*&logx.o365.Verdict.keyword=IS->Threat Intelligence",
+            "position": 7,
+            "isActive": false,
+            "isAction": false,
+            "module": "O365",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 208,
+            "parentId": 200,
+            "name": "Outlook",
+            "url": "discover/log-analyzer?patternId=12&indexPattern=log-o365-*&logx.o365.Workload.keyword=IS->Exchange",
+            "position": 8,
+            "isActive": false,
+            "isAction": false,
+            "module": "O365",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 209,
+            "parentId": 200,
+            "name": "Sharepoint",
+            "url": "discover/log-analyzer?patternId=12&indexPattern=log-o365-*&logx.o365.Workload.keyword=IS->SharePoint",
+            "position": 9,
+            "isActive": false,
+            "isAction": false,
+            "module": "O365",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 210,
+            "parentId": 200,
+            "name": "AWS",
+            "url": "discover/log-analyzer?patternId=10&indexPattern=log-aws-*",
+            "position": 200,
+            "isActive": false,
+            "isAction": false,
+            "module": "AWS",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 211,
+            "parentId": 200,
+            "name": "Azure",
+            "url": "discover/log-analyzer?patternId=10&indexPattern=log-azure-*",
+            "position": 1,
+            "isActive": false,
+            "isAction": false,
+            "module": "AZURE",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 212,
+            "parentId": 200,
+            "name": "DNS",
+            "url": "discover/log-analyzer?patternId=6&indexPattern=log-dns-*",
+            "position": 11,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 213,
+            "parentId": 200,
+            "name": "Sophos",
+            "url": "discover/log-analyzer?patternId=17&indexPattern=log-firewall-sophos-*",
+            "position": 1200,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        }
+    ]
+}

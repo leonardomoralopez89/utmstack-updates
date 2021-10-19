@@ -1,0 +1,150 @@
+[
+    {
+        "idVisualization": 142,
+        "idDashboard": 114,
+        "order": 0,
+        "width": 1573,
+        "height": 623.2,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"94e0f981-84a6-5e2d-3a8f-43eafe54992d\",\"rows\":12,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 142,
+            "name": "A new external device was recognized by the system.",
+            "description": "Event id 6416: A new external device was recognized by the system.",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-07T18:48:36.303Z",
+            "modifiedDate": "2021-02-27T05:16:57.323Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "6416"
+                    ]
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.SubjectUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.host.name.keyword",
+                    "customLabel": "Host name",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.SubjectUserName.keyword",
+                        "customLabel": "User logged",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.task.keyword",
+                            "customLabel": "Task",
+                            "subBucket": {
+                                "id": "1003",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.DeviceDescription.keyword",
+                                "customLabel": "Device description",
+                                "subBucket": {
+                                    "id": "1004",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "logx.wineventlog.event_data.VendorIds.keyword",
+                                    "customLabel": "Vendor ID",
+                                    "subBucket": {
+                                        "id": "1005",
+                                        "aggregation": "TERMS",
+                                        "type": "BUCKET",
+                                        "field": "@timestamp",
+                                        "customLabel": "Date",
+                                        "terms": {
+                                            "sortBy": "_count",
+                                            "asc": false,
+                                            "size": 5
+                                        }
+                                    },
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 114,
+            "name": "A new external device was recognized by the system",
+            "description": "A new external device was recognized by the system.",
+            "refreshTime": null,
+            "createdDate": "2021-08-20T02:32:03.638Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

@@ -1,0 +1,56 @@
+{
+    "id": 300,
+    "name": "User logon report",
+    "description": "The most critical auditing requirement of an organization is to monitor information related to user login, whether it be for login failures, user login activity, etc.",
+    "reports": [
+        {
+            "id": 301,
+            "name": "Logon failures based on users",
+            "description": "This report is based on specific actions, data on Logon failures, logon failures based on users, etc.",
+            "type": "TEMPLATE",
+            "dashboardId": 51
+        },
+        {
+            "id": 302,
+            "name": "Failures due to Bad User Name",
+            "description": "This report is based on specific actions, with data on Logon failures, failures due to Bad User Name.",
+            "type": "TEMPLATE",
+            "dashboardId": 56
+        },
+        {
+            "id": 303,
+            "name": "Failures due to Bad Password",
+            "description": "This report is based on specific actions, with data on Logon failures, failures due to Bad Password.",
+            "type": "TEMPLATE",
+            "dashboardId": 52
+        },
+        {
+            "id": 304,
+            "name": "Logon Activity based on IP Address",
+            "description": "This report is based on the login activity according to the computer's IP address where the action was executed.",
+            "type": "TEMPLATE",
+            "dashboardId": 31
+        },
+        {
+            "id": 305,
+            "name": "Users logged into multiple computers",
+            "description": "This report is based on the login activity according to Users logged into multiple computers.",
+            "type": "TEMPLATE",
+            "dashboardId": 32
+        },
+        {
+            "id": 306,
+            "name": "User Logon Activity",
+            "description": "This report is based on the user's login activity per date.",
+            "type": "TEMPLATE",
+            "dashboardId": 33
+        },
+        {
+            "id": 307,
+            "name": "Recent User Logon Activity",
+            "description": "This report is based on the user's login activity in the last 15 minutes.",
+            "type": "TEMPLATE",
+            "dashboardId": 34
+        }
+    ]
+}

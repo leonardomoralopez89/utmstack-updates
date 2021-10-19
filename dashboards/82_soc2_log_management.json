@@ -1,0 +1,95 @@
+[
+    {
+        "idVisualization": 228,
+        "idDashboard": 82,
+        "order": 4,
+        "width": 827,
+        "height": 548,
+        "top": 13,
+        "left": 15,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":15,\"id\":\"5677af01-ebe9-3a2a-76fe-d9b831adb04b\",\"rows\":10,\"x\":15,\"y\":13}",
+        "visualization": {
+            "id": 228,
+            "name": "Windows LOG",
+            "description": "Windows LOG",
+            "eventType": "LOGX",
+            "createdDate": "2021-02-19T21:13:49.989Z",
+            "modifiedDate": "2021-02-27T05:13:09.952Z",
+            "userCreated": "siem",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.type.keyword",
+                    "value": "wineventlog"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-1H",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.message.keyword",
+                    "customLabel": "Windows LOG",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "@timestamp",
+                        "customLabel": "Date",
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 82,
+            "name": "SOC 2: Log management",
+            "description": "SOC 2: Log management",
+            "refreshTime": null,
+            "createdDate": "2021-02-19T21:17:19.531Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

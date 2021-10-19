@@ -1,0 +1,785 @@
+[
+    {
+        "idVisualization": 53,
+        "idDashboard": 13,
+        "order": 6,
+        "width": 548,
+        "height": 269,
+        "top": 4,
+        "left": 20,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"21d95999-84f1-3477-973e-e8f0b6179a55\",\"rows\":5,\"x\":20,\"y\":4}",
+        "visualization": {
+            "id": 53,
+            "name": "O365 Top Logs by Source",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-05-03T20:27:12.551Z",
+            "modifiedDate": "2021-07-23T16:24:08.108Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "{\"pieType\":\"pie\",\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"\",\"extraCssText\":\"z-index:100\",\"data\":[\"SharePoint\",\"AzureActiveDirectory\",\"CRM\",\"OneDrive\",\"Exchange\",\"MicrosoftTeams\",\"ThreatIntelligence\",\"SecurityComplianceCenter\",\"MicrosoftStream\",\"MicrosoftForms\"]},\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":false,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":false,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":false}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"grid\":{\"top\":0,\"right\":0,\"left\":0,\"bottom\":0}}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "PIE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "O365 Logs by Source"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.Workload.keyword",
+                    "customLabel": "Log Source",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": "O365",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 13,
+            "name": "O365 Overview",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-08-16T12:39:36.859Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 61,
+        "idDashboard": 13,
+        "order": 7,
+        "width": 436.4,
+        "height": 492.2,
+        "top": 9,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"c06413ff-52f8-59dc-2937-8655b12c6053\",\"rows\":9,\"x\":0,\"y\":9}",
+        "visualization": {
+            "id": 61,
+            "name": "O365 Top 5 Attackers",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-07T22:36:25.869Z",
+            "modifiedDate": "2021-07-23T16:24:08.342Z",
+            "userCreated": "rick",
+            "userModified": "admin",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.o365.Workload",
+                    "value": "ThreatIntelligence"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.SenderIp.keyword",
+                    "customLabel": "Sender",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": "O365",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 13,
+            "name": "O365 Overview",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-08-16T12:39:36.859Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 58,
+        "idDashboard": 13,
+        "order": 1,
+        "width": 380.6,
+        "height": 213.2,
+        "top": 0,
+        "left": 8,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":7,\"id\":\"10592d1d-e913-6c2b-1a22-db866bfdc723\",\"rows\":4,\"x\":8,\"y\":0}",
+        "visualization": {
+            "id": 58,
+            "name": "O365 Exchange Top Phish Target",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-08T15:05:31.107Z",
+            "modifiedDate": "2021-07-23T16:24:08.155Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "{\"pieType\":\"donut\",\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"soc@alivi.com\",\"gabriel.rojas@alivi.com\",\"magdiel.rodriguez@alivi.com\",\"ed.geller@footandanklenetwork.com\",\"maikel.abreu@alivi.com\"]},\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":false,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":false,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":false}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"grid\":{\"top\":0,\"right\":0,\"left\":\"0\",\"bottom\":0}}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "PIE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.o365.Verdict.keyword",
+                    "value": "Phish"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.Recipients.keyword",
+                    "customLabel": "User",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": "O365",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 13,
+            "name": "O365 Overview",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-08-16T12:39:36.859Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 60,
+        "idDashboard": 13,
+        "order": 4,
+        "width": 492.2,
+        "height": 269,
+        "top": 4,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":9,\"id\":\"b4279a31-608a-7463-eb15-d52818adb689\",\"rows\":5,\"x\":0,\"y\":4}",
+        "visualization": {
+            "id": 60,
+            "name": "O365 Alerts by Category",
+            "description": "",
+            "eventType": "alert-*",
+            "createdDate": "2020-06-07T22:04:19.279Z",
+            "modifiedDate": "2021-07-23T16:24:08.319Z",
+            "userCreated": "rick",
+            "userModified": "admin",
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"Users monitoring\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"Count\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":\"1\",\"name\":\"\",\"type\":\"bar\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"Users monitoring\",\"type\":\"bar\",\"data\":[{\"value\":89,\"name\":\"Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "VERTICAL_BAR_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "dataType.keyword",
+                    "value": "o365"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "category.keyword",
+                    "customLabel": "Alerts",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 13,
+            "name": "O365 Overview",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-08-16T12:39:36.859Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 55,
+        "idDashboard": 13,
+        "order": 5,
+        "width": 603.8,
+        "height": 269,
+        "top": 4,
+        "left": 9,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":11,\"id\":\"0412622a-25f7-916a-4d3a-103505a762b4\",\"rows\":5,\"x\":9,\"y\":4}",
+        "visualization": {
+            "id": 55,
+            "name": "O365 AD Successful Login Location",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-07T23:52:41.726Z",
+            "modifiedDate": "2021-07-23T16:24:08.182Z",
+            "userCreated": "rick",
+            "userModified": "admin",
+            "chartConfig": "{\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"padding\":null,\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"visualMap\":{\"type\":\"continuous\",\"calculable\":true,\"realtime\":true,\"inRange\":{\"color\":[\"#f5994e\",\"#c05050\"]},\"orient\":\"horizontal\",\"left\":\"center\",\"top\":\"bottom\",\"bottom\":\"15%\"},\"leaflet\":{\"center\":[0,0],\"zoom\":1,\"roam\":true,\"layerControl\":{\"position\":\"topleft\"},\"tiles\":[{\"label\":\"Open Street Map\",\"urlTemplate\":\"https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png\",\"options\":{\"attribution\":\"\"}}],\"lat\":0,\"lon\":0},\"series\":null,\"top\":10}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "COORDINATE_MAP_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.o365.Operation.keyword",
+                    "value": "UserLoggedIn"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.ClientIP.keyword",
+                    "customLabel": "Location",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 100
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": "O365",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 13,
+            "name": "O365 Overview",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-08-16T12:39:36.859Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 49,
+        "idDashboard": 13,
+        "order": 3,
+        "width": 436.4,
+        "height": 213.2,
+        "top": 0,
+        "left": 22,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"cb5129fa-81d9-70a2-d380-0a944e02cf46\",\"rows\":4,\"x\":22,\"y\":0}",
+        "visualization": {
+            "id": 49,
+            "name": "O365 SharePoint File Access",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-08T14:54:13.057Z",
+            "modifiedDate": "2021-07-23T16:24:08.258Z",
+            "userCreated": "rick",
+            "userModified": "admin",
+            "chartConfig": "{\"pieType\":\"donut\",\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"FileAccessed\",\"PageViewed\",\"FilePreviewed\",\"ListViewed\"]},\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":false,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":false,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":false}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"grid\":{}}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "PIE_CHART",
+            "filterType": [
+                {
+                    "operator": "EXIST",
+                    "field": "logx.o365.Operation.keyword"
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.o365.Workload.keyword",
+                    "value": "SharePoint"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.Operation.keyword",
+                    "customLabel": "File Access operation",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": "O365",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 13,
+            "name": "O365 Overview",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-08-16T12:39:36.859Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 59,
+        "idDashboard": 13,
+        "order": 0,
+        "width": 436.4,
+        "height": 213.2,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"608032aa-b6c3-8dcb-7ca0-05e1c46e228f\",\"rows\":4,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 59,
+            "name": "O365 AD Failed Login",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-08T14:58:46.484Z",
+            "modifiedDate": "2021-07-23T16:24:08.425Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "{\"pieType\":\"donut\",\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"Help@hcasonline.com\",\"helpdesk@alivi.com\",\"ssil@alivi.com\",\"dhig@alivi.com\",\"darr@alivi.com\"]},\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":false,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":false,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":false}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"grid\":{\"top\":0,\"right\":0,\"left\":0,\"bottom\":0}}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "PIE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.o365.Operation.keyword",
+                    "value": "UserLoginFailed"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.UserId.keyword",
+                    "customLabel": "User",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": "O365",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 13,
+            "name": "O365 Overview",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-08-16T12:39:36.859Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 62,
+        "idDashboard": 13,
+        "order": 8,
+        "width": 436.4,
+        "height": 492.2,
+        "top": 9,
+        "left": 8,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"e145f90c-9b55-deaf-fc72-1ce8a92541fe\",\"rows\":9,\"x\":8,\"y\":9}",
+        "visualization": {
+            "id": 62,
+            "name": "O365 Threat Intel Detection Method",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-07T22:44:31.639Z",
+            "modifiedDate": "2021-07-23T16:24:08.443Z",
+            "userCreated": "rick",
+            "userModified": "admin",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.DetectionMethod.keyword",
+                    "customLabel": "Detection",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": "O365",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 13,
+            "name": "O365 Overview",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-08-16T12:39:36.859Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 66,
+        "idDashboard": 13,
+        "order": 2,
+        "width": 380.6,
+        "height": 213.2,
+        "top": 0,
+        "left": 15,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":7,\"id\":\"4b544912-182e-55dc-b171-b13f6df3e691\",\"rows\":4,\"x\":15,\"y\":0}",
+        "visualization": {
+            "id": 66,
+            "name": "O365 Top 5 Exchange Operations",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-07T21:25:41.192Z",
+            "modifiedDate": "2021-07-23T16:24:08.353Z",
+            "userCreated": "rick",
+            "userModified": "rick",
+            "chartConfig": "{\"pieType\":\"donut\",\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"\",\"extraCssText\":\"z-index:100\",\"data\":[\"MailItemsAccessed\",\"MoveToDeletedItems\",\"SoftDelete\",\"Create\",\"HardDelete\",\"Set-User\",\"SupervisoryReviewOLAudit\",\"Set-Mailbox\",\"ModifyFolderPermissions\",\"Set-TransportRule\"]},\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":false,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":false,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":false}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"grid\":{\"top\":0,\"right\":0,\"left\":0,\"bottom\":0}}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "PIE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.o365.Workload.keyword",
+                    "value": "Exchange"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.Operation.keyword",
+                    "customLabel": "Operations",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": "O365",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 13,
+            "name": "O365 Overview",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-08-16T12:39:36.859Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 63,
+        "idDashboard": 13,
+        "order": 10,
+        "width": 380.6,
+        "height": 492.2,
+        "top": 9,
+        "left": 23,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":7,\"id\":\"701fbc69-4838-d43c-1e12-aba0aeaaee86\",\"rows\":9,\"x\":23,\"y\":9}",
+        "visualization": {
+            "id": 63,
+            "name": "O365 Top5 Detection Type",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-07T22:50:52.746Z",
+            "modifiedDate": "2021-07-23T16:24:08.458Z",
+            "userCreated": "rick",
+            "userModified": "admin",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.DetectionType.keyword",
+                    "customLabel": "Detection Type",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": "O365",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 13,
+            "name": "O365 Overview",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-08-16T12:39:36.859Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 64,
+        "idDashboard": 13,
+        "order": 9,
+        "width": 380.6,
+        "height": 492.2,
+        "top": 9,
+        "left": 16,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":7,\"id\":\"5ee50469-51cb-aef2-ae68-c41e5fee51ef\",\"rows\":9,\"x\":16,\"y\":9}",
+        "visualization": {
+            "id": 64,
+            "name": "O365 Top 5 Targets",
+            "description": "",
+            "eventType": "log-o365-*",
+            "createdDate": "2020-06-07T22:22:04.639Z",
+            "modifiedDate": "2021-07-23T16:24:08.414Z",
+            "userCreated": "rick",
+            "userModified": "admin",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 12,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Attacks count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.o365.Recipients.keyword",
+                    "customLabel": "Targets",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 12,
+                "pattern": "log-o365-*",
+                "patternModule": "O365",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 13,
+            "name": "O365 Overview",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-08-16T12:39:36.859Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

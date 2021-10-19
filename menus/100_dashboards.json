@@ -1,0 +1,153 @@
+{
+    "id": 100,
+    "name": "Dashboards Changed",
+    "position": 0,
+    "isActive": true,
+    "isAction": false,
+    "icon": "WEBSITE_ANALYSIS.svg",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ],
+    "submenus": [
+        {
+            "id": 101,
+            "parentId": 100,
+            "name": "New Dashboard",
+            "url": "creator/dashboard/builder",
+            "position": 0,
+            "isActive": true,
+            "isAction": true,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 102,
+            "parentId": 100,
+            "name": "New Visualization",
+            "url": "creator/visualization/list?onInitAction=showCreateModal",
+            "position": 1,
+            "isActive": true,
+            "isAction": true,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 103,
+            "parentId": 100,
+            "name": "Overview",
+            "url": "dashboard/overview",
+            "position": 0,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 104,
+            "parentId": 100,
+            "name": "Vulnerabilities",
+            "url": "/vulnerability-scanner/overview",
+            "position": 2,
+            "isActive": false,
+            "isAction": false,
+            "module": "VULNERABILITIES",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 105,
+            "parentId": 100,
+            "name": "AD Auditor",
+            "url": "active-directory/overview",
+            "position": 1,
+            "isActive": false,
+            "isAction": false,
+            "module": "AD_AUDIT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 106,
+            "parentId": 100,
+            "name": "Azure Activity",
+            "url": "dashboard/render/5/azure-activity",
+            "dashboardId": 5,
+            "position": 3,
+            "isActive": false,
+            "isAction": false,
+            "module": "AZURE",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 107,
+            "parentId": 100,
+            "name": "Threat Activity",
+            "url": "dashboard/render/7/threat-activity",
+            "dashboardId": 7,
+            "position": 9,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 108,
+            "parentId": 100,
+            "name": "Network Intrusion Detection",
+            "url": "dashboard/render/8/network-intrusion-detection",
+            "dashboardId": 8,
+            "position": 5,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 109,
+            "parentId": 100,
+            "name": "Host Intrusion Detection",
+            "url": "dashboard/render/6/host-intrusion-detection",
+            "dashboardId": 6,
+            "position": 6,
+            "isActive": true,
+            "isAction": false,
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 110,
+            "parentId": 100,
+            "name": "AWS Activity",
+            "url": "dashboard/render/28/aws-activity",
+            "dashboardId": 28,
+            "position": 7,
+            "isActive": false,
+            "isAction": false,
+            "module": "AWS",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        }
+    ]
+}

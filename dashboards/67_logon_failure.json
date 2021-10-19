@@ -1,0 +1,748 @@
+[
+    {
+        "idVisualization": 195,
+        "idDashboard": 67,
+        "order": 3,
+        "width": 380.6,
+        "height": 213.2,
+        "top": 0,
+        "left": 23,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":7,\"id\":\"ec17e425-8c7f-760c-8475-d79e3acd5e1c\",\"rows\":4,\"x\":23,\"y\":0}",
+        "visualization": {
+            "id": 195,
+            "name": "Other type connection",
+            "description": "other type connection, logon failure last 24 hours",
+            "eventType": "LOGX",
+            "createdDate": "2021-01-25T04:02:38.950Z",
+            "modifiedDate": "2021-01-25T03:55:49.764Z",
+            "userCreated": "admin",
+            "userModified": "admin",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.LogonType.keyword",
+                    "value": [
+                        "3",
+                        "2"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 67,
+            "name": "Logon Failure",
+            "description": "Logon Failure",
+            "refreshTime": null,
+            "createdDate": "2021-01-25T04:22:09.440Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 199,
+        "idDashboard": 67,
+        "order": 6,
+        "width": 603.8,
+        "height": 492.2,
+        "top": 4,
+        "left": 19,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":11,\"id\":\"9f5b0b9b-7c38-1090-46d6-1327c6f06cbc\",\"rows\":9,\"x\":19,\"y\":4}",
+        "visualization": {
+            "id": 199,
+            "name": "Failure reason last 24 hours",
+            "description": "Failure reason last 24 hours",
+            "eventType": "LOGX",
+            "createdDate": "2021-01-25T05:08:08.857Z",
+            "modifiedDate": "2021-02-20T22:06:43.209Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\"},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"showTitle\":null,\"left\":\"right\",\"top\":\"top\",\"width\":null,\"height\":null,\"iconStyle\":null},\"yAxis\":{\"name\":null,\"type\":\"category\",\"data\":null,\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"name\":null,\"type\":\"value\",\"data\":null,\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{\"top\":null,\"right\":null,\"left\":null,\"bottom\":null},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"padding\":null,\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"width\":null,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"},\"left\":null,\"top\":null,\"right\":null,\"bottom\":null},\"seriesOption\":[{\"metricId\":\"1\",\"name\":\"\",\"type\":\"bar\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"itemStyle\":null}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "HORIZONTAL_BAR_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                    "customLabel": "Failure reason",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 67,
+            "name": "Logon Failure",
+            "description": "Logon Failure",
+            "refreshTime": null,
+            "createdDate": "2021-01-25T04:22:09.440Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 192,
+        "idDashboard": 67,
+        "order": 0,
+        "width": 436.4,
+        "height": 213.2,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"0eefed96-1c67-e4f4-b80f-f7970962b06e\",\"rows\":4,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 192,
+            "name": "Total logon failure last 24 hours",
+            "description": "Total logon failure last 24 hours",
+            "eventType": "LOGX",
+            "createdDate": "2021-01-25T03:56:35.650Z",
+            "modifiedDate": "2021-02-20T22:45:06.317Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 67,
+            "name": "Logon Failure",
+            "description": "Logon Failure",
+            "refreshTime": null,
+            "createdDate": "2021-01-25T04:22:09.440Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 193,
+        "idDashboard": 67,
+        "order": 1,
+        "width": 436.4,
+        "height": 213.2,
+        "top": 0,
+        "left": 8,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":8,\"id\":\"0ddf1172-ba2c-65da-b70c-a886b52f8e9e\",\"rows\":4,\"x\":8,\"y\":0}",
+        "visualization": {
+            "id": 193,
+            "name": "Network logon failure last 24 hours",
+            "description": "Network logon failure last 24 hours",
+            "eventType": "LOGX",
+            "createdDate": "2021-01-25T03:58:39.979Z",
+            "modifiedDate": "2021-02-20T22:45:53.330Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.LogonType.keyword",
+                    "value": "3"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 67,
+            "name": "Logon Failure",
+            "description": "Logon Failure",
+            "refreshTime": null,
+            "createdDate": "2021-01-25T04:22:09.440Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 194,
+        "idDashboard": 67,
+        "order": 2,
+        "width": 380.6,
+        "height": 213.2,
+        "top": 0,
+        "left": 16,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":7,\"id\":\"3139108c-337a-e59a-b289-5d9e424bf537\",\"rows\":4,\"x\":16,\"y\":0}",
+        "visualization": {
+            "id": 194,
+            "name": "Local logon failure last 24 hours",
+            "description": "Local logon failure last 24 hours",
+            "eventType": "LOGX",
+            "createdDate": "2021-01-25T03:59:35.839Z",
+            "modifiedDate": "2021-02-20T22:46:29.776Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_data.LogonType.keyword",
+                    "value": "2"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 67,
+            "name": "Logon Failure",
+            "description": "Logon Failure",
+            "refreshTime": null,
+            "createdDate": "2021-01-25T04:22:09.440Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 196,
+        "idDashboard": 67,
+        "order": 4,
+        "width": 492.2,
+        "height": 492.2,
+        "top": 4,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":9,\"id\":\"a522792c-3343-ef1e-d5c3-2ed6d3ee63ee\",\"rows\":9,\"x\":0,\"y\":4}",
+        "visualization": {
+            "id": 196,
+            "name": "Top 10 logon failure by user last 24 hours",
+            "description": "Top 10 logon failure by user last 24 hours",
+            "eventType": "LOGX",
+            "createdDate": "2021-01-25T04:08:38Z",
+            "modifiedDate": "2021-02-20T07:21:41.713Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "Username",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 67,
+            "name": "Logon Failure",
+            "description": "Logon Failure",
+            "refreshTime": null,
+            "createdDate": "2021-01-25T04:22:09.440Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 198,
+        "idDashboard": 67,
+        "order": 5,
+        "width": 548,
+        "height": 492.2,
+        "top": 4,
+        "left": 9,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"b68321e8-4fe9-fa7a-d2db-9e821e05ef0e\",\"rows\":9,\"x\":9,\"y\":4}",
+        "visualization": {
+            "id": 198,
+            "name": "Recently logon failure",
+            "description": "Recently logon failure, last 15 minute",
+            "eventType": "LOGX",
+            "createdDate": "2021-01-25T05:04:35.693Z",
+            "modifiedDate": "2021-02-20T21:45:25.623Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"pieType\":\"pie\",\"legend\":{\"show\":true,\"type\":\"plain\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[]},\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":false,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":false,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":false}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"grid\":{}}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "PIE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-15m",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "Username",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 67,
+            "name": "Logon Failure",
+            "description": "Logon Failure",
+            "refreshTime": null,
+            "createdDate": "2021-01-25T04:22:09.440Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 200,
+        "idDashboard": 67,
+        "order": 7,
+        "width": 1664,
+        "height": 548,
+        "top": 13,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"ab75eafe-1750-04e8-91f6-2b03ca5d1717\",\"rows\":10,\"x\":0,\"y\":13}",
+        "visualization": {
+            "id": 200,
+            "name": "Detail user logon failure last 24 hour",
+            "description": "Detail user logon failure last 24 hour",
+            "eventType": "LOGX",
+            "createdDate": "2020-12-15T05:11:28.717Z",
+            "modifiedDate": "2021-02-20T21:28:02.308Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-24H",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                    "value": [
+                        "None",
+                        "An Error occurred during Logon"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1001",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "Username",
+                    "subBucket": {
+                        "id": "1002",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.event_data.WorkstationName.keyword",
+                        "customLabel": "Computer",
+                        "subBucket": {
+                            "id": "1003",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                            "customLabel": "Failure reason",
+                            "subBucket": {
+                                "id": "1007",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.SubStatusDescription.keyword",
+                                "customLabel": "Detail",
+                                "subBucket": {
+                                    "id": "1008",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "@timestamp",
+                                    "customLabel": "Date",
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 67,
+            "name": "Logon Failure",
+            "description": "Logon Failure",
+            "refreshTime": null,
+            "createdDate": "2021-01-25T04:22:09.440Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

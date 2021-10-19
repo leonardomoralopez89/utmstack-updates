@@ -1,0 +1,109 @@
+[
+    {
+        "idVisualization": 318,
+        "idDashboard": 188,
+        "order": 0,
+        "width": 1565,
+        "height": 672.5,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"f6bb94b5-81de-94ef-cd57-6aed2703bbd8\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 318,
+            "name": "A scheduled task was created",
+            "description": "A scheduled task was created",
+            "eventType": null,
+            "createdDate": "2021-09-24T03:08:34.305Z",
+            "modifiedDate": null,
+            "userCreated": "anniel",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "systemOwner": null,
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4698"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_name.keyword",
+                    "customLabel": "Event name",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.message.keyword",
+                        "customLabel": "Message",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "@timestamp",
+                            "customLabel": "When",
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 188,
+            "name": "A scheduled task was created",
+            "description": "A scheduled task was created",
+            "refreshTime": null,
+            "createdDate": "2021-09-24T03:09:01.584Z",
+            "modifiedDate": "2021-09-24T03:09:05.480Z",
+            "userCreated": "anniel",
+            "userModified": "1",
+            "filters": null,
+            "dashboardType": null,
+            "systemOwner": null
+        }
+    }
+]

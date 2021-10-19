@@ -1,0 +1,85 @@
+{
+    "id": 1100,
+    "name": "File Classification",
+    "position": 11,
+    "isActive": false,
+    "isAction": false,
+    "icon": "FILE_INTEGRITY.svg",
+    "module": "FILE_INTEGRITY",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ],
+    "submenus": [
+        {
+            "id": 1101,
+            "parentId": 1100,
+            "name": "Event Explorer",
+            "url": "data/file/view?filterBy=ALL_EVENTS",
+            "position": 0,
+            "isActive": false,
+            "isAction": true,
+            "module": "FILE_INTEGRITY",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 1102,
+            "parentId": 1100,
+            "name": "Created Files",
+            "url": "data/file/view?filterBy=FILES_CREATED",
+            "position": 0,
+            "isActive": false,
+            "isAction": false,
+            "module": "FILE_INTEGRITY",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 1103,
+            "parentId": 1100,
+            "name": "Deleted Files",
+            "url": "data/file/view?filterBy=FILES_DELETED",
+            "position": 1,
+            "isActive": false,
+            "isAction": false,
+            "module": "FILE_INTEGRITY",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 1104,
+            "parentId": 1100,
+            "name": "Permission Change",
+            "url": "data/file/view?filterBy=PERMISSION_CHANGE",
+            "position": 2,
+            "isActive": false,
+            "isAction": false,
+            "module": "FILE_INTEGRITY",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 1105,
+            "parentId": 1100,
+            "name": "Shared Files",
+            "url": "data/file/view?filterBy=FILES_SHARED",
+            "position": 3,
+            "isActive": false,
+            "isAction": false,
+            "module": "FILE_INTEGRITY",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        }
+    ]
+}

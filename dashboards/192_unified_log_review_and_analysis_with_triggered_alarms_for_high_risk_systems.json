@@ -1,0 +1,104 @@
+[
+    {
+        "idVisualization": 322,
+        "idDashboard": 192,
+        "order": 0,
+        "width": 1565,
+        "height": 672.5,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"d336bc86-c905-1736-1962-31cc58b40fc9\",\"rows\":13,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 322,
+            "name": "Unified log review and analysis, with triggered alarms for high risk systems.",
+            "description": "Unified log review and analysis, with triggered alarms for high risk systems.",
+            "eventType": null,
+            "createdDate": "2021-09-24T03:56:52.566Z",
+            "modifiedDate": null,
+            "userCreated": "anniel",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "systemOwner": null,
+            "idPattern": 2,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "dataSource.keyword",
+                    "customLabel": "Data source",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "dataType.keyword",
+                        "customLabel": "Data type",
+                        "subBucket": {
+                            "id": "1002",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "@timestamp",
+                            "customLabel": "When",
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 192,
+            "name": "Unified log review and analysis, with triggered alarms for high risk systems",
+            "description": "Unified log review and analysis, with triggered alarms for high risk systems.",
+            "refreshTime": null,
+            "createdDate": "2021-09-24T03:57:14.625Z",
+            "modifiedDate": "2021-09-24T03:57:18.703Z",
+            "userCreated": "anniel",
+            "userModified": "1",
+            "filters": null,
+            "dashboardType": null,
+            "systemOwner": null
+        }
+    }
+]

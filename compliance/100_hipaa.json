@@ -1,0 +1,820 @@
+[
+    {
+        "configSolution": "§164.308(a)(1)(ii)(D) - Information System Activity Review (Local logon failure)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": true,
+        "dashboardId": 3,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(1)(ii)(D) - Information System Activity Review (Logon success on Local Computers and Network)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": true,
+        "dashboardId": 4,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(1)(ii)(D) - Information System Activity Review (Logon failure)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": true,
+        "dashboardId": 2,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(1)(ii)(A) - Risk Analysis (Office365 Threat Intelligence Events)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": true,
+        "dashboardId": 11,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(5)(ii)(C) - Log-in Monitoring (logon failures to systems, security devices, cloud environments, and more)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 103,
+        "configReportEditable": true,
+        "dashboardId": 2,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 103,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(5) - Security Awareness and Training",
+            "standardSectionDescription": "Security awareness and training. Implement a security awareness and training program for all members of its workforce (including management). ",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(4)(ii)(C) - Access Establishment and Modification (logon success)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 104,
+        "configReportEditable": true,
+        "dashboardId": 60,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 104,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(4) - Information Access Management",
+            "standardSectionDescription": "Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(3)(ii)(C) - Termination Procedures (login failures)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 105,
+        "configReportEditable": true,
+        "dashboardId": 2,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 105,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(3) - Workforce Security ",
+            "standardSectionDescription": "Workforce security. Implement policies and procedures to ensure that all members of its workforce have appropriate access to electronic protected health information, as provided under paragraph (a)(4) of this section, and to prevent those workforce members who do not have access under paragraph (a)(4) of this section from obtaining access to electronic protected health information.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(3)(ii)(C) - Termination Procedures (login successes)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 105,
+        "configReportEditable": true,
+        "dashboardId": 60,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 105,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(3) - Workforce Security ",
+            "standardSectionDescription": "Workforce security. Implement policies and procedures to ensure that all members of its workforce have appropriate access to electronic protected health information, as provided under paragraph (a)(4) of this section, and to prevent those workforce members who do not have access under paragraph (a)(4) of this section from obtaining access to electronic protected health information.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(1)(ii)(A) - Risk Analysis (Monitors access to and attempt to modify system and application binaries, configuration files, log files.)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": true,
+        "dashboardId": 1,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.312(b) - Audit Controls (Monitors for changes to Office 365 policies including Data Leakage Protection (DLP), information management, and more.)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 102,
+        "configReportEditable": true,
+        "dashboardId": 13,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 102,
+            "standardId": 100,
+            "standardSectionName": " §164.312(b) - Audit Controls ",
+            "standardSectionDescription": "Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.312(b) - Audit Controls (Unified log collection, review and analysis, with triggered alarms for high risk systems.)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 102,
+        "configReportEditable": true,
+        "dashboardId": 15,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 102,
+            "standardId": 100,
+            "standardSectionName": " §164.312(b) - Audit Controls ",
+            "standardSectionDescription": "Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(5)(ii)(C) - Log-in Monitoring (logon success to systems, security devices, cloud environments, and more)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 103,
+        "configReportEditable": true,
+        "dashboardId": 60,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 103,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(5) - Security Awareness and Training",
+            "standardSectionDescription": "Security awareness and training. Implement a security awareness and training program for all members of its workforce (including management). ",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(4)(ii)(C) - Access Establishment and Modification (logon failures)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 104,
+        "configReportEditable": true,
+        "dashboardId": 2,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 104,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(4) - Information Access Management",
+            "standardSectionDescription": "Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(4)(ii)(C) - Access Establishment and Modification (All user account creation and modification activities)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 104,
+        "configReportEditable": true,
+        "dashboardId": 62,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 104,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(4) - Information Access Management",
+            "standardSectionDescription": "Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.312(c)(1) - Integrity (Monitors for changes to Office 365 policies including Data Leakage Protection (DLP), information management, and more.)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 106,
+        "configReportEditable": true,
+        "dashboardId": 13,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 106,
+            "standardId": 100,
+            "standardSectionName": "§164.312(c)(1) - Integrity",
+            "standardSectionDescription": "Implement policies and procedures to protect electronic protected health information from improper alteration or destruction.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.312(e)(2)(i) - Integrity Controls (Monitors for changes to Office 365 policies including Data Leakage Protection (DLP), information management, and more.)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 107,
+        "configReportEditable": true,
+        "dashboardId": 13,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 107,
+            "standardId": 100,
+            "standardSectionName": "§164.312(e)(1) - Transmission Security ",
+            "standardSectionDescription": "Implement technical security measures to guard against unauthorized access to electronic protected health information that is being transmitted over an electronic communications network.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Ensure the confidentiality, integrity, and availability of all electronic protected health information the covered entity or business associate creates, receives, maintains, or transmits.",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 109,
+        "configReportEditable": true,
+        "dashboardId": 18,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 109,
+            "standardId": 100,
+            "standardSectionName": "§ 164.306 Security standards: General rules.",
+            "standardSectionDescription": "Ensure the confidentiality, integrity, and availability of all electronic protected health information the covered entity or business associate creates, receives, maintains, or transmits<br> Protect against any reasonably anticipated threats or hazards to the security or integrity of such information.<br> Protect against any reasonably anticipated uses or disclosures of such information that are not permitted or required under subpart E of this part.<br> Ensure compliance with this subpart by its workforce",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(1)(ii)(D) - Information System Activity Review (Logon success)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": true,
+        "dashboardId": 60,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(1)(ii)(D) - Information System Activity Review (Privilege escalation attempts)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": true,
+        "dashboardId": 61,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(5)(ii)(D) - Password Management (Reset and changes password)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 103,
+        "configReportEditable": true,
+        "dashboardId": 64,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 103,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(5) - Security Awareness and Training",
+            "standardSectionDescription": "Security awareness and training. Implement a security awareness and training program for all members of its workforce (including management). ",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(4)(ii)(C) - Access Establishment and Modification (Privilege escalation attempts)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 4,
+        "configReportEditable": true,
+        "dashboardId": 61,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 4,
+            "standardId": 1,
+            "standardSectionName": "§164.308(a)(4) - Information Access Management",
+            "standardSectionDescription": "Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 1,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(3)(ii)(A) - Authorization and/or Supervision (access attempts to critical files and data)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 105,
+        "configReportEditable": true,
+        "dashboardId": 63,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 105,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(3) - Workforce Security ",
+            "standardSectionDescription": "Workforce security. Implement policies and procedures to ensure that all members of its workforce have appropriate access to electronic protected health information, as provided under paragraph (a)(4) of this section, and to prevent those workforce members who do not have access under paragraph (a)(4) of this section from obtaining access to electronic protected health information.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Integrity Check",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 108,
+        "configReportEditable": true,
+        "dashboardId": 1,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 108,
+            "standardId": 100,
+            "standardSectionName": "164.308 (a)(5)(ii)(C)",
+            "standardSectionDescription": "Log-in monitoring (Addressable). Procedures for monitoring log-in attempts and reporting discrepancies. ",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Asset Discovery",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": false,
+        "dashboardId": null,
+        "configType": "CUSTOM",
+        "configUrl": "api/compliance/custom/assetsDiscovered",
+        "dashboard": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(1)(ii)(D) - Information System Activity Review (Active Directory-All users)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": false,
+        "dashboardId": null,
+        "configType": "CUSTOM",
+        "configUrl": "api/compliance/custom/allUsers",
+        "dashboard": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(1)(ii)(D) - Information System Activity Review (Active Directory-Inactive users)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": false,
+        "dashboardId": null,
+        "configType": "CUSTOM",
+        "configUrl": "api/compliance/custom/inactiveUsers",
+        "dashboard": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(1)(ii)(D) - Information System Activity Review (Active Directory-All computers)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": false,
+        "dashboardId": null,
+        "configType": "CUSTOM",
+        "configUrl": "api/compliance/custom/allComputers",
+        "dashboard": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(1)(ii)(D) - Information System Activity Review (Active Directory-Inactive computers)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": false,
+        "dashboardId": null,
+        "configType": "CUSTOM",
+        "configUrl": "api/compliance/custom/inactiveComputers",
+        "dashboard": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "§164.308(a)(1)(ii)(D) - Information System Activity Review (Active Directory-Disabled computers)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 101,
+        "configReportEditable": false,
+        "dashboardId": null,
+        "configType": "CUSTOM",
+        "configUrl": "api/compliance/custom/disabledComputers",
+        "dashboard": null,
+        "section": {
+            "id": 101,
+            "standardId": 100,
+            "standardSectionName": "§164.308(a)(1) - Security management process",
+            "standardSectionDescription": "Security management process. Implement policies and procedures to prevent, detect, contain, and correct security violations.",
+            "standard": {
+                "id": 100,
+                "standardName": "HIPAA",
+                "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    }
+]

@@ -1,0 +1,161 @@
+[
+    {
+        "idVisualization": 6,
+        "idDashboard": 55,
+        "order": 0,
+        "width": 1672,
+        "height": 662.8,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"62ecc968-b757-682a-6475-be80f6b6d7ce\",\"rows\":12,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 6,
+            "name": "Detail User Logon Failure",
+            "description": "Detail Logon Failure",
+            "eventType": "log-wineventlog-*",
+            "createdDate": "2020-12-15T05:11:28.717Z",
+            "modifiedDate": "2021-02-19T21:54:45.456Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                    "value": [
+                        "None",
+                        "An Error occurred during Logon"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1001",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "Username",
+                    "subBucket": {
+                        "id": "1002",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.beat.hostname.keyword",
+                        "customLabel": "Computer",
+                        "subBucket": {
+                            "id": "1003",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                            "customLabel": "Failure reason",
+                            "subBucket": {
+                                "id": "1004",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "logx.wineventlog.event_data.StatusDescription.keyword",
+                                "customLabel": "Status",
+                                "subBucket": {
+                                    "id": "1007",
+                                    "aggregation": "TERMS",
+                                    "type": "BUCKET",
+                                    "field": "logx.wineventlog.event_data.SubStatusDescription.keyword",
+                                    "customLabel": "Sub Status",
+                                    "subBucket": {
+                                        "id": "1008",
+                                        "aggregation": "TERMS",
+                                        "type": "BUCKET",
+                                        "field": "@timestamp",
+                                        "customLabel": "Date",
+                                        "terms": {
+                                            "sortBy": "_count",
+                                            "asc": false,
+                                            "size": 5
+                                        }
+                                    },
+                                    "terms": {
+                                        "sortBy": "_count",
+                                        "asc": false,
+                                        "size": 5
+                                    }
+                                },
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 55,
+            "name": "Report: Logon Failures",
+            "description": "Report: Logon Failures",
+            "refreshTime": null,
+            "createdDate": "2021-02-03T22:48:29.437Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

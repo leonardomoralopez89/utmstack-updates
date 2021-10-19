@@ -1,0 +1,57 @@
+{
+    "id": 800,
+    "name": "Vulnerabilities",
+    "position": 8,
+    "isActive": false,
+    "isAction": false,
+    "icon": "TROJAN_HORSE.svg",
+    "module": "VULNERABILITIES",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ],
+    "submenus": [
+        {
+            "id": 801,
+            "parentId": 800,
+            "name": "Overview",
+            "url": "vulnerability-scanner/overview",
+            "position": 0,
+            "isActive": false,
+            "isAction": false,
+            "module": "VULNERABILITIES",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 802,
+            "parentId": 800,
+            "name": "Tasks",
+            "url": "vulnerability-scanner/tasks",
+            "position": 1,
+            "isActive": false,
+            "isAction": false,
+            "module": "VULNERABILITIES",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 803,
+            "parentId": 800,
+            "name": "New Scan",
+            "url": "vulnerability-scanner/tasks?onInitAction=showCreateModal",
+            "position": 0,
+            "isActive": false,
+            "isAction": true,
+            "module": "VULNERABILITIES",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        }
+    ]
+}

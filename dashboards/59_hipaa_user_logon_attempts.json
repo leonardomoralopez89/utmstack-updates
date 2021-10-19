@@ -1,0 +1,351 @@
+[
+    {
+        "idVisualization": 173,
+        "idDashboard": 59,
+        "order": 0,
+        "width": 548,
+        "height": 269,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"05cc0089-cd24-1605-838f-9597e493e17a\",\"rows\":5,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 173,
+            "name": "User Logon Attempts",
+            "description": "User Logon Attempts",
+            "eventType": "LOGX",
+            "createdDate": "2020-12-15T06:16:56.533Z",
+            "modifiedDate": "2021-02-27T03:50:24.561Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4624",
+                        "4625"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "User logon attempts"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 59,
+            "name": "HIPAA: User Logon Attempts",
+            "description": "HIPAA: User Logon Attempts",
+            "refreshTime": null,
+            "createdDate": "2020-12-15T06:37:06.771Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 175,
+        "idDashboard": 59,
+        "order": 2,
+        "width": 548,
+        "height": 269,
+        "top": 0,
+        "left": 20,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"9a4bb2a6-9619-bf63-e5af-1613ed01d79b\",\"rows\":5,\"x\":20,\"y\":0}",
+        "visualization": {
+            "id": 175,
+            "name": "Login Failure",
+            "description": "Logon Failure",
+            "eventType": "LOGX",
+            "createdDate": "2020-12-15T03:40:54.092Z",
+            "modifiedDate": "2021-02-27T03:50:47.458Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "\"\\\"[{\\\\\\\"metricId\\\\\\\":1,\\\\\\\"icon\\\\\\\":null,\\\\\\\"color\\\\\\\":\\\\\\\"#b71c1c\\\\\\\",\\\\\\\"decimal\\\\\\\":0}]\\\"\"",
+            "chartAction": "\"\\\"{\\\\\\\"active\\\\\\\":true,\\\\\\\"customUrl\\\\\\\":false,\\\\\\\"navigate\\\\\\\":null,\\\\\\\"customNavigate\\\\\\\":null}\\\"\"",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4625"
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                    "value": [
+                        "None",
+                        "An Error occurred during Logon"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "failed"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 59,
+            "name": "HIPAA: User Logon Attempts",
+            "description": "HIPAA: User Logon Attempts",
+            "refreshTime": null,
+            "createdDate": "2020-12-15T06:37:06.771Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 174,
+        "idDashboard": 59,
+        "order": 1,
+        "width": 548,
+        "height": 269,
+        "top": 0,
+        "left": 10,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"6752ace1-6c6a-f828-9a1b-a0569e41135b\",\"rows\":5,\"x\":10,\"y\":0}",
+        "visualization": {
+            "id": 174,
+            "name": "User Logon Successful",
+            "description": "User Logon Successful",
+            "eventType": "LOGX",
+            "createdDate": "2020-12-15T06:40:40.818Z",
+            "modifiedDate": "2021-02-27T03:06:02.108Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "logx.wineventlog.event_id",
+                    "value": "4624"
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                },
+                {
+                    "operator": "IS_NOT",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "value": "-"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "successfull"
+                    }
+                ]
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 59,
+            "name": "HIPAA: User Logon Attempts",
+            "description": "HIPAA: User Logon Attempts",
+            "refreshTime": null,
+            "createdDate": "2020-12-15T06:37:06.771Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 176,
+        "idDashboard": 59,
+        "order": 3,
+        "width": 1664,
+        "height": 603.8,
+        "top": 5,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"87eedfb2-731e-b7f4-0016-fab32ef4b284\",\"rows\":11,\"x\":0,\"y\":5}",
+        "visualization": {
+            "id": 176,
+            "name": "User Detail Login Attempts",
+            "description": "User Detail Login Attempts",
+            "eventType": "LOGX",
+            "createdDate": "2020-12-15T06:32:00.007Z",
+            "modifiedDate": "2021-02-20T08:03:26.804Z",
+            "userCreated": "admin",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 8,
+            "chartType": "LIST_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_ONE_OF",
+                    "field": "logx.wineventlog.event_id",
+                    "value": [
+                        "4625",
+                        "4624"
+                    ]
+                },
+                {
+                    "operator": "IS_NOT_ONE_OF",
+                    "field": "logx.wineventlog.event_data.FailureReasonDescription.keyword",
+                    "value": [
+                        "None",
+                        "An Error occurred during Logon"
+                    ]
+                },
+                {
+                    "operator": "NOT_ENDS_WITH",
+                    "field": "logx.wineventlog.event_data.TargetUserName",
+                    "value": "$"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.wineventlog.event_data.TargetUserName.keyword",
+                    "customLabel": "Username",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.wineventlog.beat.hostname.keyword",
+                        "customLabel": "Computer",
+                        "subBucket": {
+                            "id": "1004",
+                            "aggregation": "TERMS",
+                            "type": "BUCKET",
+                            "field": "logx.wineventlog.event_id",
+                            "customLabel": "Event ID",
+                            "subBucket": {
+                                "id": "1005",
+                                "aggregation": "TERMS",
+                                "type": "BUCKET",
+                                "field": "@timestamp",
+                                "customLabel": "Date",
+                                "terms": {
+                                    "sortBy": "_count",
+                                    "asc": false,
+                                    "size": 5
+                                }
+                            },
+                            "terms": {
+                                "sortBy": "_count",
+                                "asc": false,
+                                "size": 5
+                            }
+                        },
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 8,
+                "pattern": "log-wineventlog-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 59,
+            "name": "HIPAA: User Logon Attempts",
+            "description": "HIPAA: User Logon Attempts",
+            "refreshTime": null,
+            "createdDate": "2020-12-15T06:37:06.771Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

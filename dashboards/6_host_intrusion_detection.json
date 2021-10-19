@@ -1,0 +1,316 @@
+[
+    {
+        "idVisualization": 28,
+        "idDashboard": 6,
+        "order": 1,
+        "width": 548,
+        "height": 436.4,
+        "top": 7,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"4c9e65c6-3dec-1462-daef-cd98148df038\",\"rows\":8,\"x\":0,\"y\":7}",
+        "visualization": {
+            "id": 28,
+            "name": "Top 10 events by HIDS",
+            "description": "",
+            "eventType": "log-hids-*",
+            "createdDate": "2020-04-18T15:58:03.286Z",
+            "modifiedDate": "2020-04-18T15:37:27.900Z",
+            "userCreated": "admin",
+            "userModified": "admin",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 16,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.hids.rule.description.keyword",
+                    "customLabel": "Name",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 16,
+                "pattern": "log-hids-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 6,
+            "name": "Host Intrusion Detection",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T05:13:17.057Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 29,
+        "idDashboard": 6,
+        "order": 2,
+        "width": 548,
+        "height": 436.4,
+        "top": 7,
+        "left": 10,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"2e9bf774-3d69-7c20-d043-646f091609ee\",\"rows\":8,\"x\":10,\"y\":7}",
+        "visualization": {
+            "id": 29,
+            "name": "HIDS Alert category",
+            "description": "",
+            "eventType": "alert-*",
+            "createdDate": "2020-05-20T16:00:22.455Z",
+            "modifiedDate": "2020-08-16T11:32:33.776Z",
+            "userCreated": "rick",
+            "userModified": "demo",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "dataType.keyword",
+                    "value": "hids"
+                },
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-30d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "category.keyword",
+                    "customLabel": "HIDS Alert category",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 6,
+            "name": "Host Intrusion Detection",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T05:13:17.057Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 30,
+        "idDashboard": 6,
+        "order": 3,
+        "width": 548,
+        "height": 436.4,
+        "top": 7,
+        "left": 20,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"5a091df1-a460-1a07-4b04-e0d9297d368b\",\"rows\":8,\"x\":20,\"y\":7}",
+        "visualization": {
+            "id": 30,
+            "name": "HIDS Alerts by host",
+            "description": "",
+            "eventType": "alert-*",
+            "createdDate": "2020-05-20T16:02:39.356Z",
+            "modifiedDate": "2020-08-16T11:33:17.759Z",
+            "userCreated": "rick",
+            "userModified": "demo",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "TABLE_CHART",
+            "filterType": [
+                {
+                    "operator": "IS",
+                    "field": "dataType.keyword",
+                    "value": "hids"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Alert Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "destination.host.keyword",
+                    "customLabel": "IP",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "destination.ip.keyword",
+                        "customLabel": "Host Name",
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 6,
+            "name": "Host Intrusion Detection",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T05:13:17.057Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 31,
+        "idDashboard": 6,
+        "order": 0,
+        "width": 1664,
+        "height": 380.6,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"b1a4b8e8-4d65-1019-5e85-e3bde68e200b\",\"rows\":7,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 31,
+            "name": "Top 10 HIDS Alerts",
+            "description": "Top 10 HIDS Alerts",
+            "eventType": "alert-*",
+            "createdDate": "2020-05-20T15:58:53.379Z",
+            "modifiedDate": "2021-02-19T21:34:00.997Z",
+            "userCreated": "rick",
+            "userModified": "siem",
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"Dpkg (Debian Package) half configured.\",\"New dpkg (Debian Package) installed.\",\"sshd: Possible attack on the ssh server (or version gathering).\",\"An IPsec Main Mode negotiation failed\",\"Multiple Windows Logon Failures\",\"File deleted.\",\"SessionEnv was unavailable to handle a critical notification event\",\"Benchmark for Windows audit: Ensure Null sessions are not allowed\",\"Partition usage reached 100% (disk space monitor).\",\"Benchmark for Windows audit: Ensure 'Interactive logon: Smart card removal behavior' is set to 'Lock Workstation' or higher\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"HIDS Alerts Count\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":\"1\",\"name\":\"\",\"type\":\"bar\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"Dpkg (Debian Package) half configured.\",\"type\":\"bar\",\"data\":[{\"value\":8,\"name\":\"HIDS Alerts Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"New dpkg (Debian Package) installed.\",\"type\":\"bar\",\"data\":[{\"value\":7,\"name\":\"HIDS Alerts Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"sshd: Possible attack on the ssh server (or version gathering).\",\"type\":\"bar\",\"data\":[{\"value\":6,\"name\":\"HIDS Alerts Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"An IPsec Main Mode negotiation failed\",\"type\":\"bar\",\"data\":[{\"value\":5,\"name\":\"HIDS Alerts Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"Multiple Windows Logon Failures\",\"type\":\"bar\",\"data\":[{\"value\":5,\"name\":\"HIDS Alerts Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"File deleted.\",\"type\":\"bar\",\"data\":[{\"value\":4,\"name\":\"HIDS Alerts Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"SessionEnv was unavailable to handle a critical notification event\",\"type\":\"bar\",\"data\":[{\"value\":4,\"name\":\"HIDS Alerts Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"Benchmark for Windows audit: Ensure Null sessions are not allowed\",\"type\":\"bar\",\"data\":[{\"value\":3,\"name\":\"HIDS Alerts Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"Partition usage reached 100% (disk space monitor).\",\"type\":\"bar\",\"data\":[{\"value\":2,\"name\":\"HIDS Alerts Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"Benchmark for Windows audit: Ensure 'Interactive logon: Smart card removal behavior' is set to 'Lock Workstation' or higher\",\"type\":\"bar\",\"data\":[{\"value\":1,\"name\":\"HIDS Alerts Count\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 2,
+            "chartType": "VERTICAL_BAR_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-30d",
+                        "now"
+                    ]
+                },
+                {
+                    "operator": "IS",
+                    "field": "dataType.keyword",
+                    "value": "hids"
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "HIDS Alerts Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "name.keyword",
+                    "customLabel": "Name",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 2,
+                "pattern": "alert-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 6,
+            "name": "Host Intrusion Detection",
+            "description": "",
+            "refreshTime": 60000,
+            "createdDate": "2020-06-05T05:13:17.057Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

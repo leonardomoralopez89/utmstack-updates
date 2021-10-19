@@ -1,0 +1,162 @@
+{
+    "id": 900,
+    "name": "AD Audit",
+    "position": 10,
+    "isActive": false,
+    "isAction": false,
+    "icon": "USERS.svg",
+    "module": "AD_AUDIT",
+    "authorities": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+    ],
+    "submenus": [
+        {
+            "id": 901,
+            "parentId": 900,
+            "name": "Overview",
+            "url": "active-directory/overview",
+            "position": 0,
+            "isActive": false,
+            "isAction": true,
+            "module": "AD_AUDIT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 902,
+            "parentId": 900,
+            "name": "AD Auditor",
+            "url": "active-directory/view",
+            "position": 1,
+            "isActive": false,
+            "isAction": true,
+            "module": "AD_AUDIT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 903,
+            "parentId": 900,
+            "name": "Activity Tracker",
+            "url": "active-directory/tracker",
+            "position": 2,
+            "isActive": false,
+            "isAction": true,
+            "module": "AD_AUDIT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 904,
+            "parentId": 900,
+            "name": "User account management",
+            "url": "dashboard/render/69/user-account-management",
+            "dashboardId": 69,
+            "position": 5,
+            "isActive": false,
+            "isAction": false,
+            "module": "AD_AUDIT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 905,
+            "parentId": 900,
+            "name": "Logon Failure",
+            "url": "dashboard/render/67/logon-failure",
+            "dashboardId": 67,
+            "position": 7,
+            "isActive": false,
+            "isAction": false,
+            "module": "AD_AUDIT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 906,
+            "parentId": 900,
+            "name": "Privilege Use",
+            "url": "dashboard/render/70/privilege-use",
+            "dashboardId": 70,
+            "position": 4,
+            "isActive": false,
+            "isAction": true,
+            "module": "AD_AUDIT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 907,
+            "parentId": 900,
+            "name": "Password changes",
+            "url": "dashboard/render/71/password-changes",
+            "dashboardId": 71,
+            "position": 8,
+            "isActive": false,
+            "isAction": false,
+            "module": "AD_AUDIT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 908,
+            "parentId": 900,
+            "name": "Access attempts to files",
+            "url": "dashboard/render/43/access-attempts-to-files",
+            "dashboardId": 43,
+            "position": 9,
+            "isActive": false,
+            "isAction": false,
+            "module": "AD_AUDIT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 909,
+            "parentId": 900,
+            "name": "Logon/Logoff events",
+            "url": "dashboard/render/68/logon-logoff-events",
+            "dashboardId": 68,
+            "position": 6,
+            "isActive": false,
+            "isAction": false,
+            "module": "AD_AUDIT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        },
+        {
+            "id": 910,
+            "parentId": 900,
+            "name": "Policy change",
+            "url": "dashboard/render/57/policy-change",
+            "dashboardId": 57,
+            "position": 3,
+            "isActive": false,
+            "isAction": false,
+            "module": "AD_AUDIT",
+            "authorities": [
+                "ROLE_ADMIN",
+                "ROLE_USER"
+            ]
+        }
+    ]
+}

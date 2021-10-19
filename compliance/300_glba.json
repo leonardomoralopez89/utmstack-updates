@@ -1,0 +1,534 @@
+[
+    {
+        "configSolution": "Successful Users Logoff",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 304,
+        "configReportEditable": true,
+        "dashboardId": 24,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 304,
+            "standardId": 300,
+            "standardSectionName": "Section 501B(2)&(3) Logon",
+            "standardSectionDescription": "GLBA Logon section 501B(2)(3)",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Group Membership Changes Active Directory",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 302,
+        "configReportEditable": true,
+        "dashboardId": 20,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 302,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(2) Policy Changes in Active Directory",
+            "standardSectionDescription": "To protect against any anticipated threats or hazards to the security or integrity of such records",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "New and Enabled User Accounts",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 303,
+        "configReportEditable": true,
+        "dashboardId": 21,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 303,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(2) New and Enabled User Accounts in Active Directory",
+            "standardSectionDescription": "New and Enabled User Accounts",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Successful Users Logons",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 304,
+        "configReportEditable": true,
+        "dashboardId": 23,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 304,
+            "standardId": 300,
+            "standardSectionName": "Section 501B(2)&(3) Logon",
+            "standardSectionDescription": "GLBA Logon section 501B(2)(3)",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "RDP Logon",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 305,
+        "configReportEditable": true,
+        "dashboardId": 22,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 305,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(3) Unsuccessful Logon",
+            "standardSectionDescription": "To protect against unauthorized access to or use of such records or information which could result in substantial harm or inconvenience to any customer",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Unsuccessful Logon",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 305,
+        "configReportEditable": true,
+        "dashboardId": 26,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 305,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(3) Unsuccessful Logon",
+            "standardSectionDescription": "To protect against unauthorized access to or use of such records or information which could result in substantial harm or inconvenience to any customer",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User account creation and modification",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 302,
+        "configReportEditable": true,
+        "dashboardId": 62,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 302,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(2) Policy Changes in Active Directory",
+            "standardSectionDescription": "To protect against any anticipated threats or hazards to the security or integrity of such records",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Privilege scalation",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 302,
+        "configReportEditable": true,
+        "dashboardId": 70,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 302,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(2) Policy Changes in Active Directory",
+            "standardSectionDescription": "To protect against any anticipated threats or hazards to the security or integrity of such records",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "File integrity monitoring",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 301,
+        "configReportEditable": true,
+        "dashboardId": 35,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 301,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(1) File Access",
+            "standardSectionDescription": "To insure the security and confidentiality of customer records and information",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "File Access",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 301,
+        "configReportEditable": true,
+        "dashboardId": 43,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 301,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(1) File Access",
+            "standardSectionDescription": "To insure the security and confidentiality of customer records and information",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "File deleted",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 301,
+        "configReportEditable": true,
+        "dashboardId": 65,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 301,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(1) File Access",
+            "standardSectionDescription": "To insure the security and confidentiality of customer records and information",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Files modified",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 301,
+        "configReportEditable": true,
+        "dashboardId": 66,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 301,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(1) File Access",
+            "standardSectionDescription": "To insure the security and confidentiality of customer records and information",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Local logon failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 304,
+        "configReportEditable": true,
+        "dashboardId": 3,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 304,
+            "standardId": 300,
+            "standardSectionName": "Section 501B(2)&(3) Logon",
+            "standardSectionDescription": "GLBA Logon section 501B(2)(3)",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Unsuccessful Users Logons",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 304,
+        "configReportEditable": true,
+        "dashboardId": 25,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 304,
+            "standardId": 300,
+            "standardSectionName": "Section 501B(2)&(3) Logon",
+            "standardSectionDescription": "GLBA Logon section 501B(2)(3)",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User logon attempt",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 304,
+        "configReportEditable": true,
+        "dashboardId": 59,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 304,
+            "standardId": 300,
+            "standardSectionName": "Section 501B(2)&(3) Logon",
+            "standardSectionDescription": "GLBA Logon section 501B(2)(3)",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Logon failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 305,
+        "configReportEditable": true,
+        "dashboardId": 2,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 305,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(3) Unsuccessful Logon",
+            "standardSectionDescription": "To protect against unauthorized access to or use of such records or information which could result in substantial harm or inconvenience to any customer",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Successful logon local and network",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 306,
+        "configReportEditable": true,
+        "dashboardId": 4,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 306,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(3) Successful Logon / Logoff",
+            "standardSectionDescription": "To protect against unauthorized access to or use of such records or information which could result in substantial harm or inconvenience to any customer",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Successful logon",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 306,
+        "configReportEditable": true,
+        "dashboardId": 23,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 306,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(3) Successful Logon / Logoff",
+            "standardSectionDescription": "To protect against unauthorized access to or use of such records or information which could result in substantial harm or inconvenience to any customer",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Successful Logon / Logoff",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 306,
+        "configReportEditable": true,
+        "dashboardId": 68,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 306,
+            "standardId": 300,
+            "standardSectionName": "§§6801(b)(3) Successful Logon / Logoff",
+            "standardSectionDescription": "To protect against unauthorized access to or use of such records or information which could result in substantial harm or inconvenience to any customer",
+            "standard": {
+                "id": 300,
+                "standardName": "GLBA",
+                "standardDescription": "The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial Modernization Act of 1999, is a federal law enacted in the United States to control the ways that financial institutions deal with the private information of individuals."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    }
+]

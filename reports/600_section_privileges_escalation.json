@@ -1,0 +1,21 @@
+{
+    "id": 600,
+    "name": "Privileges escalation",
+    "description": "This module helps analyzing user behavior can discover if there are compromised identities. Usually, the attackers will target the user identities which provide access to the organization systems.",
+    "reports": [
+        {
+            "id": 601,
+            "name": "Detail user privilege escalation",
+            "description": "This reporting provides detailed user privilege escalation",
+            "type": "TEMPLATE",
+            "dashboardId": 78
+        },
+        {
+            "id": 602,
+            "name": "Processes run with administrator privileges",
+            "description": "This reporting provides details of the processes run with administrator privileges",
+            "type": "TEMPLATE",
+            "dashboardId": 79
+        }
+    ]
+}

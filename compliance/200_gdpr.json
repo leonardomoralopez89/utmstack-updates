@@ -1,0 +1,847 @@
+[
+    {
+        "configSolution": "Audits file and folder actions including create, rename, delete, copy, and more.",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 35,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Audits file and folder actions, including create, rename, delete, copy, and more, in real-time.",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 36,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Password changes attempted by an Administrator",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 45,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Created users ",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 46,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Disabled users",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 48,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Users locked out",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 49,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Attempting to access a file from an external device (Uses predefined policies to help prevent unwarranted data transfers to USB devices, monitor file integrity, and more.)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 203,
+        "configReportEditable": true,
+        "dashboardId": 38,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 203,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 24(2)",
+            "standardSectionDescription": "Appropriate data protection policies are to be implemented to protect the rights of data subjects.",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Users' password changes",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 44,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Deleted users",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 53,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Successfull Users Logons",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 23,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Successful Users Logoffs",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 24,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Unsuccessful user logons",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 25,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Identifies the location where personal/sensitive personal data is stored to facilitate further processes.",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 202,
+        "configReportEditable": true,
+        "dashboardId": 37,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 202,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 15(3)",
+            "standardSectionDescription": "Provide data subjects with a copy of all their personal data that has been collected for processing.",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A network share object was accessed (Find users with full control access to your Windows shares)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 204,
+        "configReportEditable": true,
+        "dashboardId": 39,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 204,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 25(2)",
+            "standardSectionDescription": "Practice data minimization and ensure that personal data is not accessible by an indefinite number of individuals.",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Logon Failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 2,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Local logon Failure<br/>",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 3,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Recently logon failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 16,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Recently logon success",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 17,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User activity in files (Audits user activity in files with details on who accessed what, when, and from where.)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 205,
+        "configReportEditable": true,
+        "dashboardId": 40,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 205,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 30(1)",
+            "standardSectionDescription": "A record of all processing activities along with details on the sensitive data processed and the technical measures used to safeguard the data shall be maintained.",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Attempting to access a file from an external device (Uses predefined policies to help prevent unwarranted data transfers to USB devices, monitor file integrity, and more.)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 206,
+        "configReportEditable": true,
+        "dashboardId": 38,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 206,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 32(2)",
+            "standardSectionDescription": "Technical and organizational measures to address the risk of accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to personal data transmitted or stored shall be implemented.",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "The system recognized a new external device. (Monitors the use of removable storage devices such as USBs in your organization.)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 206,
+        "configReportEditable": true,
+        "dashboardId": 41,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 206,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 32(2)",
+            "standardSectionDescription": "Technical and organizational measures to address the risk of accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to personal data transmitted or stored shall be implemented.",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "File and folder deletions (a complete record of all file and folder deletions, along with details on who deleted what, when, and where)",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 206,
+        "configReportEditable": true,
+        "dashboardId": 42,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 206,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 32(2)",
+            "standardSectionDescription": "Technical and organizational measures to address the risk of accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to personal data transmitted or stored shall be implemented.",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Enabled users",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 47,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Unlocked users",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 50,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User logon attempts",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": true,
+        "dashboardId": 59,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Users with password never expire",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": false,
+        "dashboardId": null,
+        "configType": "CUSTOM",
+        "configUrl": "api/compliance/custom/usersWithPasswordNeverExpire",
+        "dashboard": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Password expired users",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 201,
+        "configReportEditable": false,
+        "dashboardId": null,
+        "configType": "CUSTOM",
+        "configUrl": "api/compliance/custom/usersWithPasswordExpired",
+        "dashboard": null,
+        "section": {
+            "id": 201,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 5(1)(b)(f)",
+            "standardSectionDescription": "Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner with those purposes. Processed in a way that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and accidental loss, destruction, or damage, using appropriate technical or organizational measures (‘integrity and confidentiality’).",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Asset Discovery",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 203,
+        "configReportEditable": false,
+        "dashboardId": null,
+        "configType": "CUSTOM",
+        "configUrl": "api/compliance/custom/assetsDiscovered",
+        "dashboard": null,
+        "section": {
+            "id": 203,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 24(2)",
+            "standardSectionDescription": "Appropriate data protection policies are to be implemented to protect the rights of data subjects.",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Asset Discovery",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 204,
+        "configReportEditable": false,
+        "dashboardId": null,
+        "configType": "CUSTOM",
+        "configUrl": "api/compliance/custom/assetsDiscovered",
+        "dashboard": null,
+        "section": {
+            "id": 204,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 25(2)",
+            "standardSectionDescription": "Practice data minimization and ensure that personal data is not accessible by an indefinite number of individuals.",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Asset Discovery",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 207,
+        "configReportEditable": false,
+        "dashboardId": null,
+        "configType": "CUSTOM",
+        "configUrl": "api/compliance/custom/assetsDiscovered",
+        "dashboard": null,
+        "section": {
+            "id": 207,
+            "standardId": 200,
+            "standardSectionName": "GDPR Article 35",
+            "standardSectionDescription": "A Data Protection Impact Assessment (DPIA) should be carried out if the processing of data is likely to create a high risk.",
+            "standard": {
+                "id": 200,
+                "standardName": "GDPR",
+                "standardDescription": "Is a legal framework that sets guidelines for the collection and processing of personal information from individuals who live in the European Union (EU). Since the Regulation applies regardless of where websites are based, it must be heeded by all sites that attract European visitors, even if they don't specifically market goods or services to EU residents."
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    }
+]

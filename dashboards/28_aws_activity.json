@@ -1,0 +1,423 @@
+[
+    {
+        "idVisualization": 124,
+        "idDashboard": 28,
+        "order": 2,
+        "width": 548,
+        "height": 324.8,
+        "top": 6,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"b0503f6d-8ecc-7ac8-0075-9801fefbcf99\",\"rows\":6,\"x\":0,\"y\":6}",
+        "visualization": {
+            "id": 124,
+            "name": "AWS Activity by Module",
+            "description": "AWS Activity by Module",
+            "eventType": "log-aws-*",
+            "createdDate": "2020-07-31T16:36:53.341Z",
+            "modifiedDate": null,
+            "userCreated": "demo",
+            "userModified": null,
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"cloudtrail\",\"rds\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"Activity\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":1,\"name\":\"\",\"type\":\"bar\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"cloudtrail\",\"type\":\"bar\",\"data\":[{\"value\":18084,\"name\":\"Activity\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true},{\"name\":\"rds\",\"type\":\"bar\",\"data\":[{\"value\":2197,\"name\":\"Activity\"}],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"smooth\":true}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 10,
+            "chartType": "VERTICAL_BAR_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Activity"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "logx.aws.module.keyword",
+                    "customLabel": "AWS Modules",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 10,
+                "pattern": "log-aws-*",
+                "patternModule": "AWS",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 28,
+            "name": "AWS Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T16:39:55.150Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 125,
+        "idDashboard": 28,
+        "order": 0,
+        "width": 1273.4,
+        "height": 324.8,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":23,\"id\":\"f3a36743-ceb7-409b-65eb-7eb91f92975f\",\"rows\":6,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 125,
+            "name": "AWS Activity Histogram",
+            "description": "AWS Activity Histogram",
+            "eventType": "log-aws-*",
+            "createdDate": "2020-07-31T16:23:57.743Z",
+            "modifiedDate": "2020-07-31T18:31:19.957Z",
+            "userCreated": "demo",
+            "userModified": "demo",
+            "chartConfig": "{\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"Log Count\"]},\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":true,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":true,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":true}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"yAxis\":{\"type\":\"value\",\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"xAxis\":{\"type\":\"category\",\"data\":[\"2020-07-28T03:00:00.000Z\",\"2020-07-28T04:00:00.000Z\",\"2020-07-28T05:00:00.000Z\",\"2020-07-28T06:00:00.000Z\",\"2020-07-28T07:00:00.000Z\",\"2020-07-28T08:00:00.000Z\",\"2020-07-28T09:00:00.000Z\",\"2020-07-28T10:00:00.000Z\",\"2020-07-28T11:00:00.000Z\",\"2020-07-28T12:00:00.000Z\",\"2020-07-28T13:00:00.000Z\",\"2020-07-28T14:00:00.000Z\",\"2020-07-28T15:00:00.000Z\",\"2020-07-28T16:00:00.000Z\",\"2020-07-28T17:00:00.000Z\",\"2020-07-28T18:00:00.000Z\",\"2020-07-28T19:00:00.000Z\",\"2020-07-28T20:00:00.000Z\",\"2020-07-28T21:00:00.000Z\",\"2020-07-28T22:00:00.000Z\",\"2020-07-28T23:00:00.000Z\",\"2020-07-29T00:00:00.000Z\",\"2020-07-29T01:00:00.000Z\",\"2020-07-29T02:00:00.000Z\",\"2020-07-29T03:00:00.000Z\",\"2020-07-29T04:00:00.000Z\",\"2020-07-29T05:00:00.000Z\",\"2020-07-29T06:00:00.000Z\",\"2020-07-29T07:00:00.000Z\",\"2020-07-29T08:00:00.000Z\",\"2020-07-29T09:00:00.000Z\",\"2020-07-29T10:00:00.000Z\",\"2020-07-29T11:00:00.000Z\",\"2020-07-29T12:00:00.000Z\",\"2020-07-29T13:00:00.000Z\",\"2020-07-29T14:00:00.000Z\",\"2020-07-29T15:00:00.000Z\",\"2020-07-29T16:00:00.000Z\",\"2020-07-29T17:00:00.000Z\",\"2020-07-29T18:00:00.000Z\",\"2020-07-29T19:00:00.000Z\",\"2020-07-29T20:00:00.000Z\",\"2020-07-29T21:00:00.000Z\",\"2020-07-29T22:00:00.000Z\",\"2020-07-29T23:00:00.000Z\",\"2020-07-30T00:00:00.000Z\",\"2020-07-30T01:00:00.000Z\",\"2020-07-30T02:00:00.000Z\",\"2020-07-30T03:00:00.000Z\",\"2020-07-30T04:00:00.000Z\",\"2020-07-30T05:00:00.000Z\",\"2020-07-30T06:00:00.000Z\",\"2020-07-30T07:00:00.000Z\",\"2020-07-30T08:00:00.000Z\",\"2020-07-30T09:00:00.000Z\",\"2020-07-30T10:00:00.000Z\",\"2020-07-30T11:00:00.000Z\",\"2020-07-30T12:00:00.000Z\",\"2020-07-30T13:00:00.000Z\",\"2020-07-30T14:00:00.000Z\",\"2020-07-30T15:00:00.000Z\",\"2020-07-30T16:00:00.000Z\",\"2020-07-30T17:00:00.000Z\",\"2020-07-30T18:00:00.000Z\",\"2020-07-30T19:00:00.000Z\",\"2020-07-30T20:00:00.000Z\",\"2020-07-30T21:00:00.000Z\",\"2020-07-30T22:00:00.000Z\",\"2020-07-30T23:00:00.000Z\",\"2020-07-31T00:00:00.000Z\",\"2020-07-31T01:00:00.000Z\",\"2020-07-31T02:00:00.000Z\",\"2020-07-31T03:00:00.000Z\",\"2020-07-31T04:00:00.000Z\",\"2020-07-31T05:00:00.000Z\",\"2020-07-31T06:00:00.000Z\",\"2020-07-31T07:00:00.000Z\",\"2020-07-31T08:00:00.000Z\",\"2020-07-31T09:00:00.000Z\",\"2020-07-31T10:00:00.000Z\",\"2020-07-31T11:00:00.000Z\",\"2020-07-31T12:00:00.000Z\",\"2020-07-31T13:00:00.000Z\",\"2020-07-31T14:00:00.000Z\",\"2020-07-31T15:00:00.000Z\",\"2020-07-31T16:00:00.000Z\",\"2020-07-31T17:00:00.000Z\",\"2020-07-31T18:00:00.000Z\"],\"axisLabel\":{\"color\":\"#333\",\"formatter\":\"{value}\"},\"axisLine\":{\"lineStyle\":{\"color\":\"#999\"}},\"splitLine\":{\"show\":true,\"lineStyle\":{\"color\":\"#eee\",\"type\":\"dashed\"}}},\"grid\":{},\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"dataZoom\":{\"show\":false,\"orient\":\"horizontal\",\"type\":\"slider\",\"start\":0,\"end\":100,\"height\":40,\"borderColor\":\"#ccc\",\"fillerColor\":\"rgba(40,54,139,0.21)\",\"handleStyle\":{\"color\":\"#004b8b\"}},\"seriesOption\":[{\"metricId\":\"1\",\"name\":\"\",\"type\":\"line\",\"data\":[],\"smooth\":true,\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]}}],\"series\":[{\"name\":\"Log Count\",\"type\":\"line\",\"data\":[12,236,240,246,242,223,266,252,247,218,242,244,236,235,230,229,236,233,228,298,303,239,231,229,233,237,245,227,235,236,233,242,239,228,258,262,241,235,291,219,232,238,238,247,235,231,208,240,222,244,230,241,244,244,247,228,231,230,242,230,201,205,256,244,297,258,244,239,239,236,240,238,215,246,240,240,222,231,240,264,224,246,233,240,239,244,233,122],\"markPoint\":{\"symbol\":\"pin\",\"symbolSize\":35,\"label\":{\"fontSize\":10},\"data\":[]},\"markLine\":null,\"smooth\":true,\"itemStyle\":null}]}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 10,
+            "chartType": "LINE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Log Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "DATE_HISTOGRAM",
+                    "type": "AXIS",
+                    "field": "@timestamp",
+                    "customLabel": "AWS Activity",
+                    "dateHistogram": {
+                        "interval": "60m"
+                    }
+                }
+            },
+            "pattern": {
+                "id": 10,
+                "pattern": "log-aws-*",
+                "patternModule": "AWS",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 28,
+            "name": "AWS Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T16:39:55.150Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 127,
+        "idDashboard": 28,
+        "order": 3,
+        "width": 548,
+        "height": 324.8,
+        "top": 6,
+        "left": 10,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"b9835810-556c-897f-85a9-06fb73c92457\",\"rows\":6,\"x\":10,\"y\":6}",
+        "visualization": {
+            "id": 127,
+            "name": "AWS Activity Console Logon",
+            "description": "AWS Activity Console Logon Location",
+            "eventType": "LOGX",
+            "createdDate": "2020-07-31T16:55:53.671Z",
+            "modifiedDate": null,
+            "userCreated": "demo",
+            "userModified": null,
+            "chartConfig": "{\"tooltip\":{\"trigger\":\"item\",\"backgroundColor\":\"rgba(0,75,139,0.85)\",\"padding\":null,\"textStyle\":{\"fontSize\":13,\"fontFamily\":\"Roboto, sans-serif\"}},\"visualMap\":{\"type\":\"continuous\",\"calculable\":true,\"realtime\":true,\"inRange\":{\"color\":[\"#f5994e\",\"#c05050\"]},\"orient\":\"horizontal\",\"left\":\"center\",\"top\":\"bottom\",\"bottom\":\"15%\"},\"leaflet\":{\"center\":[0,0],\"zoom\":1,\"roam\":true,\"layerControl\":{\"position\":\"topleft\"},\"tiles\":[{\"label\":\"Open Street Map\",\"urlTemplate\":\"https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png\",\"options\":{\"attribution\":\"\"}}],\"lat\":0,\"lon\":0},\"series\":null,\"top\":10}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 10,
+            "chartType": "COORDINATE_MAP_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-30d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Logon Location"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.aws.cloudtrail.sourceIPAddress.keyword",
+                    "customLabel": "AWS Logon ",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 10,
+                "pattern": "log-aws-*",
+                "patternModule": "AWS",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 28,
+            "name": "AWS Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T16:39:55.150Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 128,
+        "idDashboard": 28,
+        "order": 4,
+        "width": 548,
+        "height": 324.8,
+        "top": 6,
+        "left": 20,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"9b348e83-d3c4-d1c4-ebc1-03825ec1b700\",\"rows\":6,\"x\":20,\"y\":6}",
+        "visualization": {
+            "id": 128,
+            "name": "AWS Activity per User",
+            "description": "AWS Activity per User",
+            "eventType": "LOGX",
+            "createdDate": "2020-07-31T17:02:07.549Z",
+            "modifiedDate": null,
+            "userCreated": "demo",
+            "userModified": null,
+            "chartConfig": "{\"pieType\":\"donut\",\"legend\":{\"show\":true,\"type\":\"scroll\",\"top\":\"bottom\",\"left\":\"center\",\"orient\":\"horizontal\",\"itemHeight\":8,\"itemWidth\":8,\"icon\":\"roundRect\",\"extraCssText\":\"z-index:100\",\"data\":[\"atlas\"]},\"color\":[\"#03A9F4\",\"#FF7043\",\"#EC407A\",\"#8BC34A\",\"#FF9800\",\"#795548\",\"#777777\",\"#607D8B\",\"#42A5F5\",\"#EF5350\",\"#66BB6A\",\"#009688\",\"#26C6DA\",\"#AB47BC\",\"#7E57C2\",\"#2196F3\",\"#F44336\",\"#4CAF50\",\"#F4511E\",\"#00BCD4\",\"#E91E63\",\"#9C27B0\",\"#673AB7\",\"#3F51B5\",\"#5C6BC0\",\"#29B6F6\",\"#26A69A\",\"#9CCC65\",\"#FFA726\",\"#8D6E63\",\"#888888\",\"#78909C\",\"#2196F3\",\"#F44336\",\"#3F51B5\",\"#ffebee\",\"#ffcdd2\",\"#ef9a9a\",\"#e57373\",\"#ef5350\",\"#f44336\",\"#e53935\",\"#d32f2f\",\"#c62828\",\"#b71c1c\",\"#ff8a80\",\"#ff5252\",\"#ff1744\",\"#d50000\",\"#2ec7c9\",\"#b6a2de\",\"#d87a80\",\"#8d98b3\",\"#59678c\",\"#e5cf0d\",\"#97b552\",\"#95706d\",\"#dc69aa\",\"#07a2a4\",\"#9a7fd1\",\"#588dd5\",\"#f5994e\",\"#c05050\",\"#c9ab00\",\"#7eb00a\",\"#6f5553\",\"#c14089\",\"#ffb980\",\"#5ab1ef\",\"#F06292\"],\"toolbox\":{\"show\":true,\"feature\":{\"saveAsImage\":{\"show\":true,\"type\":\"png\",\"name\":\"utm-chart\",\"title\":\"Save as image\"},\"restore\":{\"show\":true,\"title\":\"Restore\"},\"dataView\":{\"show\":true,\"title\":\"Data view\",\"readOnly\":true,\"lang\":[\"Data view\",\"Close\",\"Refresh\"],\"backgroundColor\":null,\"textareaColor\":null,\"textareaBorderColor\":null,\"textColor\":null,\"buttonColor\":\"#0277bd\",\"buttonTextColor\":\"#fff\"},\"dataZoom\":{\"show\":false,\"title\":{\"zoom\":[\"Zoom\"],\"back\":[\"Step back\"]}},\"magicType\":{\"show\":false,\"type\":null,\"title\":{\"line\":\"Line\",\"bar\":\"Bar\",\"stack\":\"Stack\",\"tiled\":\"Tiled\"}},\"brush\":{\"type\":\"rect\"},\"mark\":{\"show\":false}},\"orient\":\"horizontal\",\"itemSize\":14,\"left\":\"right\",\"top\":\"top\"},\"grid\":{}}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 10,
+            "chartType": "PIE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Actions count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.aws.cloudtrail.userIdentity.userName.keyword",
+                    "customLabel": "User Activity",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 10,
+                "pattern": "log-aws-*",
+                "patternModule": "AWS",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 28,
+            "name": "AWS Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T16:39:55.150Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 129,
+        "idDashboard": 28,
+        "order": 5,
+        "width": 1664,
+        "height": 324.8,
+        "top": 12,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":30,\"id\":\"95b977c8-fe5c-fa98-f2ad-be6f0405e336\",\"rows\":6,\"x\":0,\"y\":12}",
+        "visualization": {
+            "id": 129,
+            "name": "AWS Activity Top 20 Events",
+            "description": "AWS Top 20 Events",
+            "eventType": "LOGX",
+            "createdDate": "2020-07-31T17:43:19.041Z",
+            "modifiedDate": null,
+            "userCreated": "demo",
+            "userModified": null,
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 10,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Event Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.aws.cloudtrail.eventName.keyword",
+                    "customLabel": "Event Name",
+                    "subBucket": {
+                        "id": "1001",
+                        "aggregation": "TERMS",
+                        "type": "BUCKET",
+                        "field": "logx.aws.cloudtrail.eventType.keyword",
+                        "customLabel": "Event Type",
+                        "terms": {
+                            "sortBy": "_count",
+                            "asc": false,
+                            "size": 5
+                        }
+                    },
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 10,
+                "pattern": "log-aws-*",
+                "patternModule": "AWS",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 28,
+            "name": "AWS Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T16:39:55.150Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    },
+    {
+        "idVisualization": 126,
+        "idDashboard": 28,
+        "order": 1,
+        "width": 380.6,
+        "height": 324.8,
+        "top": 0,
+        "left": 23,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":7,\"id\":\"caeef4f2-74be-012c-5515-09b56696ea1f\",\"rows\":6,\"x\":23,\"y\":0}",
+        "visualization": {
+            "id": 126,
+            "name": "AWS Activity Top 10 Log Sources",
+            "description": "AWS Activity Top 10 Log Sources",
+            "eventType": "LOGX",
+            "createdDate": "2020-07-31T16:50:26.872Z",
+            "modifiedDate": "2021-02-19T16:34:08.953Z",
+            "userCreated": "demo",
+            "userModified": "siem",
+            "chartConfig": "{\"itemsPerPage\":10,\"showTotal\":false,\"totalFunction\":\"sum\",\"exportCsv\":true,\"dynamicPageSize\":true}",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "idPattern": 10,
+            "chartType": "TABLE_CHART",
+            "filterType": [],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": "Count"
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "BUCKET",
+                    "field": "logx.aws.cloudtrail.eventSource.keyword",
+                    "customLabel": "Top 10 Log Sources",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 10
+                    }
+                }
+            },
+            "pattern": {
+                "id": 10,
+                "pattern": "log-aws-*",
+                "patternModule": "AWS",
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 28,
+            "name": "AWS Activity",
+            "description": "",
+            "refreshTime": 300000,
+            "createdDate": "2020-07-31T16:39:55.150Z",
+            "modifiedDate": null,
+            "userCreated": "system",
+            "userModified": null,
+            "filters": null,
+            "dashboardType": null
+        }
+    }
+]

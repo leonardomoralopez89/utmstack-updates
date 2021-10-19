@@ -1,0 +1,2326 @@
+[
+    {
+        "configSolution": "A new external device was recognized by the system.",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 114,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Attempting to access a file from an external device",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 115,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Unsuccessful user logons",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 119,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Added members to a security-enabled local group.",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 122,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A member was removed from a security-enabled local group",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 123,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-enabled local group was deleted",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 124,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-disabled local group was deleted",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 129,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-disabled global group was created",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 130,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A user account was disabled",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 106,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A user account was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 108,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-disabled global group was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 131,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-disabled global group was deleted",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 132,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-enabled universal group was created",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 133,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-enabled universal group was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 134,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-enabled universal group was deleted",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 135,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-disabled universal group was created",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 136,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-disabled universal group was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 137,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A group’s type was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 138,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Failures due to Bad Password",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 142,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Failures due to Bad User Name",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 143,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "The workstation was unlocked",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 144,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "The workstation was locked",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 145,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "The audit log was cleared",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 148,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Detection of invalid image hash of a file",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 150,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Detection of invalid page hash of an image file\t",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 151,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A user right was removed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 155,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A user right was assigned",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 156,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A member was added to a security-enabled global group",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 157,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "An account failed, the specified account is currently disabled",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 159,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "An account failed, the specified user isn't allowed to sign in to the computer",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 160,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "An account failed, the specified account has time restrictions",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 161,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Kerberos pre-authentication failed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 163,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "An account was successfully logged on",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 164,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User Logon Activity",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 33,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Logon Failures based on users",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 51,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Logon Failures",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 55,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User network logon success",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 74,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User Logon success",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 75,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A logon was attempted using explicit credentials",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 76,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Permissions on an object were changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 95,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A user account was deleted",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 107,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "File and folder deletions in the storage device",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 72,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Interactive Logon Failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 99,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A user account was created",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 102,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A user account was enabled",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 103,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "An attempt was made to change an account's password.",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 104,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "An attempt was made to reset an account's password",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 105,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A user account was unlocked",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 110,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Processes run with administrator privileges",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 111,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Detail user privilege escalation",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 112,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Detail User network login attempt",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 113,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Detail users logon/logoff",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 602,
+        "configReportEditable": true,
+        "dashboardId": 77,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 602,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 2",
+            "standardSectionDescription": "There are 72 controls that makeup CMMC Level 2, which encompasses the CMMC Level 1 controls. A CMMC Level 2 audit will cover 65% of the NIST 800-171 CUI controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "HIDS Event logging",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 602,
+        "configReportEditable": true,
+        "dashboardId": 172,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 602,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 2",
+            "standardSectionDescription": "There are 72 controls that makeup CMMC Level 2, which encompasses the CMMC Level 1 controls. A CMMC Level 2 audit will cover 65% of the NIST 800-171 CUI controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Software package is removed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 602,
+        "configReportEditable": true,
+        "dashboardId": 176,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 602,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 2",
+            "standardSectionDescription": "There are 72 controls that makeup CMMC Level 2, which encompasses the CMMC Level 1 controls. A CMMC Level 2 audit will cover 65% of the NIST 800-171 CUI controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A user account was locked out",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 603,
+        "configReportEditable": true,
+        "dashboardId": 109,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 603,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 3",
+            "standardSectionDescription": "There are 130 controls that makeup CMMC Level 3, which encompasses the CMMC Level 1 & 2 controls. A CMMC Level 3 audit will cover 100% of the 110 NIST SP 800-171 CUI controls and adds 20 controls from various sources.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "System security access was granted to an account",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 603,
+        "configReportEditable": true,
+        "dashboardId": 166,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 603,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 3",
+            "standardSectionDescription": "There are 130 controls that makeup CMMC Level 3, which encompasses the CMMC Level 1 & 2 controls. A CMMC Level 3 audit will cover 100% of the 110 NIST SP 800-171 CUI controls and adds 20 controls from various sources.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "System security access was removed from an account",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 603,
+        "configReportEditable": true,
+        "dashboardId": 167,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 603,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 3",
+            "standardSectionDescription": "There are 130 controls that makeup CMMC Level 3, which encompasses the CMMC Level 1 & 2 controls. A CMMC Level 3 audit will cover 100% of the 110 NIST SP 800-171 CUI controls and adds 20 controls from various sources.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Domain Policy was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 603,
+        "configReportEditable": true,
+        "dashboardId": 168,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 603,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 3",
+            "standardSectionDescription": "There are 130 controls that makeup CMMC Level 3, which encompasses the CMMC Level 1 & 2 controls. A CMMC Level 3 audit will cover 100% of the 110 NIST SP 800-171 CUI controls and adds 20 controls from various sources.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Logon success on Local Computers and Network",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 116,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Local Logon Failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 117,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Recent logon failure",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 118,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User Logon Attempts",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 121,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-enabled local group was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 125,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-enabled global group was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 126,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-disabled local group was created",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 127,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A member was added to a security-disabled local group",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 139,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A Kerberos service ticket was requested",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 158,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "System audit policy was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 602,
+        "configReportEditable": true,
+        "dashboardId": 152,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 602,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 2",
+            "standardSectionDescription": "There are 72 controls that makeup CMMC Level 2, which encompasses the CMMC Level 1 controls. A CMMC Level 2 audit will cover 65% of the NIST 800-171 CUI controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Domain Policy was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 602,
+        "configReportEditable": true,
+        "dashboardId": 168,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 602,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 2",
+            "standardSectionDescription": "There are 72 controls that makeup CMMC Level 2, which encompasses the CMMC Level 1 controls. A CMMC Level 2 audit will cover 65% of the NIST 800-171 CUI controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Windows system audit logs",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 602,
+        "configReportEditable": true,
+        "dashboardId": 169,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 602,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 2",
+            "standardSectionDescription": "There are 72 controls that makeup CMMC Level 2, which encompasses the CMMC Level 1 controls. A CMMC Level 2 audit will cover 65% of the NIST 800-171 CUI controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Sysmon Service Configuration Change",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 602,
+        "configReportEditable": true,
+        "dashboardId": 173,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 602,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 2",
+            "standardSectionDescription": "There are 72 controls that makeup CMMC Level 2, which encompasses the CMMC Level 1 controls. A CMMC Level 2 audit will cover 65% of the NIST 800-171 CUI controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Policy Change Events",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 602,
+        "configReportEditable": true,
+        "dashboardId": 174,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 602,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 2",
+            "standardSectionDescription": "There are 72 controls that makeup CMMC Level 2, which encompasses the CMMC Level 1 controls. A CMMC Level 2 audit will cover 65% of the NIST 800-171 CUI controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A security-disabled local group was changed",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 128,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A member was removed from a security-disabled local group",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 140,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Special privileges assigned to new logon.",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 153,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "The computer attempted to validate the credentials for an account",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 154,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Detail users logon/logoff",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 77,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A user account is removed to a Distribution Group in AD",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 86,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "User account added to Privileged Group",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 601,
+        "configReportEditable": true,
+        "dashboardId": 100,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 601,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 1",
+            "standardSectionDescription": "There are 17 controls that makeup CMMC Level 1, and each of those controls is directly mapped to Federal Acquisition Regulation (FAR) 52.204-21. Even though there are only 15 FAR 52.204-21 controls, the CMMC spread that basic coverage to make up 17 CMMC controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Alert management",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 602,
+        "configReportEditable": true,
+        "dashboardId": 170,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 602,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 2",
+            "standardSectionDescription": "There are 72 controls that makeup CMMC Level 2, which encompasses the CMMC Level 1 controls. A CMMC Level 2 audit will cover 65% of the NIST 800-171 CUI controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "NIDS Event logging",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 602,
+        "configReportEditable": true,
+        "dashboardId": 171,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 602,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 2",
+            "standardSectionDescription": "There are 72 controls that makeup CMMC Level 2, which encompasses the CMMC Level 1 controls. A CMMC Level 2 audit will cover 65% of the NIST 800-171 CUI controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "Installation successfully software package",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 602,
+        "configReportEditable": true,
+        "dashboardId": 175,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 602,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 2",
+            "standardSectionDescription": "There are 72 controls that makeup CMMC Level 2, which encompasses the CMMC Level 1 controls. A CMMC Level 2 audit will cover 65% of the NIST 800-171 CUI controls.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    },
+    {
+        "configSolution": "A new process has been created",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 603,
+        "configReportEditable": true,
+        "dashboardId": 165,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 603,
+            "standardId": 600,
+            "standardSectionName": "CMMC LEVEL 3",
+            "standardSectionDescription": "There are 130 controls that makeup CMMC Level 3, which encompasses the CMMC Level 1 & 2 controls. A CMMC Level 3 audit will cover 100% of the 110 NIST SP 800-171 CUI controls and adds 20 controls from various sources.",
+            "standard": {
+                "id": 600,
+                "standardName": "CMMC",
+                "standardDescription": "Cybersecurity Capability Maturity Model (CMMC) certification is the US Government's solution to fix low rates of compliance associated with NIST SP 800-171. CMMC is not optional and is designed to permit only allow businesses with a valid CMMC certification to bid on and win contracts with the US Government. The US Department of Defense (DoD) recognizes that all contractors are not alike, as well as the nature of how subcontractors are used. "
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    }
+]
