@@ -1,6 +1,6 @@
 [
     {
-        "idVisualization": 319,
+        "idVisualization": 318,
         "idDashboard": 189,
         "order": 0,
         "width": 1565,
@@ -11,7 +11,7 @@
         "defaultTimeRange": null,
         "gridInfo": "{\"cols\":30,\"id\":\"7512555e-101d-b311-8060-fc09aeb8dc89\",\"rows\":13,\"x\":0,\"y\":0}",
         "visualization": {
-            "id": 319,
+            "id": 318,
             "name": "A scheduled task was deleted",
             "description": "A scheduled task was deleted",
             "eventType": null,

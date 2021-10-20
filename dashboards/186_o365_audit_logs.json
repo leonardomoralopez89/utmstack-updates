@@ -1,6 +1,6 @@
 [
     {
-        "idVisualization": 316,
+        "idVisualization": 309,
         "idDashboard": 186,
         "order": 0,
         "width": 1565,
@@ -11,7 +11,7 @@
         "defaultTimeRange": null,
         "gridInfo": "{\"cols\":30,\"id\":\"1f0cb6d0-96b9-5d01-0ffa-f42d1e8d9231\",\"rows\":13,\"x\":0,\"y\":0}",
         "visualization": {
-            "id": 316,
+            "id": 309,
             "name": "O365 audit logs",
             "description": "O365 audit logs",
             "eventType": null,

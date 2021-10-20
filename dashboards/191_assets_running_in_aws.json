@@ -1,6 +1,6 @@
 [
     {
-        "idVisualization": 321,
+        "idVisualization": 320,
         "idDashboard": 191,
         "order": 0,
         "width": 1565,
@@ -11,7 +11,7 @@
         "defaultTimeRange": null,
         "gridInfo": "{\"cols\":30,\"id\":\"315f7373-3ef9-b75f-6ab7-57c15b56930d\",\"rows\":13,\"x\":0,\"y\":0}",
         "visualization": {
-            "id": 321,
+            "id": 320,
             "name": "Assets running in AWS",
             "description": "Assets running in AWS",
             "eventType": null,

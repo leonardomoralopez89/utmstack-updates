@@ -1,6 +1,6 @@
 [
     {
-        "idVisualization": 320,
+        "idVisualization": 319,
         "idDashboard": 190,
         "order": 0,
         "width": 1565,
@@ -11,7 +11,7 @@
         "defaultTimeRange": null,
         "gridInfo": "{\"cols\":30,\"id\":\"6a524c65-e801-c9db-dfe0-c75766f9f28c\",\"rows\":13,\"x\":0,\"y\":0}",
         "visualization": {
-            "id": 320,
+            "id": 319,
             "name": "A scheduled task was updated",
             "description": "A scheduled task was updated",
             "eventType": null,
