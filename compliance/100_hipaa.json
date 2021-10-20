@@ -183,7 +183,7 @@
         "section": {
             "id": 105,
             "standardId": 100,
-            "standardSectionName": "§164.308(a)(3) - Workforce Security ",
+            "standardSectionName": "§164.308(a)(3) - Workforce Security",
             "standardSectionDescription": "Workforce security. Implement policies and procedures to ensure that all members of its workforce have appropriate access to electronic protected health information, as provided under paragraph (a)(4) of this section, and to prevent those workforce members who do not have access under paragraph (a)(4) of this section from obtaining access to electronic protected health information.",
             "standard": {
                 "id": 100,
@@ -211,7 +211,7 @@
         "section": {
             "id": 105,
             "standardId": 100,
-            "standardSectionName": "§164.308(a)(3) - Workforce Security ",
+            "standardSectionName": "§164.308(a)(3) - Workforce Security",
             "standardSectionDescription": "Workforce security. Implement policies and procedures to ensure that all members of its workforce have appropriate access to electronic protected health information, as provided under paragraph (a)(4) of this section, and to prevent those workforce members who do not have access under paragraph (a)(4) of this section from obtaining access to electronic protected health information.",
             "standard": {
                 "id": 100,
@@ -267,7 +267,7 @@
         "section": {
             "id": 102,
             "standardId": 100,
-            "standardSectionName": " §164.312(b) - Audit Controls ",
+            "standardSectionName": "§164.312(b) - Audit Controls",
             "standardSectionDescription": "Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.",
             "standard": {
                 "id": 100,
@@ -295,7 +295,7 @@
         "section": {
             "id": 102,
             "standardId": 100,
-            "standardSectionName": " §164.312(b) - Audit Controls ",
+            "standardSectionName": "§164.312(b) - Audit Controls",
             "standardSectionDescription": "Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.",
             "standard": {
                 "id": 100,
@@ -435,7 +435,7 @@
         "section": {
             "id": 107,
             "standardId": 100,
-            "standardSectionName": "§164.312(e)(1) - Transmission Security ",
+            "standardSectionName": "§164.312(e)(1) - Transmission Security",
             "standardSectionDescription": "Implement technical security measures to guard against unauthorized access to electronic protected health information that is being transmitted over an electronic communications network.",
             "standard": {
                 "id": 100,
@@ -455,15 +455,15 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 109,
+        "standardSectionId": 108,
         "configReportEditable": true,
         "dashboardId": 18,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 109,
+            "id": 108,
             "standardId": 100,
-            "standardSectionName": "§ 164.306 Security standards: General rules.",
+            "standardSectionName": "§164.306 Security standards: General rules",
             "standardSectionDescription": "Ensure the confidentiality, integrity, and availability of all electronic protected health information the covered entity or business associate creates, receives, maintains, or transmits<br> Protect against any reasonably anticipated threats or hazards to the security or integrity of such information.<br> Protect against any reasonably anticipated uses or disclosures of such information that are not permitted or required under subpart E of this part.<br> Ensure compliance with this subpart by its workforce",
             "standard": {
                 "id": 100,
@@ -567,18 +567,18 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 4,
+        "standardSectionId": 104,
         "configReportEditable": true,
         "dashboardId": 61,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 4,
-            "standardId": 1,
+            "id": 104,
+            "standardId": 100,
             "standardSectionName": "§164.308(a)(4) - Information Access Management",
             "standardSectionDescription": "Implement policies and procedures to prevent, detect, contain, and correct security violations.",
             "standard": {
-                "id": 1,
+                "id": 100,
                 "standardName": "HIPAA",
                 "standardDescription": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient’s consent or knowledge."
             }
@@ -603,7 +603,7 @@
         "section": {
             "id": 105,
             "standardId": 100,
-            "standardSectionName": "§164.308(a)(3) - Workforce Security ",
+            "standardSectionName": "§164.308(a)(3) - Workforce Security",
             "standardSectionDescription": "Workforce security. Implement policies and procedures to ensure that all members of its workforce have appropriate access to electronic protected health information, as provided under paragraph (a)(4) of this section, and to prevent those workforce members who do not have access under paragraph (a)(4) of this section from obtaining access to electronic protected health information.",
             "standard": {
                 "id": 100,
@@ -623,13 +623,13 @@
         "configReportFilterByTime": null,
         "configReportDataOrigin": null,
         "configReportExportCsvUrl": null,
-        "standardSectionId": 108,
+        "standardSectionId": 109,
         "configReportEditable": true,
         "dashboardId": 1,
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 108,
+            "id": 109,
             "standardId": 100,
             "standardSectionName": "164.308 (a)(5)(ii)(C)",
             "standardSectionDescription": "Log-in monitoring (Addressable). Procedures for monitoring log-in attempts and reporting discrepancies. ",
