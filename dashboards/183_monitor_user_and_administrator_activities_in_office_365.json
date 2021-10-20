@@ -136,7 +136,7 @@
             }
         },
         "dashboard": {
-            "id": 186,
+            "id": 183,
             "name": "Monitor user and administrator activities in Office 365",
             "description": "Monitor user and administrator activities in Office 365",
             "refreshTime": null,
