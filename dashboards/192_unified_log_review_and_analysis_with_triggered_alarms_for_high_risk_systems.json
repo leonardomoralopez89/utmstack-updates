@@ -1,6 +1,6 @@
 [
     {
-        "idVisualization": 322,
+        "idVisualization": 321,
         "idDashboard": 192,
         "order": 0,
         "width": 1565,
@@ -11,7 +11,7 @@
         "defaultTimeRange": null,
         "gridInfo": "{\"cols\":30,\"id\":\"d336bc86-c905-1736-1962-31cc58b40fc9\",\"rows\":13,\"x\":0,\"y\":0}",
         "visualization": {
-            "id": 322,
+            "id": 321,
             "name": "Unified log review and analysis, with triggered alarms for high risk systems.",
             "description": "Unified log review and analysis, with triggered alarms for high risk systems.",
             "eventType": null,

@@ -1,6 +1,6 @@
 [
     {
-        "idVisualization": 318,
+        "idVisualization": 317,
         "idDashboard": 188,
         "order": 0,
         "width": 1565,
@@ -11,7 +11,7 @@
         "defaultTimeRange": null,
         "gridInfo": "{\"cols\":30,\"id\":\"f6bb94b5-81de-94ef-cd57-6aed2703bbd8\",\"rows\":13,\"x\":0,\"y\":0}",
         "visualization": {
-            "id": 318,
+            "id": 317,
             "name": "A scheduled task was created",
             "description": "A scheduled task was created",
             "eventType": null,

@@ -1,6 +1,6 @@
 [
     {
-        "idVisualization": 317,
+        "idVisualization": 316,
         "idDashboard": 187,
         "order": 0,
         "width": 1565,
@@ -11,7 +11,7 @@
         "defaultTimeRange": null,
         "gridInfo": "{\"cols\":30,\"id\":\"87fc3637-d7fe-5d2e-2e95-56c8881bbd51\",\"rows\":13,\"x\":0,\"y\":0}",
         "visualization": {
-            "id": 317,
+            "id": 316,
             "name": "Assets running in Azure",
             "description": "Assets running in Azure",
             "eventType": null,
