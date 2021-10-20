@@ -1105,8 +1105,8 @@
         "configType": "TEMPLATE",
         "configUrl": null,
         "section": {
-            "id": 35,
-            "standardId": 504,
+            "id": 504,
+            "standardId": 500,
             "standardSectionName": "AC-11 Session Lock / Unlock",
             "standardSectionDescription": "AC-11 (A.11.3.2, A.11.3.3, A.11.5.5) Session Lock / Unlock",
             "standard": {
