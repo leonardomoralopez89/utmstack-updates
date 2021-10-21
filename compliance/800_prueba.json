@@ -1,0 +1,31 @@
+[
+    {
+        "configSolution": "esto es solo para prueba",
+        "configReportResourceUrl": null,
+        "configReportRequestType": null,
+        "configReportPageable": null,
+        "configReportFilterByTime": null,
+        "configReportDataOrigin": null,
+        "configReportExportCsvUrl": null,
+        "standardSectionId": 801,
+        "configReportEditable": true,
+        "dashboardId": 138,
+        "configType": "TEMPLATE",
+        "configUrl": null,
+        "section": {
+            "id": 801,
+            "standardId": 800,
+            "standardSectionName": "Seccion de prueba",
+            "standardSectionDescription": "seccion de prueba",
+            "standard": {
+                "id": 800,
+                "standardName": "PRUEBA",
+                "standardDescription": "Este compliance es solo para probar los updates",
+                "systemOwner": null
+            }
+        },
+        "columns": null,
+        "requestBodyFilters": null,
+        "requestParamFilters": null
+    }
+]
