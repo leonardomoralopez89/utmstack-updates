@@ -1,0 +1,80 @@
+[
+    {
+        "idVisualization": 322,
+        "idDashboard": 193,
+        "order": 0,
+        "width": 496,
+        "height": 394.8,
+        "top": 0,
+        "left": 0,
+        "showTimeFilter": true,
+        "defaultTimeRange": null,
+        "gridInfo": "{\"cols\":10,\"id\":\"72189b25-79ed-d0ac-6912-51a65cf47099\",\"rows\":8,\"x\":0,\"y\":0}",
+        "visualization": {
+            "id": 322,
+            "name": "Visualizacion de prueba",
+            "description": "borrar esta visualizacion",
+            "eventType": null,
+            "createdDate": "2021-10-21T10:56:29.248Z",
+            "modifiedDate": null,
+            "userCreated": "admin",
+            "userModified": null,
+            "chartConfig": "[]",
+            "chartAction": "{\"active\":true,\"customUrl\":false,\"navigate\":null,\"customNavigate\":null}",
+            "systemOwner": null,
+            "idPattern": 1,
+            "chartType": "METRIC_CHART",
+            "filterType": [
+                {
+                    "operator": "IS_BETWEEN",
+                    "field": "@timestamp",
+                    "value": [
+                        "now-7d",
+                        "now"
+                    ]
+                }
+            ],
+            "aggregationType": {
+                "metrics": [
+                    {
+                        "id": "1",
+                        "aggregation": "COUNT",
+                        "field": "",
+                        "customLabel": ""
+                    }
+                ],
+                "bucket": {
+                    "id": "1000",
+                    "aggregation": "TERMS",
+                    "type": "AXIS",
+                    "field": "dataType.keyword",
+                    "customLabel": "",
+                    "terms": {
+                        "sortBy": "_count",
+                        "asc": false,
+                        "size": 5
+                    }
+                }
+            },
+            "pattern": {
+                "id": 1,
+                "pattern": "log-*",
+                "patternModule": null,
+                "patternSystem": true
+            }
+        },
+        "dashboard": {
+            "id": 193,
+            "name": "Dashboard de prueba",
+            "description": "Eliminar este dashboard",
+            "refreshTime": null,
+            "createdDate": "2021-10-21T10:59:41.769Z",
+            "modifiedDate": "2021-10-21T10:56:38.914Z",
+            "userCreated": "admin",
+            "userModified": "1",
+            "filters": null,
+            "dashboardType": null,
+            "systemOwner": null
+        }
+    }
+]
