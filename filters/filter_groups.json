@@ -182,5 +182,17 @@
                 "path": "filters/vmware/vmware-esxi.conf"
             }
         ]
+    },
+    {
+        "id": 1300,
+        "name": "prueba",
+        "description": "Esto solo es para probar la actualizacion de los filtros",
+        "filters": [
+            {
+                "id": 1301,
+                "name": "prueba",
+                "path": "filters/prueba/filtro-de-prueba.conf"
+            }
+        ]
     }
 ]
