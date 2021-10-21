@@ -113,19 +113,6 @@
                 "ROLE_ADMIN",
                 "ROLE_USER"
             ]
-        },
-        {
-            "id": 509,
-            "parentId": 500,
-            "name": "PRUEBA Dashboard",
-            "url": "compliance/templates?standardId=800&standardName=PRUEBA",
-            "position": 7,
-            "isActive": true,
-            "isAction": false,
-            "authorities": [
-                "ROLE_ADMIN",
-                "ROLE_USER"
-            ]
         }
     ]
 }
