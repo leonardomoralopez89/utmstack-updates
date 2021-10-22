@@ -78,9 +78,5 @@
     {
         "id": 19,
         "pattern": "log-generic-*"
-    },
-    {
-        "id": 20,
-        "pattern": "log-testing-*"
     }
 ]
