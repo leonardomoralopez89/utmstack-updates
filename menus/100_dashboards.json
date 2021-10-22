@@ -148,20 +148,6 @@
                 "ROLE_ADMIN",
                 "ROLE_USER"
             ]
-        },
-        {
-            "id": 111,
-            "parentId": 100,
-            "name": "Dashboard de Prueba",
-            "url": "dashboard/render/193/dashboard_de_prueba",
-            "dashboardId": 193,
-            "position": 8,
-            "isActive": true,
-            "isAction": false,
-            "authorities": [
-                "ROLE_ADMIN",
-                "ROLE_USER"
-            ]
         }
     ]
 }
